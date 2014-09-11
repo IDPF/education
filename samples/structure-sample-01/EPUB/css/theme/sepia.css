@@ -1,0 +1,1555 @@
+html {
+  color: #000;
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+a, abbr, acronym, address, applet, article, aside, audio,
+b, big, blockquote, body, canvas, caption, center, cite,
+code, dd, del, details, dfn, dl, dt, em, embed, fieldset,
+figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6,
+header, hgroup, i, iframe, img, ins, kbd, label,
+legend, li, mark, menu, nav, object, ol, output, p, pre,
+q, ruby, s, samp, section, small, strike, strong, sub,
+summary, sup, table, tbody, td, tfoot, th, thead, time,
+tr, tt, u, ul, var, video, :before, :after, .content,
+.media, .step-title, .step-info, .title-info, .chapter-number,
+.grid, .grid-item {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  line-height: 1;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  font-style: italic;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 19px;
+  font-size: 1em;
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+
+html {
+  font-size: 17px;
+}
+@media screen and (min-width: 640px) {
+  html {
+    font-size: 19px;
+  }
+}
+
+body {
+  background: #fbeecf;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  color: #673403;
+  padding: 0 20px;
+  line-height: 28.5px;
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+@media screen and (min-width: 640px) {
+  body {
+    padding: 0 80px;
+  }
+}
+
+img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+
+aside {
+  clear: both;
+  margin-bottom: 1.5em;
+}
+aside:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.marginalia {
+  margin: 3em;
+  border-color: rgba(219, 46, 0, 0.15);
+  border-style: solid;
+  border-width: 2px 0 0 0;
+}
+.marginalia img {
+  float: left;
+  padding-right: 1.5em;
+  width: auto;
+}
+.marginalia p {
+  margin: 1.5em;
+}
+.marginalia :last-child {
+  margin-bottom: 0;
+}
+.marginalia .glossary p:last-child {
+  margin-bottom: 0;
+}
+.marginalia .glossary {
+  background: rgba(219, 46, 0, 0.15);
+  padding: 1.5em;
+}
+
+.pullquote {
+  font-size: 1.26316em;
+  font-weight: 300;
+}
+
+.sidebar {
+  background: transparent;
+  border-color: #db2e00;
+  border-style: solid;
+  border-width: 0 0 0 2px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  color: inherit;
+  padding-left: 28.5px;
+  padding-right: 28.5px;
+}
+.sidebar header .label,
+.sidebar hgroup .label {
+  background: transparent;
+  color: #db2e00;
+  display: block;
+  font-size: 19px;
+  font-size: 0.63333em;
+  line-height: 1.5;
+  margin-top: 0em;
+  margin-bottom: 0em;
+  letter-spacing: 0;
+  line-height: normal;
+  padding: 0;
+  text-transform: none;
+}
+.sidebar > hgroup h1,
+.sidebar > header h1 {
+  color: #673403;
+  font-size: 30px;
+  font-size: 1.57895em;
+  line-height: 1.9;
+  margin-top: 0em;
+  margin-bottom: 0em;
+  font-weight: 400;
+}
+.sidebar > section:not(.chapter):not(.frontmatter):not(.bodymatter):not(.feature) > header h1,
+.sidebar > section:not(.chapter):not(.frontmatter):not(.bodymatter):not(.feature) > hgroup h1 {
+  color: #666666;
+  font-size: 30px;
+  font-size: 1.57895em;
+  line-height: 1.9;
+  margin-top: 0em;
+  margin-bottom: 0em;
+  font-weight: 400;
+}
+.sidebar p:last-child {
+  margin-bottom: 0;
+}
+
+.sidebar_1 {
+  background: rgba(219, 46, 0, 0.15);
+  border-color: #db2e00;
+  border-style: none;
+  border-width: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  color: inherit;
+  padding: 0 1.5em;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+.sidebar_1 hgroup .label,
+.sidebar_1 header .label {
+  background: #db2e00;
+  color: white;
+  display: block;
+  font-size: 17px;
+  font-size: 0.56667em;
+  line-height: 1.67647;
+  margin-top: 0em;
+  margin-bottom: 0em;
+  letter-spacing: 2px;
+  line-height: normal;
+  padding: 0.83824em 1.67647em;
+  text-transform: uppercase;
+  margin-left: -1.67647em;
+  margin-right: -1.67647em;
+}
+.sidebar_1 > hgroup h1,
+.sidebar_1 > header h1 {
+  color: #673403;
+  font-size: 30px;
+  font-size: 1.57895em;
+  line-height: 1.9;
+  margin-top: 0em;
+  margin-bottom: 0em;
+  font-weight: 400;
+}
+.sidebar_1 > section:not(.chapter):not(.frontmatter):not(.bodymatter):not(.feature) > header h1,
+.sidebar_1 > section:not(.chapter):not(.frontmatter):not(.bodymatter):not(.feature) > hgroup h1 {
+  color: #666666;
+  font-size: 30px;
+  font-size: 1.57895em;
+  line-height: 1.9;
+  margin-top: 0em;
+  margin-bottom: 0em;
+  font-weight: 400;
+}
+
+.sidebar_2 {
+  background: transparent;
+  border-color: #db2e00;
+  border-style: solid;
+  border-width: 1px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  color: inherit;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+.sidebar_2 hgroup .label,
+.sidebar_2 header .label {
+  background: none;
+  color: #db2e00;
+  display: block;
+  font-size: 17px;
+  font-size: 0.56667em;
+  line-height: 1.67647;
+  margin-top: 0em;
+  margin-bottom: 0em;
+  letter-spacing: 2px;
+  line-height: normal;
+  padding-left: 0em;
+  padding-right: 0em;
+  text-transform: uppercase;
+}
+.sidebar_2 > hgroup h1,
+.sidebar_2 > header h1 {
+  color: #673403;
+  font-size: 30px;
+  font-size: 1.57895em;
+  margin-top: 0.95em;
+  margin-bottom: 0em;
+  font-weight: 400;
+}
+.sidebar_2 > section:not(.chapter):not(.frontmatter):not(.bodymatter):not(.feature) > header h1,
+.sidebar_2 > section:not(.chapter):not(.frontmatter):not(.bodymatter):not(.feature) > hgroup h1 {
+  color: #666666;
+  font-size: 30px;
+  font-size: 1.57895em;
+  line-height: 1.9;
+  margin-top: 0em;
+  margin-bottom: 0em;
+  font-weight: 400;
+}
+
+.sidebar_3 {
+  background: rgba(103, 52, 3, 0.15);
+  border-color: #db2e00;
+  border-style: none;
+  border-width: 1px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  color: inherit;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+.sidebar_3 hgroup .label,
+.sidebar_3 header .label {
+  background: transparent;
+  color: #673403;
+  display: block;
+  font-size: 17px;
+  font-size: 0.56667em;
+  line-height: 1.67647;
+  margin-top: 0em;
+  margin-bottom: 0em;
+  letter-spacing: 2px;
+  line-height: normal;
+  padding-left: 0em;
+  padding-right: 0em;
+  text-transform: uppercase;
+}
+.sidebar_3 > hgroup h1,
+.sidebar_3 > header h1 {
+  color: #673403;
+  font-size: 30px;
+  font-size: 1.57895em;
+  margin-top: 0.95em;
+  margin-bottom: 0em;
+  font-weight: 400;
+}
+.sidebar_3 > section:not(.chapter):not(.frontmatter):not(.bodymatter):not(.feature) > header h1,
+.sidebar_3 > section:not(.chapter):not(.frontmatter):not(.bodymatter):not(.feature) > hgroup h1 {
+  color: #666666;
+  font-size: 30px;
+  font-size: 1.57895em;
+  line-height: 1.9;
+  margin-top: 0em;
+  margin-bottom: 0em;
+  font-weight: 400;
+}
+
+button {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  padding: 0.75em;
+  background-color: #eeeeee;
+  border: 0 none;
+  color: #666666;
+  font-weight: 700;
+}
+button:hover {
+  background-color: #dddddd;
+}
+button:active {
+  background-color: #666666;
+  color: #eeeeee;
+  outline: 0;
+}
+
+.equation,
+.informalequation,
+.inlineequation {
+  position: relative;
+}
+.equation img,
+.informalequation img,
+.inlineequation img {
+  width: auto;
+}
+
+.equation .number,
+.equation .label,
+.informalequation .number,
+.informalequation .label {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.inlineequation {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.eq-h1 {
+  height: 1em;
+  width: auto;
+}
+
+.eq-h2 {
+  height: 2em;
+  width: auto;
+}
+
+.eq-h3 {
+  height: 3em;
+  width: auto;
+}
+
+figure > :last-child {
+  margin-bottom: 0;
+}
+
+.figure,
+figure {
+  clear: both;
+  margin-bottom: 1.5em;
+}
+.figure:after,
+figure:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.figure figcaption,
+figure figcaption {
+  margin-top: 0.75em;
+}
+.figure figcaption hgroup,
+.figure figcaption header,
+figure figcaption hgroup,
+figure figcaption header {
+  margin-bottom: 0;
+}
+.figure figcaption h1,
+figure figcaption h1 {
+  margin-bottom: 0;
+  font-family: inherit;
+  font-style: inherit;
+  font-size: 1em;
+  color: #666666;
+  font-weight: 700;
+}
+.figure .caption :last-child,
+figure .caption :last-child {
+  margin-bottom: 0;
+}
+.figure :last-child,
+figure :last-child {
+  margin-bottom: 0;
+}
+
+.caption .source {
+  margin-bottom: 0;
+}
+
+.caption {
+  color: #666666;
+  font-weight: 300;
+}
+
+.inline,
+.figure-inline {
+  display: inline;
+}
+.inline figcaption,
+.figure-inline figcaption {
+  margin-top: 0.75em;
+}
+.inline figcaption hgroup,
+.inline figcaption header,
+.figure-inline figcaption hgroup,
+.figure-inline figcaption header {
+  margin-bottom: 0;
+}
+.inline figcaption h1,
+.figure-inline figcaption h1 {
+  font-size: 1em;
+  color: #666666;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+img.inline {
+  vertical-align: middle;
+}
+
+h1 {
+  line-height: 1.5;
+}
+
+.level1 > hgroup h1, .level1
+> header h1 {
+  font-size: 48px !important;
+  font-size: 2.52632em !important;
+  line-height: 1.1875 !important;
+  margin-top: 1.1875em !important;
+  margin-bottom: 0.59375em !important;
+  color: #db2e00 !important;
+  font-style: normal !important;
+  font-weight: 300 !important;
+}
+.level2 > hgroup h1, .level2
+> header h1 {
+  font-size: 36px !important;
+  font-size: 1.89474em !important;
+  line-height: 1.58333 !important;
+  margin-top: 1.1875em !important;
+  margin-bottom: 0.79167em !important;
+  color: #666666 !important;
+  font-style: normal !important;
+  font-weight: 300 !important;
+}
+.level3 > hgroup h1, .level3
+> header h1 {
+  font-size: 30px !important;
+  font-size: 1.57895em !important;
+  margin-top: 0.95em !important;
+  margin-bottom: 0.475em !important;
+  color: #666666 !important;
+  font-style: italic !important;
+  font-weight: 300 !important;
+}
+.level4 > hgroup h1, .level4
+> header h1 {
+  font-size: 19px !important;
+  font-size: 1em !important;
+  line-height: 1.5 !important;
+  margin-top: 1.5em !important;
+  margin-bottom: 0.75em !important;
+  color: #db2e00 !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+}
+.level5 > hgroup h1, .level5
+> header h1 {
+  font-size: 19px !important;
+  font-size: 1em !important;
+  line-height: 1.5 !important;
+  margin-top: 1.5em !important;
+  margin-bottom: 0em !important;
+  color: #666666 !important;
+  font-style: italic !important;
+  font-weight: 300 !important;
+}
+.level6 > hgroup h1, .level6
+> header h1 {
+  font-size: 19px !important;
+  font-size: 1em !important;
+  line-height: 1.5 !important;
+  margin-top: 1.5em !important;
+  margin-bottom: 0em !important;
+  color: #db2e00 !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+}
+
+section:not(.chapter):not(.frontmatter):not(.bodymatter):not(.feature) > hgroup h1,
+section:not(.chapter):not(.frontmatter):not(.bodymatter):not(.feature) > header h1,
+section:not(.chapter):not(.frontmatter):not(.bodymatter):not(.feature) nav > hgroup h1,
+section:not(.chapter):not(.frontmatter):not(.bodymatter):not(.feature) nav > header h1,
+nav > hgroup h1,
+nav > header h1,
+nav nav > hgroup h1,
+nav nav > header h1 {
+  font-size: 48px;
+  font-size: 2.52632em;
+  margin-top: 1.1875em;
+  margin-bottom: 0.59375em;
+  color: #db2e00;
+  font-style: normal;
+  font-weight: 300;
+}
+section:not(.chapter):not(.frontmatter):not(.bodymatter):not(.feature) > hgroup h2,
+section:not(.chapter):not(.frontmatter):not(.bodymatter):not(.feature) > header .subtitle,
+section:not(.chapter):not(.frontmatter):not(.bodymatter):not(.feature) nav > hgroup h2,
+section:not(.chapter):not(.frontmatter):not(.bodymatter):not(.feature) nav > header .subtitle,
+nav > hgroup h2,
+nav > header .subtitle,
+nav nav > hgroup h2,
+nav nav > header .subtitle {
+  font-size: 30px;
+  font-size: 1.57895em;
+  margin-top: 0em;
+  margin-bottom: 0.95em;
+  color: #666666;
+  font-style: italic;
+  font-weight: 300;
+}
+section:not(.chapter):not(.frontmatter):not(.bodymatter):not(.feature) section > hgroup h1,
+section:not(.chapter):not(.frontmatter):not(.bodymatter):not(.feature) section > header h1,
+nav section > hgroup h1,
+nav section > header h1 {
+  font-size: 36px;
+  font-size: 1.89474em;
+  margin-top: 1.1875em;
+  margin-bottom: 0.79167em;
+  color: #666666;
+  font-style: normal;
+  font-weight: 300;
+}
+section:not(.chapter):not(.frontmatter):not(.bodymatter):not(.feature) section > hgroup h2,
+section:not(.chapter):not(.frontmatter):not(.bodymatter):not(.feature) section > header .subtitle,
+nav section > hgroup h2,
+nav section > header .subtitle {
+  font-size: 24px;
+  font-size: 1.26316em;
+  margin-top: 0em;
+  margin-bottom: 1.1875em;
+  color: #666666;
+  font-style: normal;
+  font-weight: 500;
+}
+section:not(.chapter):not(.frontmatter):not(.bodymatter):not(.feature) section section > hgroup h1,
+section:not(.chapter):not(.frontmatter):not(.bodymatter):not(.feature) section section > header h1,
+nav section section > hgroup h1,
+nav section section > header h1 {
+  font-size: 30px;
+  font-size: 1.57895em;
+  margin-top: 0.95em;
+  margin-bottom: 0.475em;
+  color: #666666;
+  font-style: italic;
+  font-weight: 300;
+}
+section:not(.chapter):not(.frontmatter):not(.bodymatter):not(.feature) section section > hgroup h2,
+section:not(.chapter):not(.frontmatter):not(.bodymatter):not(.feature) section section > header .subtitle,
+nav section section > hgroup h2,
+nav section section > header .subtitle {
+  font-size: 19px;
+  font-size: 1em;
+  margin-top: 0em;
+  margin-bottom: 0em;
+  color: #666666;
+  font-style: italic;
+  font-weight: 300;
+}
+section:not(.chapter):not(.frontmatter):not(.bodymatter):not(.feature) section section section > hgroup h1,
+section:not(.chapter):not(.frontmatter):not(.bodymatter):not(.feature) section section section > header h1,
+nav section section section > hgroup h1,
+nav section section section > header h1 {
+  font-size: 24px;
+  font-size: 1.26316em;
+  margin-top: 1.1875em;
+  margin-bottom: 0.59375em;
+  color: #666666;
+  font-style: normal;
+  font-weight: 500;
+}
+section:not(.chapter):not(.frontmatter):not(.bodymatter):not(.feature) section section section > hgroup h2,
+section:not(.chapter):not(.frontmatter):not(.bodymatter):not(.feature) section section section > header .subtitle,
+nav section section section > hgroup h2,
+nav section section section > header .subtitle {
+  font-size: 19px;
+  font-size: 1em;
+  margin-top: 0em;
+  margin-bottom: 0em;
+  color: #db2e00;
+  font-style: normal;
+  font-weight: 500;
+}
+section:not(.chapter):not(.frontmatter):not(.bodymatter):not(.feature) section section section section > hgroup h1,
+section:not(.chapter):not(.frontmatter):not(.bodymatter):not(.feature) section section section section > header h1,
+nav section section section section > hgroup h1,
+nav section section section section > header h1 {
+  font-size: 19px;
+  font-size: 1em;
+  margin-top: 1.5em;
+  margin-bottom: 0em;
+  color: #666666;
+  font-style: italic;
+  font-weight: 300;
+}
+section:not(.chapter):not(.frontmatter):not(.bodymatter):not(.feature) section section section section > hgroup h2,
+section:not(.chapter):not(.frontmatter):not(.bodymatter):not(.feature) section section section section > header .subtitle,
+nav section section section section > hgroup h2,
+nav section section section section > header .subtitle {
+  font-size: 19px;
+  font-size: 1em;
+  margin-top: 0em;
+  margin-bottom: 0em;
+  color: #db2e00;
+  font-style: normal;
+  font-weight: 500;
+}
+section:not(.chapter):not(.frontmatter):not(.bodymatter):not(.feature) section section section section section > hgroup h1,
+section:not(.chapter):not(.frontmatter):not(.bodymatter):not(.feature) section section section section section > header h1,
+nav section section section section section > hgroup h1,
+nav section section section section section > header h1 {
+  font-size: 19px;
+  font-size: 1em;
+  margin-top: 1.5em;
+  margin-bottom: 0em;
+  color: #db2e00;
+  font-style: normal;
+  font-weight: 500;
+}
+section:not(.chapter):not(.frontmatter):not(.bodymatter):not(.feature) section section section section section > hgroup h2,
+section:not(.chapter):not(.frontmatter):not(.bodymatter):not(.feature) section section section section section > header .subtitle,
+nav section section section section section > hgroup h2,
+nav section section section section section > header .subtitle {
+  font-size: 17px;
+  font-size: 0.89474em;
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+
+body > h1 {
+  font-size: 48px;
+  font-size: 2.52632em;
+  margin-top: 1.1875em;
+  margin-bottom: 0.59375em;
+  color: #db2e00;
+  font-style: normal;
+  font-weight: 300;
+}
+body > h2 {
+  font-size: 36px;
+  font-size: 1.89474em;
+  margin-top: 1.1875em;
+  margin-bottom: 0.79167em;
+  color: #666666;
+  font-style: normal;
+  font-weight: 300;
+}
+body > h3 {
+  font-size: 30px;
+  font-size: 1.57895em;
+  margin-top: 0.95em;
+  margin-bottom: 0.475em;
+  color: #666666;
+  font-style: italic;
+  font-weight: 300;
+}
+body > h4 {
+  font-size: 24px;
+  font-size: 1.26316em;
+  margin-top: 1.1875em;
+  margin-bottom: 0.59375em;
+  color: #666666;
+  font-style: normal;
+  font-weight: 500;
+}
+body > h5 {
+  font-size: 19px;
+  font-size: 1em;
+  margin-top: 1.5em;
+  margin-bottom: 0em;
+  color: #666666;
+  font-style: italic;
+  font-weight: 300;
+}
+body > h6 {
+  font-size: 19px;
+  font-size: 1em;
+  margin-top: 1.5em;
+  margin-bottom: 0em;
+  color: #db2e00;
+  font-style: normal;
+  font-weight: 500;
+}
+
+b {
+  font-weight: 700;
+}
+
+code, pre, kbd, samp {
+  font-family: Courier, "Courier New", monospace;
+  font-size: 14px;
+  font-size: 0.73684em;
+  margin-top: 0em;
+  margin-bottom: 0em;
+  color: #673403;
+  padding: 2px 4px;
+}
+
+pre {
+  background: rgba(103, 52, 3, 0.15);
+  white-space: pre-wrap;
+  padding: 1.5em 0 1.5em 2.02632em;
+  margin-bottom: 1.5em;
+}
+
+span.emphasis,
+span.source,
+em {
+  font-style: italic;
+}
+
+i {
+  font-style: italic;
+}
+
+span.keyword,
+span.pronunciation {
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+}
+
+span.leadin {
+  font-weight: 700;
+}
+
+small {
+  font-size: small;
+}
+
+span.smallcaps {
+  font-variant: small-caps;
+}
+
+strong,
+span.strong {
+  font-weight: 700;
+}
+
+s {
+  text-decoration: line-through;
+}
+
+sup, sub {
+  vertical-align: baseline;
+  position: relative;
+  top: -0.4em;
+  font-size: 0.6em;
+}
+
+sub {
+  top: 0.2em;
+}
+
+u {
+  text-decoration: underline;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.doubleunderscore {
+  border-bottom: 4px double #673403;
+}
+
+ins {
+  text-decoration: underline;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+mark {
+  background: #ffd056;
+}
+
+span.label,
+span.number,
+.inlineequation,
+.speaker,
+.index-term,
+.index-locator-range,
+.index-xref-related,
+.index-xref-preferred {
+  text-transform: none;
+}
+
+var {
+  font-style: italic;
+}
+
+span.wol {
+  text-decoration: underline;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.xref {
+  background: url(../images/iconmonstr-window-new-icon-20x20.png) no-repeat right center;
+  display: inline-block;
+  padding: 0 23px 0 0;
+}
+
+a.keyword {
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  background: url(../images/iconmonstr-info-8-icon-20x20.png) no-repeat right center;
+  padding: 0 23px 0 0;
+}
+
+.noteref_footnote,
+.noteref_endnote,
+.noteref_rearnote {
+  vertical-align: super;
+  font-size: 17px;
+  font-size: 0.89474em;
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+
+.url-example,
+.ulink-example {
+  text-transform: none;
+}
+
+.url-obsolete,
+.ulink-obsolete {
+  color: #aaaaaa;
+}
+
+.pagebreak {
+  color: inherit;
+}
+
+ol {
+  margin-left: 57px;
+  margin-bottom: 1.5em;
+}
+ol ol:not([type]) {
+  list-style-type: upper-latin;
+}
+ol ol ol:not([type]) {
+  list-style-type: decimal;
+}
+ol ol ol ol:not([type]) {
+  list-style-type: lower-latin;
+}
+ol ul {
+  list-style-type: square;
+}
+ol p {
+  margin-bottom: 0;
+}
+
+.ol_1:not([type]) {
+  list-style-type: lower-alpha;
+}
+
+.ol_1:not([type]) {
+  list-style-type: upper-roman;
+}
+
+.ol_3:not([type]) {
+  list-style-type: square;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 28.5px;
+  margin-bottom: 1.5em;
+}
+ul ul {
+  list-style-type: square;
+}
+ul ul ul {
+  list-style-type: circle;
+}
+ul ul ul ul {
+  list-style-type: disc;
+}
+ul p {
+  margin-bottom: 0;
+}
+
+.nomark {
+  list-style-type: none;
+}
+.nomark p {
+  margin-bottom: 0.75em;
+}
+
+.biblioentrylist:not([type]),
+.keywordlist:not([type]),
+.tocpart:not([type]),
+.tocchapter:not([type]),
+.tocentrylist:not([type]),
+.dynamiclist:not([type]),
+.nomark:not([type]),
+.index-entrylist:not([type]),
+.index-entry-list:not([type]),
+.tocproductfrontmatter:not([type]),
+.tocproductbacktmatter:not([type]),
+.staticlist:not([type]) {
+  list-style: none;
+}
+
+.staticlist li {
+  margin-left: 28.5px;
+}
+
+.epigraph {
+  padding: 0 3em;
+}
+
+.epigraph + .source {
+  text-align: right;
+  padding: 0 3em;
+}
+
+.essay {
+  padding: 0 3em;
+}
+
+.letter {
+  padding: 0 3em;
+}
+
+.drama {
+  margin-left: 1.5em;
+}
+.drama .speaker {
+  font-weight: 700;
+}
+.drama > hgroup,
+.drama > header {
+  margin-bottom: 0.75em;
+}
+.drama > hgroup > h1,
+.drama > header > h1 {
+  font-size: 1em !important;
+  font-weight: bold !important;
+}
+
+.poem {
+  margin-left: 1.5em;
+}
+
+.dialog,
+.dialogue {
+  margin-bottom: 1.5em;
+}
+.dialog .speech,
+.dialogue .speech {
+  overflow: hidden;
+  clear: both;
+  margin-bottom: 0.75em;
+}
+.dialog .speech:last-of-type,
+.dialogue .speech:last-of-type {
+  margin-bottom: 0;
+}
+.dialog .line,
+.dialogue .line {
+  overflow: hidden;
+  float: right;
+  width: 87%;
+}
+.dialog .line ~ .line,
+.dialogue .line ~ .line {
+  margin-top: 0.75em;
+}
+.dialog .speaker,
+.dialog .persona,
+.dialogue .speaker,
+.dialogue .persona {
+  width: 11%;
+  float: left;
+  font-weight: 700;
+  word-wrap: break-word;
+  margin-right: 0.75em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.dialog .line ~ .speaker,
+.dialog .line ~ .persona,
+.dialogue .line ~ .speaker,
+.dialogue .line ~ .persona {
+  clear: both;
+  margin-top: 0.75em;
+}
+.dialog p,
+.dialogue p {
+  margin-bottom: 0;
+}
+
+.rebus-line {
+  position: relative;
+}
+.rebus-line:before {
+  content: "\00A0";
+  display: table;
+  clear: both;
+}
+
+.rebus {
+  position: relative;
+}
+.rebus .rebus-image {
+  position: absolute;
+  width: 100%;
+  top: -100%;
+  text-align: center;
+}
+
+audio {
+  width: 100%;
+  margin-bottom: 1.5em;
+}
+
+iframe {
+  width: 100%;
+  margin-bottom: 1.5em;
+}
+
+video {
+  width: 100%;
+  margin-bottom: 1.5em;
+}
+
+nav h1 {
+  color: #db2e00;
+  font-size: 2.52632em;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.2;
+  margin-bottom: 0.75em;
+  margin-top: 1.5em;
+}
+nav h2 {
+  color: #666666;
+  font-size: 1.89474em;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.toc ol > li a {
+  color: #db2e00;
+}
+.toc ol > li ol li a {
+  color: white;
+}
+
+.tocentrylist {
+  margin-left: 0;
+}
+.tocentrylist li p {
+  margin-bottom: 1.5em;
+}
+.tocentrylist ol {
+  margin-left: 1.5em;
+}
+
+p {
+  margin-bottom: 1.5em;
+}
+
+div.sample-indent > p {
+  text-indent: 28.5px;
+}
+div.sample-indent > h1 + p, div.sample-indent > h1 + *:not(p) + p, div.sample-indent > h1 + *:not(p) + *:not(p) + p, div.sample-indent > h1 + *:not(p) + *:not(p) + *:not(p) + p {
+  text-indent: 0;
+}
+div.sample-indent > h2 + p, div.sample-indent > h2 + *:not(p) + p, div.sample-indent > h2 + *:not(p) + *:not(p) + p, div.sample-indent > h2 + *:not(p) + *:not(p) + *:not(p) + p {
+  text-indent: 0;
+}
+div.sample-indent > h3 + p, div.sample-indent > h3 + *:not(p) + p, div.sample-indent > h3 + *:not(p) + *:not(p) + p, div.sample-indent > h3 + *:not(p) + *:not(p) + *:not(p) + p {
+  text-indent: 0;
+}
+div.sample-indent > h4 + p, div.sample-indent > h4 + *:not(p) + p, div.sample-indent > h4 + *:not(p) + *:not(p) + p, div.sample-indent > h4 + *:not(p) + *:not(p) + *:not(p) + p {
+  text-indent: 0;
+}
+div.sample-indent > h5 + p, div.sample-indent > h5 + *:not(p) + p, div.sample-indent > h5 + *:not(p) + *:not(p) + p, div.sample-indent > h5 + *:not(p) + *:not(p) + *:not(p) + p {
+  text-indent: 0;
+}
+div.sample-indent > h6 + p, div.sample-indent > h6 + *:not(p) + p, div.sample-indent > h6 + *:not(p) + *:not(p) + p, div.sample-indent > h6 + *:not(p) + *:not(p) + *:not(p) + p {
+  text-indent: 0;
+}
+div.sample-indent > p:first-of-type {
+  text-indent: 0;
+}
+div.sample-indent p {
+  margin-bottom: 0;
+}
+div.sample-indent p + *:not(p):not(div) {
+  margin-top: 1.5em;
+}
+
+hr {
+  border: 0px;
+  box-shadow: 0 -1px 0px 1px #aaaaaa;
+  margin-top: -1px;
+  height: 1px;
+}
+
+.abstract {
+  padding: 0 1.5em;
+}
+
+.annotation {
+  color: #666666;
+}
+h1 .annotation {
+  font-size: small;
+}
+
+dfn {
+  font-style: italic;
+  font-weight: 600;
+}
+
+dt {
+  margin-bottom: 0;
+}
+
+.glossdef {
+  margin-left: 1.5em;
+}
+
+.rearnotelist,
+.endnotelist {
+  list-style-type: none;
+  margin-left: 0;
+}
+.rearnotelist li .number,
+.endnotelist li .number {
+  font-weight: bold;
+  margin-right: 1.5em;
+}
+
+.rearnotes,
+.endnoteset {
+  font-size: 17px;
+  font-size: 0.89474em;
+  line-height: 1.67647;
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+.rearnotes p,
+.endnoteset p {
+  margin: 0;
+}
+
+.footnote {
+  font-size: 17px;
+  font-size: 0.89474em;
+  line-height: 1.67647;
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+.footnote p {
+  margin: 0;
+}
+.footnote .number {
+  font-weight: bold;
+}
+
+summary:focus {
+  outline: 0;
+}
+
+blockquote {
+  margin-bottom: 1.5em;
+}
+blockquote :last-child {
+  margin-bottom: 0;
+}
+
+blockquote:not(.epigraph) {
+  border-color: #673403;
+  border-style: solid;
+  border-width: 0 0 0 1px;
+  font-size: 17px;
+  font-size: 0.89474em;
+  line-height: 1.67647;
+  margin-top: 0em;
+  margin-bottom: 1.67647em;
+  font-weight: 300;
+  line-height: 28.5px;
+  padding-left: 1.5em;
+}
+blockquote:not(.epigraph) + .source {
+  font-style: italic;
+  padding-left: 1.5em;
+  border-color: #673403;
+  border-style: solid;
+  border-width: 0 0 0 1px;
+}
+
+.blockquotegroup {
+  margin-bottom: 1.5em;
+}
+.blockquotegroup blockquote {
+  margin-bottom: 0;
+}
+.blockquotegroup .source {
+  padding-top: 0.5em;
+}
+
+cite {
+  font-style: italic;
+}
+
+.cite_roman {
+  font-style: normal;
+}
+
+.cite_itlic {
+  font-style: italic;
+}
+
+.source {
+  font-style: italic;
+}
+.source p {
+  margin: 0;
+  font-size: 17px;
+  font-size: 0.89474em;
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+
+.table figcaption hgroup h1,
+.table figcaption header h1 {
+  font-weight: bold;
+}
+
+table {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  border-top: 2px solid #db2e00;
+  font-size: 17px;
+  font-size: 0.89474em;
+  line-height: 1.67647;
+  margin-top: 0em;
+  margin-bottom: 0em;
+  width: 100%;
+  margin-bottom: 1.5em;
+}
+table .source {
+  font-style: italic;
+}
+
+thead {
+  border-bottom: 1px solid #db2e00;
+  color: #db2e00;
+  font-style: normal;
+  font-weight: 600;
+}
+
+tfoot {
+  border-bottom: 1px solid #db2e00;
+  color: #666666;
+  font-style: italic;
+  font-weight: 400;
+}
+
+th {
+  vertical-align: top;
+  text-align: left;
+  padding: 0.75em;
+  border-right: 1px solid #db2e00;
+  border-left: 1px solid #db2e00;
+  background: rgba(219, 46, 0, 0.15);
+}
+
+tr {
+  border-bottom: 1px solid #db2e00;
+}
+
+td {
+  padding: 0.75em;
+  vertical-align: top;
+  border-right: 1px solid #db2e00;
+  border-left: 1px solid #db2e00;
+}
+
+.aboutauthor {
+  margin-bottom: 3em;
+}
+.aboutauthor > hgroup > h1,
+.aboutauthor > header > h1 {
+  margin-bottom: 0.5em;
+}
+
+.biblioentrylist {
+  list-style-type: none;
+}
+
+.case h1 {
+  color: #673403;
+}
+.case > hgroup,
+.case > header {
+  margin-bottom: 0.75em;
+}
+.case > hgroup > h1,
+.case > header > h1 {
+  font-size: 1.26316em !important;
+  font-weight: bold !important;
+}
+
+.chapter > hgroup,
+.chapter > header {
+  margin-top: 3em;
+  margin-bottom: 3em;
+  border-top: 2px solid #db2e00;
+  border-bottom: 1px solid #db2e00;
+}
+.chapter > hgroup h1,
+.chapter > header h1 {
+  color: #666666;
+  font-size: 2.52632em;
+  line-height: 1.2;
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+}
+.chapter > hgroup h1 a,
+.chapter > header h1 a {
+  color: #666666;
+}
+.chapter > hgroup h1 .number,
+.chapter > header h1 .number {
+  color: #db2e00;
+  font-weight: 700;
+  font-size: 48px;
+}
+
+.dedication {
+  margin-top: 3em;
+  padding: 0 57px;
+}
+
+.feature {
+  background: rgba(219, 46, 0, 0.15);
+  padding: 3em;
+  border-left: 1px solid #db2e00;
+}
+.feature > .marginalia {
+  margin: 0;
+}
+.feature > hgroup,
+.feature > header {
+  margin-bottom: 0.75em;
+}
+.feature > hgroup > h1,
+.feature > header > h1 {
+  font-size: 1.26316em !important;
+  font-weight: bold !important;
+  margin-top: 0;
+}
+
+.example {
+  color: #aaaaaa;
+  margin-left: 28.5px;
+}
+.example > hgroup,
+.example > header {
+  margin-bottom: 0.75em;
+}
+.example > hgroup > h1,
+.example > header > h1 {
+  font-size: 1.26316em !important;
+  font-weight: bold !important;
+}
+
+.glossary > hgroup h1,
+.glossary > header h1 {
+  font-size: 48px !important;
+  font-style: normal !important;
+  font-weight: 300 !important;
+  color: #db2e00 !important;
+}
+aside > .glossary > hgroup h1,
+aside > .glossary > header h1 {
+  font-size: 30px !important;
+  font-style: italic !important;
+  font-weight: 300 !important;
+  color: #666666 !important;
+  margin-top: 0 !important;
+}
+
+.introduction {
+  font-size: 1.26316em;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.listgroup > hgroup,
+.listgroup > header {
+  margin-bottom: 0.75em;
+}
+.listgroup > hgroup > h1,
+.listgroup > header > h1 {
+  font-size: 1em !important;
+  font-weight: bold !important;
+}
+
+.notice {
+  padding: 1.5em 28.5px;
+  border: 1px solid;
+}
+.notice > hgroup,
+.notice > header {
+  margin-bottom: 0.75em;
+}
+.notice > hgroup > h1,
+.notice > header > h1 {
+  font-size: 1.26316em !important;
+  font-weight: bold !important;
+  margin-top: 0;
+}
+
+.objectiveset > hgroup h1,
+.objectiveset > header h1 {
+  font-size: 1.89474em !important;
+  font-weight: 300 !important;
+  font-style: normal !important;
+  color: #666666 !important;
+}
+
+.author,
+.affiliation,
+.publisher {
+  color: #673403;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: bold;
+  margin-top: 1.5em;
+  padding: 0;
+}
+
+.authorgroup p {
+  margin: 0;
+}
+.authorgroup .affiliation {
+  font-weight: normal;
+  margin-top: 0;
+}
+
+.publisher .publisherlocation {
+  font-weight: normal;
+}
+
+.vignette {
+  padding: 0 1.5em;
+}
+
+aside, blockquote, figure, header, iframe,
+nav, object, pre, section, table {
+  page-break-inside: avoid;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  page-break-after: avoid;
+  page-break-inside: avoid;
+}
+
+p {
+  orphans: 2;
+  widows: 2;
+}

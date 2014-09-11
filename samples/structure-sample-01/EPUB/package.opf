@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns="http://www.idpf.org/2007/opf" version="3.0" xml:lang="en" unique-identifier="pub-id" prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+		<dc:title id="title">EDUPUB Structure Sample</dc:title>
+		<dc:creator id="creator">Jane Doe</dc:creator>
+		<dc:language>en</dc:language>
+		<dc:identifier id="pub-id">test-sample-uc</dc:identifier>
+		<meta property="dcterms:modified">2012-03-08T05:57:24Z</meta>
+		<dc:date>2011-01-07</dc:date>
+		<dc:publisher>Pearson</dc:publisher>
+		<dc:type>edupub</dc:type>
+		<dc:source id="src">urn:isbn:9780000000000</dc:source>
+		<meta property="source-of" refines="#src">pagination</meta>
+		<meta name="cover" content="cover-image"/>
+		<meta property="schema:accessibilityFeature">alternativeText</meta>
+		<meta property="schema:accessibilityFeature">mathml</meta>
+		<meta property="schema:accessibilityFeature">index</meta>
+		<meta property="schema:accessibilityFeature">printPageNumbers</meta>
+		<meta property="schema:accessibilityFeature">readingOrder</meta>
+		<meta property="schema:accessibilityFeature">structuralNavigation</meta>
+		<meta property="schema:accessibilityFeature">tableOfContents</meta>
+		<meta property="schema:typicalAgeRange">18+</meta>
+		<meta property="schema:interactivityType">mixed</meta>
+		<meta property="schema:educationalUse">technology</meta>
+		<meta property="schema:audience" id="aud01">schema:audience</meta>
+		<meta property="rdf:type" refines="#aud01">http://www.schema.org/EducationalAudience</meta>
+		<meta property="schema:educationalRole" refines="#aud01">student</meta>
+		<meta id="ea02" property="schema:educationalAlignment">schema:educationalAlignment</meta>
+		<meta refines="#ea02" property="schema:alignmentType">teaches</meta>
+	</metadata>
+	<manifest>
+		<item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
+		<item id="cover" href="xhtml/cover.xhtml" media-type="application/xhtml+xml"/>
+		<item id="toc" href="xhtml/nav.xhtml" properties="nav" media-type="application/xhtml+xml"/>
+		<item id="d6e25" href="xhtml/seriespage.xhtml" media-type="application/xhtml+xml"/>
+		<item id="d6e189" href="xhtml/halftitle.xhtml" media-type="application/xhtml+xml"/>
+		<item id="d6e199" href="xhtml/titlepage.xhtml" media-type="application/xhtml+xml"/>
+		<item id="d6e264" href="xhtml/copyright.xhtml" media-type="application/xhtml+xml"/>
+		<item id="d6e435" href="xhtml/dedication.xhtml" media-type="application/xhtml+xml"/>
+		<item id="P700048580600069A" href="xhtml/brief-toc.xhtml" media-type="application/xhtml+xml"/>
+		<item id="P700048580600069C" href="xhtml/full-toc.xhtml" media-type="application/xhtml+xml"/>
+		<item id="P700048580600069F" href="xhtml/list-of-tables.xhtml" media-type="application/xhtml+xml"/>
+		<item id="P70004858060006A0" href="xhtml/list-of-illustrations.xhtml" media-type="application/xhtml+xml"/>
+		<item id="P70004858060006A2" href="xhtml/list-of-sidebars.xhtml" media-type="application/xhtml+xml"/>
+		<item id="P70004858060006A4" href="xhtml/about-authors.xhtml" media-type="application/xhtml+xml"/>
+		<item id="P70004858060006A7" href="xhtml/preface.xhtml" media-type="application/xhtml+xml"/>
+		<item id="P70004858060006AF" href="xhtml/bibliography01.xhtml" media-type="application/xhtml+xml"/>
+		<item id="P70004858060006B5" href="xhtml/part01.xhtml" media-type="application/xhtml+xml"/>
+		<item id="P70004858060006B8" href="xhtml/chapter01.xhtml" media-type="application/xhtml+xml"/>
+		<item id="P70004858060006F9" href="xhtml/chapter02.xhtml" media-type="application/xhtml+xml"/>
+		<item id="P700048580600071E" href="xhtml/chapter03.xhtml" media-type="application/xhtml+xml"/>
+		<item id="P7000485806000731" href="xhtml/chapter04.xhtml" media-type="application/xhtml+xml"/>
+		<item id="P700048580600074B" href="xhtml/chapter05.xhtml" media-type="application/xhtml+xml"/>
+		<item id="P700048580600075C" href="xhtml/chapter06.xhtml" media-type="application/xhtml+xml" properties="mathml"/>
+		<item id="P700048580600077C" href="xhtml/chapter07.xhtml" media-type="application/xhtml+xml" properties="mathml"/>
+		<item id="P70004858060007A3" href="xhtml/appendix-a.xhtml" media-type="application/xhtml+xml"/>
+		<item id="P70004858060007A7" href="xhtml/bibliography02.xhtml" media-type="application/xhtml+xml"/>
+		<item id="P70004858060007B0" href="xhtml/glossary.xhtml" media-type="application/xhtml+xml"/>
+		<item id="P70004858060007BB" href="xhtml/subject-index.xhtml" media-type="application/xhtml+xml"/>
+		<item id="P70004858060007BC" href="xhtml/index01.xhtml" media-type="application/xhtml+xml"/>
+		<item id="P70004858060007C5" href="xhtml/index02.xhtml" media-type="application/xhtml+xml"/>
+		<item id="P70004858060007C8" href="xhtml/index03.xhtml" media-type="application/xhtml+xml"/>
+		<item id="P70004858060007CB" href="xhtml/index04.xhtml" media-type="application/xhtml+xml"/>
+		<item id="P70004858060007CF" href="xhtml/name-index.xhtml" media-type="application/xhtml+xml"/>
+		<item id="P70004858060007D1" href="xhtml/endnotes.xhtml" media-type="application/xhtml+xml"/>
+		<item id="P70004858060007D6" href="xhtml/credits.xhtml" media-type="application/xhtml+xml"/>
+		<item href="images/pub1.jpg" media-type="image/jpeg" id="idpub1_jpg"/>
+		<item href="images/f00xi-01.jpg" media-type="image/jpeg" id="idf00xi-01_jpg"/>
+		<item href="images/f00xi-02.jpg" media-type="image/jpeg" id="idf00xi-02_jpg"/>
+		<item href="images/fxvii-01.png" media-type="image/png" id="idfxvii-01_png"/>
+		<item href="images/f0007-01.jpg" media-type="image/jpeg" id="idf0007-01_jpg"/>
+		<item href="images/AAHQPRT0.jpg" media-type="image/jpeg" id="idAAHQPRT0_jpg"/>
+		<item href="images/ch27_f0018-01.jpg" media-type="image/jpeg" id="idch27_f0018-01_jpg"/>
+		<item href="images/f0244-01.png" media-type="image/png" id="idf0244-01_png"/>
+		<item href="images/f0245-01.png" media-type="image/png" id="idf0245-01_png"/>
+		<item href="images/f0246-01.png" media-type="image/png" id="idf0246-01_png"/>
+		<item href="images/study.jpg" media-type="image/jpeg" id="idstudy_jpg"/>
+		<item href="css/main.css" id="css_0" media-type="text/css"/>
+		<item href="css/images/iconmonstr-info-8-icon-20x20.png" id="css_1" media-type="image/png"/>
+		<item href="css/images/iconmonstr-info-8-icon.png" id="css_2" media-type="image/png"/>
+		<item href="css/images/iconmonstr-window-new-icon-20x20.png" id="css_3" media-type="image/png"/>
+		<item href="css/images/iconmonstr-window-new-icon.png" id="css_4" media-type="image/png"/>
+		<item href="css/theme/default.css" id="css_5" media-type="text/css"/>
+		<item href="css/theme/night.css" id="css_6" media-type="text/css"/>
+		<item href="css/theme/sepia.css" id="css_7" media-type="text/css"/>
+		<item href="images/cover.jpg" media-type="image/jpeg" id="cover-image" properties="cover-image"/>
+	</manifest>
+	<spine toc="ncx">
+		<itemref idref="cover"/>
+		<itemref idref="d6e25"/>
+		<itemref idref="d6e189"/>
+		<itemref idref="d6e199"/>
+		<itemref idref="d6e264"/>
+		<itemref idref="d6e435"/>
+		<itemref idref="P700048580600069A"/>
+		<itemref idref="P700048580600069C"/>
+		<itemref idref="P700048580600069F"/>
+		<itemref idref="P70004858060006A0"/>
+		<itemref idref="P70004858060006A2"/>
+		<itemref idref="P70004858060006A4"/>
+		<itemref idref="P70004858060006A7"/>
+		<itemref idref="P70004858060006AF"/>
+		<itemref idref="P70004858060006B5"/>
+		<itemref idref="P70004858060006B8"/>
+		<itemref idref="P70004858060006F9"/>
+		<itemref idref="P700048580600071E"/>
+		<itemref idref="P7000485806000731"/>
+		<itemref idref="P700048580600074B"/>
+		<itemref idref="P700048580600075C"/>
+		<itemref idref="P700048580600077C"/>
+		<itemref idref="P70004858060007A3"/>
+		<itemref idref="P70004858060007A7"/>
+		<itemref idref="P70004858060007B0"/>
+		<itemref idref="P70004858060007BB"/>
+		<itemref idref="P70004858060007BC"/>
+		<itemref idref="P70004858060007C5"/>
+		<itemref idref="P70004858060007C8"/>
+		<itemref idref="P70004858060007CB"/>
+		<itemref idref="P70004858060007CF"/>
+		<itemref idref="P70004858060007D1"/>
+		<itemref idref="P70004858060007D6"/>
+	</spine>
+</package>
