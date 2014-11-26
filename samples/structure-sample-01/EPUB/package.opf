@@ -46,13 +46,10 @@
 		<item id="P70004858060006A7" href="xhtml/preface.xhtml" media-type="application/xhtml+xml"/>
 		<item id="P70004858060006AF" href="xhtml/bibliography01.xhtml" media-type="application/xhtml+xml"/>
 		<item id="P70004858060006B5" href="xhtml/part01.xhtml" media-type="application/xhtml+xml"/>
-		<item id="P70004858060006B8" href="xhtml/chapter01.xhtml" media-type="application/xhtml+xml"/>
-		<item id="P70004858060006F9" href="xhtml/chapter02.xhtml" media-type="application/xhtml+xml"/>
-		<item id="P700048580600071E" href="xhtml/chapter03.xhtml" media-type="application/xhtml+xml"/>
-		<item id="P7000485806000731" href="xhtml/chapter04.xhtml" media-type="application/xhtml+xml"/>
-		<item id="P700048580600074B" href="xhtml/chapter05.xhtml" media-type="application/xhtml+xml"/>
-		<item id="P700048580600075C" href="xhtml/chapter06.xhtml" media-type="application/xhtml+xml" properties="mathml"/>
-		<item id="P700048580600077C" href="xhtml/chapter07.xhtml" media-type="application/xhtml+xml" properties="mathml"/>
+		<item id="P70004858060006F9" href="xhtml/asides.xhtml" media-type="application/xhtml+xml"/>
+		<item id="P700048580600071E" href="xhtml/figures-tables.xhtml" media-type="application/xhtml+xml"/>
+		<item id="P7000485806000731" href="xhtml/links.xhtml" media-type="application/xhtml+xml"/>
+		<item id="P700048580600075C" href="xhtml/body-content.xhtml" media-type="application/xhtml+xml" properties="mathml"/>
 		<item id="P70004858060007A3" href="xhtml/appendix-a.xhtml" media-type="application/xhtml+xml"/>
 		<item id="P70004858060007A7" href="xhtml/bibliography02.xhtml" media-type="application/xhtml+xml"/>
 		<item id="P70004858060007B0" href="xhtml/glossary.xhtml" media-type="application/xhtml+xml"/>
@@ -101,13 +98,10 @@
 		<itemref idref="P70004858060006A7"/>
 		<itemref idref="P70004858060006AF"/>
 		<itemref idref="P70004858060006B5"/>
-		<itemref idref="P70004858060006B8"/>
 		<itemref idref="P70004858060006F9"/>
 		<itemref idref="P700048580600071E"/>
 		<itemref idref="P7000485806000731"/>
-		<itemref idref="P700048580600074B"/>
 		<itemref idref="P700048580600075C"/>
-		<itemref idref="P700048580600077C"/>
 		<itemref idref="P70004858060007A3"/>
 		<itemref idref="P70004858060007A7"/>
 		<itemref idref="P70004858060007B0"/>

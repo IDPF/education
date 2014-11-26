@@ -371,15 +371,6 @@ button:active {
   width: auto;
 }
 
-.equation .number,
-.equation .label,
-.informalequation .number,
-.informalequation .label {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
 .inlineequation {
   display: inline-block;
   vertical-align: middle;
@@ -1086,9 +1077,7 @@ ul p {
   position: relative;
 }
 .rebus .rebus-image {
-  position: absolute;
   width: 100%;
-  top: -100%;
   text-align: center;
 }
 
