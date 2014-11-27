@@ -365,13 +365,6 @@
 					<content src="xhtml/body-content.xhtml#d6e5727"/>
 				</navPoint>
 
-				<navPoint id="ncx_d6e5771" playOrder="52">
-					<navLabel>
-						<text>6.7 Poem</text>
-					</navLabel>
-					<content src="xhtml/body-content.xhtml#d6e5771"/>
-				</navPoint>
-
 				<navPoint id="ncx_P700048580600076D" playOrder="53">
 					<navLabel>
 						<text>6.8 Misc Other Structures</text>
@@ -385,19 +378,6 @@
 						<content src="xhtml/body-content.xhtml#P700048580600076E"/>
 					</navPoint>
 
-					<navPoint id="ncx_P700048580600076F" playOrder="55">
-						<navLabel>
-							<text>Essay</text>
-						</navLabel>
-						<content src="xhtml/body-content.xhtml#P700048580600076F"/>
-					</navPoint>
-
-					<navPoint id="ncx_P7000485806000770" playOrder="56">
-						<navLabel>
-							<text>pre</text>
-						</navLabel>
-						<content src="xhtml/body-content.xhtml#P7000485806000770"/>
-					</navPoint>
 				</navPoint>
 
 				<navPoint id="ncx_P7000485806000774" playOrder="57">
@@ -440,13 +420,6 @@
 						<text>6.12 Keywords</text>
 					</navLabel>
 					<content src="xhtml/body-content.xhtml#P700048580600077A"/>
-				</navPoint>
-
-				<navPoint id="ncx_P700048580600077B" playOrder="63">
-					<navLabel>
-						<text>6.13 Title Subtitle text subtitle text</text>
-					</navLabel>
-					<content src="xhtml/body-content.xhtml#P700048580600077B"/>
 				</navPoint>
 			</navPoint>
 
