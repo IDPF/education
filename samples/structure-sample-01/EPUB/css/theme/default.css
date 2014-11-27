@@ -11,7 +11,7 @@ a, abbr, acronym, address, applet, article, aside, audio,
 b, big, blockquote, body, canvas, caption, center, cite,
 code, dd, del, details, dfn, dl, dt, em, embed, fieldset,
 figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6,
-header, hgroup, i, iframe, img, ins, kbd, label,
+header, i, iframe, img, ins, kbd, label,
 legend, li, mark, menu, nav, object, ol, output, p, pre,
 q, ruby, s, samp, section, small, strike, strong, sub,
 summary, sup, table, tbody, td, tfoot, th, thead, time,
@@ -152,7 +152,6 @@ aside p {
   -webkit-border-radius: 0;
   border-radius: 0;
 }
-.vignette > hgroup > h1,
 .vignette > header > h1 {
   font-size: 1.89474em ;
   line-height: 1.58333 ;
@@ -263,11 +262,9 @@ figure:after {
   display: table;
   clear: both;
 }
-figure hgroup,
 figure header {
   margin-bottom: 0;
 }
-figure hgroup h1,
 figure header h1 {
   margin-bottom: 0;
   font-family: inherit;
@@ -276,7 +273,6 @@ figure header h1 {
   color: #585858;
   font-weight: 700;
 }
-figure hgroup h1 .label, figure hgroup h1 [epub|type~='label'],
 figure header h1 .label, figure header h1 [epub|type~='label'] {
   font-size: 1em !important;
 }
@@ -293,7 +289,6 @@ figure :last-child {
   display: inline-block;
   margin-bottom: 0;
 }
-.inline hgroup,
 .inline header {
   margin-bottom: 0;
 }
@@ -315,29 +310,60 @@ h1 {
   line-height: 1.5;
 }
 
-section > hgroup,
-section nav > hgroup,
+.level1 > header h3 {
+  font-size: 48px !important;
+  font-size: 2.52632em !important;
+  line-height: 1.1875 !important;
+  margin-top: 1.1875em !important;
+  margin-bottom: 0.59375em !important;
+  color: #498778 !important;
+  font-style: normal !important;
+  font-weight: 300 !important;
+}
+
+.level2 > header h4 {
+  font-size: 36px !important;
+  font-size: 1.89474em !important;
+  line-height: 1.58333 !important;
+  margin-top: 1.1875em !important;
+  margin-bottom: 0.79167em !important;
+  color: #666666 !important;
+  font-style: normal !important;
+  font-weight: 300 !important;
+}
+.level3 > header h5 {
+  font-size: 30px !important;
+  font-size: 1.57895em !important;
+  margin-top: 0.95em !important;
+  margin-bottom: 0.475em !important;
+  color: #666666 !important;
+  font-style: italic !important;
+  font-weight: 300 !important;
+}
+.level4 > header h6 {
+  font-size: 19px !important;
+  font-size: 1em !important;
+  line-height: 1.5 !important;
+  margin-top: 1.5em !important;
+  margin-bottom: 0.75em !important;
+  color: #498778 !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+}
+
 section nav > header,
-nav > hgroup,
 nav > header,
-nav nav > hgroup,
 nav nav > header {
   background: transparent;
-  border-style: none;
-  border-width: none;
-  border-color: none;
+  border: none;
   padding: 0em;
   margin: 0em;
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
   border-radius: 0;
 }
-section > hgroup h1,
-section nav > hgroup h1,
 section nav > header h1,
-nav > hgroup h1,
 nav > header h1,
-nav nav > hgroup h1,
 nav nav > header h1 {
   font-size: 2.52632em ;
   margin-top: 1.1875em ;
@@ -346,13 +372,9 @@ nav nav > header h1 {
   font-style: normal;
   font-weight: 300;
 }
-section > hgroup h2,
 section > header .subtitle, section > header [epub|type~='subtitle'],
-section nav > hgroup h2,
 section nav > header .subtitle, section nav > header [epub|type~='subtitle'],
-nav > hgroup h2,
 nav > header .subtitle, nav > header [epub|type~='subtitle'],
-nav nav > hgroup h2,
 nav nav > header .subtitle, nav nav > header [epub|type~='subtitle'] {
   font-size: 1.57895em ;
   margin-top: 0em ;
@@ -361,23 +383,17 @@ nav nav > header .subtitle, nav nav > header [epub|type~='subtitle'] {
   font-style: italic;
   font-weight: 300;
 }
-section section > hgroup,
 section section > header,
-nav section > hgroup,
 nav section > header {
   background: transparent;
-  border-style: none;
-  border-width: none;
-  border-color: none;
+  border: none;
   padding: 0em;
   margin: 0em;
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
   border-radius: 0;
 }
-section section > hgroup h1,
 section section > header h1,
-nav section > hgroup h1,
 nav section > header h1 {
   font-size: 1.89474em ;
   margin-top: 1.1875em ;
@@ -386,9 +402,7 @@ nav section > header h1 {
   font-style: normal;
   font-weight: 300;
 }
-section section > hgroup h2,
 section section > header .subtitle, section section > header [epub|type~='subtitle'],
-nav section > hgroup h2,
 nav section > header .subtitle, nav section > header [epub|type~='subtitle'] {
   font-size: 1.26316em ;
   margin-top: 0em ;
@@ -397,23 +411,17 @@ nav section > header .subtitle, nav section > header [epub|type~='subtitle'] {
   font-style: normal;
   font-weight: 500;
 }
-section section section > hgroup,
 section section section > header,
-nav section section > hgroup,
 nav section section > header {
   background: transparent;
-  border-style: none;
-  border-width: none;
-  border-color: none;
+  border: none;
   padding: 0em;
   margin: 0em;
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
   border-radius: 0;
 }
-section section section > hgroup h1,
 section section section > header h1,
-nav section section > hgroup h1,
 nav section section > header h1 {
   font-size: 1.57895em ;
   margin-top: 0.95em ;
@@ -422,9 +430,7 @@ nav section section > header h1 {
   font-style: italic;
   font-weight: 300;
 }
-section section section > hgroup h2,
 section section section > header .subtitle, section section section > header [epub|type~='subtitle'],
-nav section section > hgroup h2,
 nav section section > header .subtitle, nav section section > header [epub|type~='subtitle'] {
   font-size: 1em ;
   margin-top: 0em ;
@@ -433,23 +439,17 @@ nav section section > header .subtitle, nav section section > header [epub|type~
   font-style: italic;
   font-weight: 300;
 }
-section section section section > hgroup,
 section section section section > header,
-nav section section section > hgroup,
 nav section section section > header {
   background: transparent;
-  border-style: none;
-  border-width: none;
-  border-color: none;
+  border: none;
   padding: 0em;
   margin: 0em;
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
   border-radius: 0;
 }
-section section section section > hgroup h1,
 section section section section > header h1,
-nav section section section > hgroup h1,
 nav section section section > header h1 {
   font-size: 1.26316em ;
   margin-top: 1.1875em ;
@@ -458,9 +458,7 @@ nav section section section > header h1 {
   font-style: normal;
   font-weight: 500;
 }
-section section section section > hgroup h2,
 section section section section > header .subtitle, section section section section > header [epub|type~='subtitle'],
-nav section section section > hgroup h2,
 nav section section section > header .subtitle, nav section section section > header [epub|type~='subtitle'] {
   font-size: 1em ;
   margin-top: 0em ;
@@ -469,23 +467,17 @@ nav section section section > header .subtitle, nav section section section > he
   font-style: normal;
   font-weight: 500;
 }
-section section section section section > hgroup,
 section section section section section > header,
-nav section section section section > hgroup,
 nav section section section section > header {
   background: transparent;
-  border-style: none;
-  border-width: none;
-  border-color: none;
+  border: none;
   padding: 0em;
   margin: 0em;
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
   border-radius: 0;
 }
-section section section section section > hgroup h1,
 section section section section section > header h1,
-nav section section section section > hgroup h1,
 nav section section section section > header h1 {
   font-size: 1em ;
   margin-top: 1.5em ;
@@ -494,9 +486,7 @@ nav section section section section > header h1 {
   font-style: italic;
   font-weight: 300;
 }
-section section section section section > hgroup h2,
 section section section section section > header .subtitle, section section section section section > header [epub|type~='subtitle'],
-nav section section section section > hgroup h2,
 nav section section section section > header .subtitle, nav section section section section > header [epub|type~='subtitle'] {
   font-size: 1em ;
   margin-top: 0em ;
@@ -505,23 +495,17 @@ nav section section section section > header .subtitle, nav section section sect
   font-style: normal;
   font-weight: 500;
 }
-section section section section section section > hgroup,
 section section section section section section > header,
-nav section section section section section > hgroup,
 nav section section section section section > header {
   background: transparent;
-  border-style: none;
-  border-width: none;
-  border-color: none;
+  border: none;
   padding: 0em;
   margin: 0em;
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
   border-radius: 0;
 }
-section section section section section section > hgroup h1,
 section section section section section section > header h1
-nav section section section section section > hgroup h1,
 nav section section section section section > header h1 {
   font-size: 1em ;
   margin-top: 1.5em ;
@@ -530,9 +514,7 @@ nav section section section section section > header h1 {
   font-style: normal;
   font-weight: 500;
 }
-section section section section section section > hgroup h2,
 section section section section section section > header .subtitle, section section section section section section > header [epub|type~='subtitle'],
-nav section section section section section > hgroup h2,
 nav section section section section section > header .subtitle, nav section section section section section > header [epub|type~='subtitle'] {
   font-size: 0.89474em ;
   margin-top: 0em ;
@@ -542,9 +524,7 @@ nav section section section section section > header .subtitle, nav section sect
 body > h1,
 nav > h1 {
   background: transparent;
-  border-style: none;
-  border-width: none;
-  border-color: none;
+  border: none;
   padding: 0em;
   margin: 0em;
   -moz-border-radius: 0;
@@ -560,9 +540,7 @@ nav > h1 {
 body > h2,
 nav > h2 {
   background: transparent;
-  border-style: none;
-  border-width: none;
-  border-color: none;
+  border: none;
   padding: 0em;
   margin: 0em;
   -moz-border-radius: 0;
@@ -578,9 +556,7 @@ nav > h2 {
 body > h3,
 nav > h3 {
   background: transparent;
-  border-style: none;
-  border-width: none;
-  border-color: none;
+  border: none;
   padding: 0em;
   margin: 0em;
   -moz-border-radius: 0;
@@ -596,9 +572,7 @@ nav > h3 {
 body > h4,
 nav > h4 {
   background: transparent;
-  border-style: none;
-  border-width: none;
-  border-color: none;
+  border: none;
   padding: 0em;
   margin: 0em;
   -moz-border-radius: 0;
@@ -614,9 +588,7 @@ nav > h4 {
 body > h5,
 nav > h5 {
   background: transparent;
-  border-style: none;
-  border-width: none;
-  border-color: none;
+  border: none;
   padding: 0em;
   margin: 0em;
   -moz-border-radius: 0;
@@ -632,9 +604,7 @@ nav > h5 {
 body > h6,
 nav > h6 {
   background: transparent;
-  border-style: none;
-  border-width: none;
-  border-color: none;
+  border: none;
   padding: 0em;
   margin: 0em;
   -moz-border-radius: 0;
@@ -1127,11 +1097,9 @@ nav.toc ol:not(.tocentrylist) li {
 .drama .speaker {
   font-weight: 700;
 }
-.drama > hgroup,
 .drama > header {
   margin-bottom: 0.75em;
 }
-.drama > hgroup > h1,
 .drama > header > h1 {
   font-size: 1em ;
   margin-top: 0em ;
@@ -1299,7 +1267,6 @@ cite {
   font-style: italic;
 }
 
-.table figcaption hgroup h1,
 .table figcaption header h1 {
   font-weight: bold;
 }
@@ -1376,7 +1343,6 @@ table tfoot td {
 .aboutauthor {
   margin-bottom: 3em;
 }
-.aboutauthor > hgroup > h1,
 .aboutauthor > header > h1 {
   margin-bottom: 0.5em;
 }
@@ -1390,7 +1356,6 @@ table tfoot td {
   -webkit-border-radius: 0;
   border-radius: 0;
 }
-.bibliography > hgroup h1, [epub|type~='bibliography'] > hgroup h1,
 .bibliography > header h1, [epub|type~='bibliography'] > header h1 {
   font-size: 1.89474em ;
   line-height: 1.58333 ;
@@ -1411,9 +1376,7 @@ footer > .bibliography, footer [epub|type~='bibliography'] {
   border-radius: 0;
 }
 aside > .bibliography > header h1, aside > [epub|type~='bibliography'] > header h1,
-aside > .bibliography > hgroup h1, aside > [epub|type~='bibliography'] > hgroup h1,
-footer > .bibliography > header h1, footer > [epub|type~='bibliography'] > header h1,
-footer > .bibliography > hgroup h1, footer > [epub|type~='bibliography'] > hgroup h1 {
+footer > .bibliography > header h1, footer > [epub|type~='bibliography'] > header h1 {
   font-size: 1.57895em ;
   line-height: 1.9 ;
   margin-top: 0.95em ;
@@ -1423,7 +1386,6 @@ footer > .bibliography > hgroup h1, footer > [epub|type~='bibliography'] > hgrou
   font-style: italic;
 }
 
-.chapter > hgroup, [epub|type~='chapter'] > hgroup,
 .chapter > header, [epub|type~='chapter'] > header {
   background: transparent;
   border-style: solid;
@@ -1438,7 +1400,6 @@ footer > .bibliography > hgroup h1, footer > [epub|type~='bibliography'] > hgrou
   -webkit-border-radius: 0;
   border-radius: 0;
 }
-.chapter > hgroup h1, [epub|type~='chapter'] > hgroup h1,
 .chapter > header h1, [epub|type~='chapter'] > header h1 {
   color: #585858;
   font-size: 2.52632em;
@@ -1446,11 +1407,9 @@ footer > .bibliography > hgroup h1, footer > [epub|type~='bibliography'] > hgrou
   margin-top: 0.75em;
   margin-bottom: 0.75em;
 }
-.chapter > hgroup h1 a, [epub|type~='chapter'] > hgroup h1 a,
 .chapter > header h1 a, [epub|type~='chapter'] > header h1 a {
   color: #585858;
 }
-.chapter > hgroup h1 .ordinal, [epub|type~='chapter'] > hgroup h1 [epub|type~='ordinal'],
 .chapter > header h1 .ordinal, [epub|type~='chapter'] > header h1 [epub|type~='ordinal'] {
   color: #468173;
   font-weight: 700;
@@ -1473,11 +1432,9 @@ footer > .bibliography > hgroup h1, footer > [epub|type~='bibliography'] > hgrou
   -webkit-border-radius: 0;
   border-radius: 0;
 }
-.feature hgroup,
 .feature header {
   margin-bottom: 0.75em;
 }
-.feature hgroup > h1,
 .feature header > h1 {
   font-size: 1.26316em !important;
   margin-top: 0em !important;
@@ -1492,11 +1449,9 @@ footer > .bibliography > hgroup h1, footer > [epub|type~='bibliography'] > hgrou
   color: #585858;
   margin-left: 28.5px;
 }
-.example > hgroup,
 .example > header {
   margin-bottom: 0.75em;
 }
-.example > hgroup > h1,
 .example > header > h1 {
   font-size: 1.26316em ;
   margin-top: 0em ;
@@ -1513,7 +1468,6 @@ footer > .bibliography > hgroup h1, footer > [epub|type~='bibliography'] > hgrou
   -webkit-border-radius: 0;
   border-radius: 0;
 }
-.glossary > hgroup h1, [epub|type~='glossary'] > hgroup h1,
 .glossary > header h1, [epub|type~='glossary'] > header h1 {
   font-size: 2.52632em ;
   line-height: 1.1875 ;
@@ -1532,7 +1486,6 @@ aside > .glossary, aside > [epub|type~='glossary'] {
   -webkit-border-radius: 0;
   border-radius: 0;
 }
-aside > .glossary > hgroup h1, aside > [epub|type~='glossary'] > hgroup h1,
 aside > .glossary > header h1, aside > [epub|type~='glossary'] > header h1 {
   font-size: 1.57895em ;
   line-height: 1.9 ;
@@ -1550,11 +1503,9 @@ aside > .glossary > header h1, aside > [epub|type~='glossary'] > header h1 {
   font-weight: 300;
 }
 
-.listgroup > hgroup,
 .listgroup > header {
   margin-bottom: 0.75em;
 }
-.listgroup > hgroup > h1,
 .listgroup > header > h1 {
   font-size: 1em ;
   margin-top: 0em ;
@@ -1566,12 +1517,10 @@ aside > .glossary > header h1, aside > [epub|type~='glossary'] > header h1 {
   padding: 1.5em 28.5px;
   border: 1px solid;
 }
-.notice > hgroup, [epub|type~='notice'] > hgroup,
 .notice > header, [epub|type~='notice'] > header {
   margin-top: 0;
   margin-bottom: 0.75em;
 }
-.notice > hgroup > h1, [epub|type~='notice'] > hgroup > h1,
 .notice > header > h1, [epub|type~='notice'] > header > h1 {
   font-size: 1.26316em ;
   line-height: 1.1875 ;
@@ -1579,8 +1528,7 @@ aside > .glossary > header h1, aside > [epub|type~='glossary'] > header h1 {
   margin-bottom: 1.1875em ;
   font-weight: bold;
 }
-
-.learning-objectives, [epub|type~=learning-objectives'] {
+.learning-objectives, [epub|type~='learning-objectives'] {
   background: transparent;
   border-style: none;
   border-width: 0;

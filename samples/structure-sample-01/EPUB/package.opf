@@ -37,8 +37,6 @@
 		<item id="d6e199" href="xhtml/titlepage.xhtml" media-type="application/xhtml+xml"/>
 		<item id="d6e264" href="xhtml/copyright.xhtml" media-type="application/xhtml+xml"/>
 		<item id="d6e435" href="xhtml/dedication.xhtml" media-type="application/xhtml+xml"/>
-		<item id="P700048580600069A" href="xhtml/brief-toc.xhtml" media-type="application/xhtml+xml"/>
-		<item id="P700048580600069C" href="xhtml/full-toc.xhtml" media-type="application/xhtml+xml"/>
 		<item id="P700048580600069F" href="xhtml/list-of-tables.xhtml" media-type="application/xhtml+xml"/>
 		<item id="P70004858060006A0" href="xhtml/list-of-illustrations.xhtml" media-type="application/xhtml+xml"/>
 		<item id="P70004858060006A2" href="xhtml/list-of-sidebars.xhtml" media-type="application/xhtml+xml"/>
@@ -89,8 +87,6 @@
 		<itemref idref="d6e199"/>
 		<itemref idref="d6e264"/>
 		<itemref idref="d6e435"/>
-		<itemref idref="P700048580600069A"/>
-		<itemref idref="P700048580600069C"/>
 		<itemref idref="P700048580600069F"/>
 		<itemref idref="P70004858060006A0"/>
 		<itemref idref="P70004858060006A2"/>
