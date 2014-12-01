@@ -39,20 +39,15 @@
 		<item id="d6e435" href="xhtml/dedication.xhtml" media-type="application/xhtml+xml"/>
 		<item id="P70004858060006A4" href="xhtml/about-authors.xhtml" media-type="application/xhtml+xml"/>
 		<item id="P70004858060006A7" href="xhtml/preface.xhtml" media-type="application/xhtml+xml"/>
-		<item id="P70004858060006AF" href="xhtml/bibliography01.xhtml" media-type="application/xhtml+xml"/>
 		<item id="P70004858060006B5" href="xhtml/part01.xhtml" media-type="application/xhtml+xml"/>
 		<item id="P70004858060006F9" href="xhtml/asides.xhtml" media-type="application/xhtml+xml"/>
 		<item id="P700048580600071E" href="xhtml/figures-tables.xhtml" media-type="application/xhtml+xml"/>
 		<item id="P7000485806000731" href="xhtml/links.xhtml" media-type="application/xhtml+xml"/>
 		<item id="P700048580600075C" href="xhtml/body-content.xhtml" media-type="application/xhtml+xml" properties="mathml"/>
 		<item id="P70004858060007A3" href="xhtml/appendix-a.xhtml" media-type="application/xhtml+xml"/>
-		<item id="P70004858060007A7" href="xhtml/bibliography02.xhtml" media-type="application/xhtml+xml"/>
+		<item id="P70004858060007A7" href="xhtml/bibliography.xhtml" media-type="application/xhtml+xml"/>
 		<item id="P70004858060007B0" href="xhtml/glossary.xhtml" media-type="application/xhtml+xml"/>
 		<item id="P70004858060007BB" href="xhtml/subject-index.xhtml" media-type="application/xhtml+xml"/>
-		<item id="P70004858060007BC" href="xhtml/index01.xhtml" media-type="application/xhtml+xml"/>
-		<item id="P70004858060007C5" href="xhtml/index02.xhtml" media-type="application/xhtml+xml"/>
-		<item id="P70004858060007C8" href="xhtml/index03.xhtml" media-type="application/xhtml+xml"/>
-		<item id="P70004858060007CB" href="xhtml/index04.xhtml" media-type="application/xhtml+xml"/>
 		<item id="P70004858060007CF" href="xhtml/name-index.xhtml" media-type="application/xhtml+xml"/>
 		<item id="P70004858060007D1" href="xhtml/endnotes.xhtml" media-type="application/xhtml+xml"/>
 		<item id="P70004858060007D6" href="xhtml/credits.xhtml" media-type="application/xhtml+xml"/>
@@ -86,7 +81,6 @@
 		<itemref idref="d6e435"/>
 		<itemref idref="P70004858060006A4"/>
 		<itemref idref="P70004858060006A7"/>
-		<itemref idref="P70004858060006AF"/>
 		<itemref idref="P70004858060006B5"/>
 		<itemref idref="P70004858060006F9"/>
 		<itemref idref="P700048580600071E"/>
@@ -96,10 +90,6 @@
 		<itemref idref="P70004858060007A7"/>
 		<itemref idref="P70004858060007B0"/>
 		<itemref idref="P70004858060007BB"/>
-		<itemref idref="P70004858060007BC"/>
-		<itemref idref="P70004858060007C5"/>
-		<itemref idref="P70004858060007C8"/>
-		<itemref idref="P70004858060007CB"/>
 		<itemref idref="P70004858060007CF"/>
 		<itemref idref="P70004858060007D1"/>
 		<itemref idref="P70004858060007D6"/>
