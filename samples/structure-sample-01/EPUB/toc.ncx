@@ -268,74 +268,67 @@
 
 					<navPoint id="ncx_P7000485806000744" playOrder="38">
 						<navLabel>
-							<text>4.12a termref</text>
+							<text>4.12.1 termref</text>
 						</navLabel>
 						<content src="xhtml/links.xhtml#P7000485806000744"/>
 					</navPoint>
 
-					<navPoint id="ncx_P7000485806000745" playOrder="39">
+					<navPoint id="ncx_P7000485806000746" playOrder="39">
 						<navLabel>
-							<text>4.13 Obsolete URL</text>
-						</navLabel>
-						<content src="xhtml/links.xhtml#P7000485806000745"/>
-					</navPoint>
-
-					<navPoint id="ncx_P7000485806000746" playOrder="40">
-						<navLabel>
-							<text>4.14 Index Anchors</text>
+							<text>4.12.2 Index Anchors</text>
 						</navLabel>
 						<content src="xhtml/links.xhtml#P7000485806000746"/>
 					</navPoint>
 				</navPoint>
 			</navPoint>
 
-			<navPoint id="P700048580600075C" playOrder="41">
+			<navPoint id="P700048580600075C" playOrder="40">
 				<navLabel>
 					<text>Chapter 6: Typical Chapter Frontmatter and Chapter Backmatter Content Chapter 6 Subtitle</text>
 				</navLabel>
 				<content src="xhtml/body-content.xhtml#P700048580600075C"/>
 
-				<navPoint id="ncx_P700048580600075E" playOrder="42">
+				<navPoint id="ncx_P700048580600075E" playOrder="41">
 					<navLabel>
 						<text>6.1 Introduction Section Label</text>
 					</navLabel>
 					<content src="xhtml/body-content.xhtml#P700048580600075E"/>
 				</navPoint>
 
-				<navPoint id="ncx_P7000485806000760" playOrder="43">
+				<navPoint id="ncx_P7000485806000760" playOrder="42">
 					<navLabel>
 						<text>6.2 Learning Objectives Section Label</text>
 					</navLabel>
 					<content src="xhtml/body-content.xhtml#P7000485806000760"/>
 				</navPoint>
 
-				<navPoint id="ncx_P7000485806000766" playOrder="44">
+				<navPoint id="ncx_P7000485806000766" playOrder="43">
 					<navLabel>
 						<text>6.3 Case Study Case Study Title</text>
 					</navLabel>
 					<content src="xhtml/body-content.xhtml#P7000485806000766"/>
 				</navPoint>
 
-				<navPoint id="ncx_d6e5627" playOrder="45">
+				<navPoint id="ncx_d6e5627" playOrder="44">
 					<navLabel>
 						<text>6.4 Section Heading</text>
 					</navLabel>
 					<content src="xhtml/body-content.xhtml#d6e5627"/>
 
-					<navPoint id="ncx_d6e5641" playOrder="46">
+					<navPoint id="ncx_d6e5641" playOrder="45">
 						<navLabel>
 							<text>6.4.1 Example 1</text>
 						</navLabel>
 						<content src="xhtml/body-content.xhtml#d6e5641"/>
 					</navPoint>
 
-					<navPoint id="ncx_P7000485806000767" playOrder="47">
+					<navPoint id="ncx_P7000485806000767" playOrder="46">
 						<navLabel>
 							<text>6.4.2 Feature Section</text>
 						</navLabel>
 						<content src="xhtml/body-content.xhtml#P7000485806000767"/>
 
-						<navPoint id="ncx_P7000485806000769" playOrder="48">
+						<navPoint id="ncx_P7000485806000769" playOrder="47">
 							<navLabel>
 								<text>feature section heading</text>
 							</navLabel>
@@ -344,13 +337,13 @@
 					</navPoint>
 				</navPoint>
 
-				<navPoint id="ncx_P700048580600076A" playOrder="49">
+				<navPoint id="ncx_P700048580600076A" playOrder="48">
 					<navLabel>
 						<text>6.5A Feature Section at different level</text>
 					</navLabel>
 					<content src="xhtml/body-content.xhtml#P700048580600076A"/>
 
-					<navPoint id="ncx_P700048580600076C" playOrder="50">
+					<navPoint id="ncx_P700048580600076C" playOrder="49">
 						<navLabel>
 							<text>feature section heading</text>
 						</navLabel>
@@ -358,20 +351,20 @@
 					</navPoint>
 				</navPoint>
 
-				<navPoint id="ncx_d6e5727" playOrder="51">
+				<navPoint id="ncx_d6e5727" playOrder="50">
 					<navLabel>
 						<text>6.6 Blockquotes</text>
 					</navLabel>
 					<content src="xhtml/body-content.xhtml#d6e5727"/>
 				</navPoint>
 
-				<navPoint id="ncx_P700048580600076D" playOrder="52">
+				<navPoint id="ncx_P700048580600076D" playOrder="51">
 					<navLabel>
 						<text>6.8 Misc Other Structures</text>
 					</navLabel>
 					<content src="xhtml/body-content.xhtml#P700048580600076D"/>
 
-					<navPoint id="ncx_P700048580600076E" playOrder="53">
+					<navPoint id="ncx_P700048580600076E" playOrder="52">
 						<navLabel>
 							<text>Abstract</text>
 						</navLabel>
@@ -380,20 +373,20 @@
 
 				</navPoint>
 
-				<navPoint id="ncx_P7000485806000774" playOrder="54">
+				<navPoint id="ncx_P7000485806000774" playOrder="53">
 					<navLabel>
 						<text>6.9 Misc</text>
 					</navLabel>
 					<content src="xhtml/body-content.xhtml#P7000485806000774"/>
 				</navPoint>
 
-				<navPoint id="ncx_P7000485806000775" playOrder="55">
+				<navPoint id="ncx_P7000485806000775" playOrder="54">
 					<navLabel>
 						<text>6.9a Conclusion Section</text>
 					</navLabel>
 					<content src="xhtml/body-content.xhtml#P7000485806000775"/>
 
-					<navPoint id="ncx_P7000485806000776" playOrder="56">
+					<navPoint id="ncx_P7000485806000776" playOrder="55">
 						<navLabel>
 							<text>Conclusion sub-section This is the subtitle</text>
 						</navLabel>
@@ -401,21 +394,21 @@
 					</navPoint>
 				</navPoint>
 
-				<navPoint id="ncx_P7000485806000777" playOrder="57">
+				<navPoint id="ncx_P7000485806000777" playOrder="56">
 					<navLabel>
 						<text>6.10 Answers</text>
 					</navLabel>
 					<content src="xhtml/body-content.xhtml#P7000485806000777"/>
 				</navPoint>
 
-				<navPoint id="ncx_P7000485806000778" playOrder="58">
+				<navPoint id="ncx_P7000485806000778" playOrder="57">
 					<navLabel>
 						<text>6.11 Exercises</text>
 					</navLabel>
 					<content src="xhtml/body-content.xhtml#P7000485806000778"/>
 				</navPoint>
 
-				<navPoint id="ncx_P700048580600077A" playOrder="59">
+				<navPoint id="ncx_P700048580600077A" playOrder="58">
 					<navLabel>
 						<text>6.12 Keywords</text>
 					</navLabel>
@@ -425,42 +418,42 @@
 
 		</navPoint>
 
-		<navPoint id="P70004858060007A3" playOrder="60">
+		<navPoint id="P70004858060007A3" playOrder="59">
 			<navLabel>
 				<text>Appendix A Title Appendix Subtitle</text>
 			</navLabel>
 			<content src="xhtml/appendix-a.xhtml#P70004858060007A3"/>
 		</navPoint>
 
-		<navPoint id="P70004858060007A7" playOrder="61">
+		<navPoint id="P70004858060007A7" playOrder="60">
 			<navLabel>
 				<text>Bibliography</text>
 			</navLabel>
 			<content src="xhtml/bibliography.xhtml#P70004858060007A7"/>
 		</navPoint>
 
-		<navPoint id="P70004858060007B0" playOrder="62">
+		<navPoint id="P70004858060007B0" playOrder="61">
 			<navLabel>
 				<text>Glossary</text>
 			</navLabel>
 			<content src="xhtml/glossary.xhtml#P70004858060007B0"/>
 		</navPoint>
 
-		<navPoint id="P70004858060007BB" playOrder="63">
+		<navPoint id="P70004858060007BB" playOrder="62">
 			<navLabel>
 				<text>Subject Index</text>
 			</navLabel>
 			<content src="xhtml/subject-index.xhtml#P70004858060007BB"/>
 		</navPoint>
 
-		<navPoint id="P70004858060007CF" playOrder="64">
+		<navPoint id="P70004858060007CF" playOrder="63">
 			<navLabel>
 				<text>Name Index</text>
 			</navLabel>
 			<content src="xhtml/name-index.xhtml#P70004858060007CF"/>
 		</navPoint>
 
-		<navPoint id="P70004858060007D1" playOrder="65">
+		<navPoint id="P70004858060007D1" playOrder="64">
 			<navLabel>
 				<text>Book Endnote List</text>
 			</navLabel>
