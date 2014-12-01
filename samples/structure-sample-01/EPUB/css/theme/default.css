@@ -301,7 +301,9 @@ h1 {
   line-height: 1.5;
 }
 
-.level1 > header > [epub|type~='title'] {
+.level1 > header > h1,
+.level1 > header > h2,
+.level1 > header > h3 {
   font-size: 48px !important;
   font-size: 2.52632em !important;
   line-height: 1.1875 !important;
@@ -312,7 +314,9 @@ h1 {
   font-weight: 300 !important;
 }
 
-.level2 > header > [epub|type~='title'] {
+.level2 > header > h2,
+.level2 > header > h3,
+.level2 > header > h4 {
   font-size: 36px !important;
   font-size: 1.89474em !important;
   line-height: 1.58333 !important;
@@ -322,7 +326,9 @@ h1 {
   font-style: normal !important;
   font-weight: 300 !important;
 }
-.level3 > header > [epub|type~='title'] {
+.level3 > header > h3,
+.level3 > header > h4,
+.level3 > header > h5 {
   font-size: 30px !important;
   font-size: 1.57895em !important;
   margin-top: 0.95em !important;
@@ -331,7 +337,9 @@ h1 {
   font-style: italic !important;
   font-weight: 300 !important;
 }
-.level4 > header > [epub|type~='title'] {
+.level4 > header > h4,
+.level4 > header > h5,
+.level4 > header > h6 {
   font-size: 19px !important;
   font-size: 1em !important;
   line-height: 1.5 !important;
