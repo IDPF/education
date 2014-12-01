@@ -228,15 +228,6 @@ button:active {
   width: auto;
 }
 
-.equation .ordinal, .equation [epub|type~='ordinal'],
-.equation .label, .equation [epub|type~='label'],
-.informalequation .ordinal, .informalequation [epub|type~='ordinal']
-.informalequation .label, .informalequation [epub|type~='label'] {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
 .inlineequation {
   display: inline-block;
   vertical-align: middle;
