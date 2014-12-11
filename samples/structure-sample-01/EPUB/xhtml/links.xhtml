@@ -16,9 +16,6 @@
 					<span epub:type="ordinal">3:</span> Linked Content</h1>
 			</header>
 			<section class="bodymatter" id="d6e4925" aria-label="Chapter body">
-				<p>The <code>a</code> element can represent a hyperlink or an anchor. If the a element has an href
-					attribute, then it represents a hyperlink. If the a element has no href attribute, then the
-					element represents an anchor. </p>
 				<section id="P7000485806000733" class="level1">
 					<header>
 						<h3>3.1 General Cross-reference</h3>
@@ -30,9 +27,6 @@
 					<header>
 						<h3>3.2 Keyword Cross-reference</h3>
 					</header>
-					<p>in-line content indicating a key word or phrase. keywords typically appear in the chapter
-						bodymatter content but may also appear in sections such as <a
-							href="body-content.xhtml#P700048580600077A">keywordset</a>.</p>
 					<p>This product includes the most current information on the <a epub:type="keyword"
 							id="P7000485806000735" href="glossary.xhtml#P70004858060007B2">keyword 1</a> and <a
 							epub:type="keyword" id="P7000485806000736" href="glossary.xhtml#P70004858060007B3"
@@ -42,17 +36,6 @@
 							href="glossary.xhtml#P70004858060007B4">keyword 3</a> is the number one cause of <a
 							epub:type="keyword" id="P7000485806000738" href="glossary.xhtml#P70004858060007B5"
 							>keyword 4</a>.</p>
-				</section>
-				<section id="P7000485806000739" class="level1">
-					<header>
-						<h3>3.3 marginalia</h3>
-					</header>
-					<p>Marginalia is an anchor with a data-href attribute. It is not currently being applied as
-						part of the spec. Its purpose is to provide a vertical alignment point in the text for a
-						formatting program to reference for placement of the marginal note. Current CSS and Reading
-						System makes no use of this capability so we have not required vendors to apply it. In some
-						print composition workflows, the anchor is useful. We are currently evaluating whether to
-						apply it in the print workflow.</p>
 				</section>
 				<section id="P700048580600073A" class="level1">
 					<header>
@@ -82,41 +65,9 @@
 							(<a epub:type="biblioref" href="bibliography.xhtml#P70004858060007AE">C. K. Bennett,
 							Journal of Staff Development, Winter 1984</a>).</p>
 				</section>
-				<section id="P700048580600073B" class="level1">
-					<span title="11" epub:type="pagebreak" id="P700048580600073C"></span>
-					<header>
-						<h3>3.5 Footnote Reference</h3>
-					</header>
-					<p>See footnote reference example in the chapter on <a href="asides.xhtml#P700048580600070C"
-							>Asides</a></p>
-				</section>
-				<section id="P700048580600073D" class="level1">
-					<header>
-						<h3>3.6 Rearnote reference</h3>
-					</header>
-					<p>See rearnote reference example in the chapter on <a href="asides.xhtml#P700048580600070D"
-							>Asides</a></p>
-				</section>
-				<section id="P700048580600073E" class="level1">
-					<header>
-						<h3>3.7 Footnote reference on opener<a epub:type="noteref" id="r__P700048580600074A"
-								href="#P700048580600074A">*</a></h3>
-					</header>
-					<aside epub:type="footnote" id="P700048580600074A">
-						<p><a epub:type="referrer" href="#r__P700048580600074A">*</a> The “Early Bird” pattern, in
-							J. Bergin: “Fourteen pedagogical patterns for teaching computer science”,
-								<cite>Proceedings of the Fifth European Conference on Pattern Languages of
-								Programs</cite> (EuroPLop 2000), Irsee, Germany, July 2000.</p>
-					</aside>
-					<p> Footnote references on part, chapter, and section openers have their own subclass for when
-						they must present differently than the footnotes in the rest of the part or chapter. In
-						print, the footnote is sometimes "un-numbered" (not numbered, not symboled). We do not
-						currently have a standard convention for how to render these un-numbered footnotes digitally
-						so they are treated as a symboled footnote.</p>
-				</section>
 				<section id="P700048580600073F" class="level1">
 					<header>
-						<h3>3.8 Hyperlink to internet content</h3>
+						<h3>3.5 Hyperlink to internet content</h3>
 					</header>
 					<p>Professor Fair’s U.S. and multicountry models are available for use on the Internet free of
 						charge. The address is <a class="ulink" href="http://fairmodel.econ.yale.edu"
@@ -124,128 +75,12 @@
 						having students work with the U.S. model on the Internet is a useful complement to an
 						introductory macroeconomics course.</p>
 				</section>
-				<section id="P7000485806000740" class="level1">
-					<header>
-						<h3>3.9 Webresource</h3>
-					</header>
-					<p>A webresource represents Pearson trackable web asset specific to a Pearson product. Contrast
-						webresource with a regular ulink. In the example below, www.myeconlab.com is the
-						webresource. webresource maps to ulink in pxe basic</p>
-					<p>Log onto Pearson's <a href="http://www.myeconlab.com" class="ulink">www.myeconlab.com</a> to
-						learn more.</p>
-					<p><span class="leadin">Note:</span> A general Pearson website such as pearsoned.com is a
-						marketing website so is a regular ulink, not a webresource.</p>
-				</section>
-				<section id="P7000485806000741" class="level1">
-					<header>
-						<h3>3.10 Objective cross-reference</h3>
-					</header>
-					<p>Objective cross-reference is a hyperlink to a learning objective in the chapter
-						objectivelist. It is not currently being applied as part of the spec.</p>
-				</section>
 				<section id="P7000485806000742" class="level1">
 					<header>
-						<h3>3.11 Page cross-reference</h3>
+						<h3>3.6 Page cross-reference</h3>
 					</header>
-					<p>A pageref class is a link to a page number. Used in legacy conversions from a print version
-						of the content. In the example below, "15" is the page cross-reference.</p>
-					<p>When you click on the link for page <a href="#P700048580600073C">11</a>, it will jump to <a
-							href="#P700048580600073C">section 4.5</a>.</p>
-				</section>
-				<section id="P7000485806000743" class="level1">
-					<header>
-						<h3>3.12 Index-locator</h3>
-					</header>
-					<p>Reference to a location within the body of the work but outside any index. See <a
-							href="subject-index.xhtml#P70004858060007BB">index chapter</a> for this example.</p>
-					<section id="P7000485806000744" class="level2">
-						<header>
-							<h4>3.12.1 termref</h4>
-						</header>
-						<p>See Also cross-reference is wrapped in span epub:type="index-xref-related" and the index
-							term being referenced should be marked using a hyperlink with class="termref" (e.g., a
-							epub:type="termref" href="#index_advertising_1530". See <a
-								href="subject-index.xhtml#P70004858060007BB">index chapter</a> for this example.</p>
-					</section>
-					<section id="P7000485806000746" class="level2">
-						<span title="12" epub:type="pagebreak" id="P7000485806000747"></span>
-						<header>
-							<h4>3.12.2 Index Anchors</h4>
-						</header>
-						<p>This section starts on page 16 and contains endpoints for the <a
-								href="subject-index.xhtml#P70004858060007BB">index chapter</a></p>
-						<p>Index entry - first instance</p>
-						<p>the following text included to occupy spaceNe platonem molestiae voluptaria quo, mel te
-							erat noluisse. Cu eum causae epicuri expetenda. Pro erat iusto dissentiunt ea, et his
-							justo urbanitas reprimique. Ius ea nusquam placerat. Veri mutat dolore usu no, has ullum
-							virtute eu. Cum no singulis voluptaria. Sea latine alterum corrumpit ex, ipsum tritani
-							suscipit ea pri. Tacimates constituto id duo. Te dolorem facilis invidunt his, quot
-							percipitur contentiones ei est, pro te soleat gloriatur efficiendi. Duis facer at vim. An
-							corpora blandit facilisi eam. His ei oratio conceptam efficiantur, et clita
-							conclusionemque pri. Iusto utamur eam te. Pro an consul invidunt scripserit. Per in
-							graeco quodsi pertinacia. Cum in habemus epicurei forensibus. Definiebas repudiandae eos
-							te, sed at scripta voluptua, eruditi conceptam constituam cu eum. Solum dicat voluptua
-							vel et. Per alia melius perfecto ex, quo cu veritus minimum definitiones. Id qui utroque
-							partiendo consequat. Solum integre id quo, ea omnesque eleifend mei. Meis persecuti
-							abhorreant ut has, vim te mazim interpretaris. At alia recteque elaboraret mei, ut has
-							prima recusabo invenire. Cu nam case viris soleat, scripta complectitur mediocritatem quo
-							an. Molestiae assentior at qui. In cum oblique salutandi. Ad aliquid inermis qui, nec
-							democritum consequuntur ad, eius voluptua vim cu. Has oratio dolorem ne. Dolor iisque
-							voluptatibus ea has, ea usu percipitur contentiones, his feugiat sanctus cu. Rationibus
-							constituto cum id, doctus recteque te sit. Per ei eros dolor, ius regione laoreet
-							lucilius te, sanctus accusamus adipiscing id mei. Id vel natum ignota graeci. Case
-							adversarium in est, stet inani constituam in usu, usu iusto utroque cotidieque in. Per at
-							hinc iudicabit appellantur, qualisque dissentias qui ne, in prima accusam recusabo vis.
-							Ius sanctus menandri forensibus an. Eu per wisi sonet apeirian, has ex error efficiantur.
-							Eos at movet dictas constituto. Ad per quas aperiam, eos an velit clita, debet offendit
-							conceptam at per. Eu enim nullam disputando vix. Usu ea omnes virtute, mei ea dicat
-							expetenda reprehendunt. Ea vis libris legendos, ei mutat nominavi nam. Nusquam eligendi
-							sententiae eu mea. Et nec assentior elaboraret scribentur, at eius laudem sit. Ad ius
-							noster aperiam, appareat scripserit per ex, elit ignota et est. Pri no sumo animal
-							minimum, nibh explicari qui ut. Usu eu corrumpit constituam, in integre legendos
-							periculis mei. Cum quando periculis adolescens cu, ei altera oblique nusquam qui. Eu
-							forensibus expetendis eum. Utamur efficiantur cu his, falli nullam aperiri ex eum. His at
-							alii menandri. Saperet deleniti pertinax ut mei. Cum sonet option conclusionemque et,
-							dico deleniti repudiandae te eum. </p>
-						<span title="13" epub:type="pagebreak" id="P7000485806000748"></span>
-						<p>This is the start of page 13</p>
-						<p>Index entry - second instance</p>
-						<p>the following text included to occupy spaceNe platonem molestiae voluptaria quo, mel te
-							erat noluisse. Cu eum causae epicuri expetenda. Pro erat iusto dissentiunt ea, et his
-							justo urbanitas reprimique. Ius ea nusquam placerat. Veri mutat dolore usu no, has ullum
-							virtute eu. Cum no singulis voluptaria. Sea latine alterum corrumpit ex, ipsum tritani
-							suscipit ea pri. Tacimates constituto id duo. Te dolorem facilis invidunt his, quot
-							percipitur contentiones ei est, pro te soleat gloriatur efficiendi. Duis facer at vim. An
-							corpora blandit facilisi eam. His ei oratio conceptam efficiantur, et clita
-							conclusionemque pri. Iusto utamur eam te. Pro an consul invidunt scripserit. Per in
-							graeco quodsi pertinacia. Cum in habemus epicurei forensibus. Definiebas repudiandae eos
-							te, sed at scripta voluptua, eruditi conceptam constituam cu eum. Solum dicat voluptua
-							vel et. Per alia melius perfecto ex, quo cu veritus minimum definitiones. Id qui utroque
-							partiendo consequat. Solum integre id quo, ea omnesque eleifend mei. Meis persecuti
-							abhorreant ut has, vim te mazim interpretaris. At alia recteque elaboraret mei, ut has
-							prima recusabo invenire. Cu nam case viris soleat, scripta complectitur mediocritatem quo
-							an. Molestiae assentior at qui. In cum oblique salutandi. Ad aliquid inermis qui, nec
-							democritum consequuntur ad, eius voluptua vim cu. Has oratio dolorem ne. Dolor iisque
-							voluptatibus ea has, ea usu percipitur contentiones, his feugiat sanctus cu. Rationibus
-							constituto cum id, doctus recteque te sit. Per ei eros dolor, ius regione laoreet
-							lucilius te, sanctus accusamus adipiscing id mei. Id vel natum ignota graeci. Case
-							adversarium in est, stet inani constituam in usu, usu iusto utroque cotidieque in. Per at
-							hinc iudicabit appellantur, qualisque dissentias qui ne, in prima accusam recusabo vis.
-							Ius sanctus menandri forensibus an. Eu per wisi sonet apeirian, has ex error efficiantur.
-							Eos at movet dictas constituto. Ad per quas aperiam, eos an velit clita, debet offendit
-							conceptam at per. Eu enim nullam disputando vix. Usu ea omnes virtute, mei ea dicat
-							expetenda reprehendunt. Ea vis libris legendos, ei mutat nominavi nam. Nusquam eligendi
-							sententiae eu mea. Et nec assentior elaboraret scribentur, at eius laudem sit. Ad ius
-							noster aperiam, appareat scripserit per ex, elit ignota et est. Pri no sumo animal
-							minimum, nibh explicari qui ut. Usu eu corrumpit constituam, in integre legendos
-							periculis mei. Cum quando periculis adolescens cu, ei altera oblique nusquam qui. Eu
-							forensibus expetendis eum. Utamur efficiantur cu his, falli nullam aperiri ex eum. His at
-							alii menandri. Saperet deleniti pertinax ut mei. Cum sonet option conclusionemque et,
-							dico deleniti repudiandae te eum. </p>
-						<span title="14" epub:type="pagebreak" id="P7000485806000749"></span>
-						<p>This is the start of page 14</p>
-						<p>Index entry - third instance</p>
-					</section>
+					<p>When you click on the link for page <a href="#P7000485806000732">11</a>, it will jump to <a
+						href="#P7000485806000732">the start of the chapter</a>.</p>
 				</section>
 			</section>
 		</section>
