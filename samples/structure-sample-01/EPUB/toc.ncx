@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ncx xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="en">
+<ncx xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns="http://www.daisy.org/z3986/2005/ncx/"
+	version="2005-1" xml:lang="en">
 	<head>
 		<meta name="dtb:uid" content="test-sample-uc"/>
 		<meta name="dtb:depth" content="1"/>
@@ -45,260 +46,268 @@
 			<content src="xhtml/preface.xhtml#P70004858060006A7"/>
 		</navPoint>
 
-		<navPoint id="P70004858060006B5">
+		<navPoint id="P70004858060006BF">
 			<navLabel>
-				<text>Part I: Part Title</text>
+				<text>Volume I: Volume Title</text>
 			</navLabel>
-			<content src="xhtml/part01.xhtml#P70004858060006B5"/>
+			<content src="xhtml/vol01.xhtml#P70004858060006BF"/>
 
-			<navPoint id="P70004858060006F9">
+			<navPoint id="P70004858060006B5">
 				<navLabel>
-					<text>Chapter 1: Asides</text>
+					<text>Part I: Part Title</text>
 				</navLabel>
-				<content src="xhtml/asides.xhtml#P70004858060006F9"/>
+				<content src="xhtml/part01.xhtml#P70004858060006B5"/>
 
-				<navPoint id="ncx_P70004858060006FB">
+				<navPoint id="P70004858060006F9">
 					<navLabel>
-						<text>1.1 Sidebars</text>
+						<text>Chapter 1: Asides</text>
 					</navLabel>
-					<content src="xhtml/asides.xhtml#P70004858060006FB"/>
+					<content src="xhtml/asides.xhtml#P70004858060006F9"/>
 
-					<navPoint id="ncx_P7000485806000702">
+					<navPoint id="ncx_P70004858060006FB">
 						<navLabel>
-							<text>Sidebar Practice Section Label</text>
+							<text>1.1 Sidebars</text>
 						</navLabel>
-						<content src="xhtml/asides.xhtml#P7000485806000702"/>
-					</navPoint>
-				</navPoint>
+						<content src="xhtml/asides.xhtml#P70004858060006FB"/>
 
-				<navPoint id="ncx_P700048580600070C">
-					<navLabel>
-						<text>1.2 Footnotes</text>
-					</navLabel>
-					<content src="xhtml/asides.xhtml#P700048580600070C"/>
-				</navPoint>
-
-				<navPoint id="ncx_P700048580600070D">
-					<navLabel>
-						<text>1.3 Endnotes</text>
-					</navLabel>
-					<content src="xhtml/asides.xhtml#P700048580600070D"/>
-
-					<navPoint id="ncx_P70004858060000000000000002226F6">
-						<navLabel>
-							<text>1.3.1 Chapter Endnotes</text>
-						</navLabel>
-						<content src="xhtml/asides.xhtml#P70004858060000000000000002226F6"/>
-					</navPoint>
-
-					<navPoint id="ncx_P70004858060000000000000001116F6">
-						<navLabel>
-							<text>1.3.2 Book Endnotes</text>
-						</navLabel>
-						<content src="xhtml/asides.xhtml#P70004858060000000000000001116F6"/>
-					</navPoint>
-				</navPoint>
-
-				<navPoint id="ncx_P7000485806000713">
-					<navLabel>
-						<text>1.4 Pullquote</text>
-					</navLabel>
-					<content src="xhtml/asides.xhtml#P7000485806000713"/>
-				</navPoint>
-
-				<navPoint id="ncx_P7000485806000716">
-					<navLabel>
-						<text>1.5 Annotation</text>
-					</navLabel>
-					<content src="xhtml/asides.xhtml#P7000485806000716"/>
-				</navPoint>
-			</navPoint>
-
-			<navPoint id="P700048580600071E">
-				<navLabel>
-					<text>Chapter 2: Figures and Tables</text>
-				</navLabel>
-				<content src="xhtml/figures-tables.xhtml#P700048580600071E"/>
-
-				<navPoint id="ncx_P7000485806000720">
-					<navLabel>
-						<text>2.1 Figure</text>
-					</navLabel>
-					<content src="xhtml/figures-tables.xhtml#P7000485806000720"/>
-				</navPoint>
-
-				<navPoint id="ncx_P7000485806000728">
-					<navLabel>
-						<text>2.2 Figure containing a Table</text>
-					</navLabel>
-					<content src="xhtml/figures-tables.xhtml#P7000485806000728"/>
-				</navPoint>
-
-			</navPoint>
-
-			<navPoint id="P7000485806000731">
-				<navLabel>
-					<text>Chapter 3: Linked Content</text>
-				</navLabel>
-				<content src="xhtml/links.xhtml#P7000485806000731"/>
-
-				<navPoint id="ncx_P7000485806000733">
-					<navLabel>
-						<text>3.1 General Cross-reference</text>
-					</navLabel>
-					<content src="xhtml/links.xhtml#P7000485806000733"/>
-				</navPoint>
-
-				<navPoint id="ncx_P7000485806000734">
-					<navLabel>
-						<text>3.2 Keyword Cross-reference</text>
-					</navLabel>
-					<content src="xhtml/links.xhtml#P7000485806000734"/>
-				</navPoint>
-
-				<navPoint id="ncx_P700048580600073A">
-					<navLabel>
-						<text>3.3 Bibliographic reference</text>
-					</navLabel>
-					<content src="xhtml/links.xhtml#P700048580600073A"/>
-				</navPoint>
-
-				<navPoint id="ncx_P700048580600073F">
-					<navLabel>
-						<text>3.4 Hyperlink to internet content</text>
-					</navLabel>
-					<content src="xhtml/links.xhtml#P700048580600073F"/>
-				</navPoint>
-
-				<navPoint id="ncx_P7000485806000742">
-					<navLabel>
-						<text>3.5 Page cross-reference</text>
-					</navLabel>
-					<content src="xhtml/links.xhtml#P7000485806000742"/>
-				</navPoint>
-
-			</navPoint>
-
-			<navPoint id="P700048580600075C">
-				<navLabel>
-					<text>Chapter 4: Typical Chapter Frontmatter and Chapter Backmatter Content Chapter 6 Subtitle</text>
-				</navLabel>
-				<content src="xhtml/body-content.xhtml#P700048580600075C"/>
-
-				<navPoint id="ncx_P700048580600075E">
-					<navLabel>
-						<text>4.1 Introduction Section Label</text>
-					</navLabel>
-					<content src="xhtml/body-content.xhtml#P700048580600075E"/>
-				</navPoint>
-
-				<navPoint id="ncx_P7000485806000760">
-					<navLabel>
-						<text>4.2 Learning Objectives Section Label</text>
-					</navLabel>
-					<content src="xhtml/body-content.xhtml#P7000485806000760"/>
-				</navPoint>
-
-				<navPoint id="ncx_P7000485806000766">
-					<navLabel>
-						<text>4.3 Case Study Case Study Title</text>
-					</navLabel>
-					<content src="xhtml/body-content.xhtml#P7000485806000766"/>
-				</navPoint>
-
-				<navPoint id="ncx_d6e5627">
-					<navLabel>
-						<text>4.4 Section Heading</text>
-					</navLabel>
-					<content src="xhtml/body-content.xhtml#d6e5627"/>
-
-					<navPoint id="ncx_d6e5641">
-						<navLabel>
-							<text>4.4.1 Example 1</text>
-						</navLabel>
-						<content src="xhtml/body-content.xhtml#d6e5641"/>
-					</navPoint>
-
-					<navPoint id="ncx_P7000485806000767">
-						<navLabel>
-							<text>4.4.2 Feature Section</text>
-						</navLabel>
-						<content src="xhtml/body-content.xhtml#P7000485806000767"/>
-
-						<navPoint id="ncx_P7000485806000769">
+						<navPoint id="ncx_P7000485806000702">
 							<navLabel>
-								<text>feature section heading</text>
+								<text>Sidebar Practice Section Label</text>
 							</navLabel>
-							<content src="xhtml/body-content.xhtml#P7000485806000769"/>
+							<content src="xhtml/asides.xhtml#P7000485806000702"/>
 						</navPoint>
 					</navPoint>
-				</navPoint>
 
-				<navPoint id="ncx_d6e5727">
-					<navLabel>
-						<text>4.5 Blockquotes</text>
-					</navLabel>
-					<content src="xhtml/body-content.xhtml#d6e5727"/>
-				</navPoint>
-
-				<navPoint id="ncx_P700048580600076D">
-					<navLabel>
-						<text>4.6 Misc Other Structures</text>
-					</navLabel>
-					<content src="xhtml/body-content.xhtml#P700048580600076D"/>
-
-					<navPoint id="ncx_P700048580600076E">
+					<navPoint id="ncx_P700048580600070C">
 						<navLabel>
-							<text>Abstract</text>
+							<text>1.2 Footnotes</text>
 						</navLabel>
-						<content src="xhtml/body-content.xhtml#P700048580600076E"/>
+						<content src="xhtml/asides.xhtml#P700048580600070C"/>
+					</navPoint>
+
+					<navPoint id="ncx_P700048580600070D">
+						<navLabel>
+							<text>1.3 Endnotes</text>
+						</navLabel>
+						<content src="xhtml/asides.xhtml#P700048580600070D"/>
+
+						<navPoint id="ncx_P70004858060000000000000002226F6">
+							<navLabel>
+								<text>1.3.1 Chapter Endnotes</text>
+							</navLabel>
+							<content src="xhtml/asides.xhtml#P70004858060000000000000002226F6"/>
+						</navPoint>
+
+						<navPoint id="ncx_P70004858060000000000000001116F6">
+							<navLabel>
+								<text>1.3.2 Book Endnotes</text>
+							</navLabel>
+							<content src="xhtml/asides.xhtml#P70004858060000000000000001116F6"/>
+						</navPoint>
+					</navPoint>
+
+					<navPoint id="ncx_P7000485806000713">
+						<navLabel>
+							<text>1.4 Pullquote</text>
+						</navLabel>
+						<content src="xhtml/asides.xhtml#P7000485806000713"/>
+					</navPoint>
+
+					<navPoint id="ncx_P7000485806000716">
+						<navLabel>
+							<text>1.5 Annotation</text>
+						</navLabel>
+						<content src="xhtml/asides.xhtml#P7000485806000716"/>
+					</navPoint>
+				</navPoint>
+
+				<navPoint id="P700048580600071E">
+					<navLabel>
+						<text>Chapter 2: Figures and Tables</text>
+					</navLabel>
+					<content src="xhtml/figures-tables.xhtml#P700048580600071E"/>
+
+					<navPoint id="ncx_P7000485806000720">
+						<navLabel>
+							<text>2.1 Figure</text>
+						</navLabel>
+						<content src="xhtml/figures-tables.xhtml#P7000485806000720"/>
+					</navPoint>
+
+					<navPoint id="ncx_P7000485806000728">
+						<navLabel>
+							<text>2.2 Figure containing a Table</text>
+						</navLabel>
+						<content src="xhtml/figures-tables.xhtml#P7000485806000728"/>
 					</navPoint>
 
 				</navPoint>
 
-				<navPoint id="ncx_P7000485806000774">
+				<navPoint id="P7000485806000731">
 					<navLabel>
-						<text>4.7 Misc</text>
+						<text>Chapter 3: Linked Content</text>
 					</navLabel>
-					<content src="xhtml/body-content.xhtml#P7000485806000774"/>
+					<content src="xhtml/links.xhtml#P7000485806000731"/>
+
+					<navPoint id="ncx_P7000485806000733">
+						<navLabel>
+							<text>3.1 General Cross-reference</text>
+						</navLabel>
+						<content src="xhtml/links.xhtml#P7000485806000733"/>
+					</navPoint>
+
+					<navPoint id="ncx_P7000485806000734">
+						<navLabel>
+							<text>3.2 Keyword Cross-reference</text>
+						</navLabel>
+						<content src="xhtml/links.xhtml#P7000485806000734"/>
+					</navPoint>
+
+					<navPoint id="ncx_P700048580600073A">
+						<navLabel>
+							<text>3.3 Bibliographic reference</text>
+						</navLabel>
+						<content src="xhtml/links.xhtml#P700048580600073A"/>
+					</navPoint>
+
+					<navPoint id="ncx_P700048580600073F">
+						<navLabel>
+							<text>3.4 Hyperlink to internet content</text>
+						</navLabel>
+						<content src="xhtml/links.xhtml#P700048580600073F"/>
+					</navPoint>
+
+					<navPoint id="ncx_P7000485806000742">
+						<navLabel>
+							<text>3.5 Page cross-reference</text>
+						</navLabel>
+						<content src="xhtml/links.xhtml#P7000485806000742"/>
+					</navPoint>
+
 				</navPoint>
 
-				<navPoint id="ncx_P7000485806000775">
+				<navPoint id="P700048580600075C">
 					<navLabel>
-						<text>4.8 Conclusion Section</text>
+						<text>Chapter 4: Typical Chapter Frontmatter and Chapter Backmatter Content
+							Chapter 6 Subtitle</text>
 					</navLabel>
-					<content src="xhtml/body-content.xhtml#P7000485806000775"/>
+					<content src="xhtml/body-content.xhtml#P700048580600075C"/>
 
-					<navPoint id="ncx_P7000485806000776">
+					<navPoint id="ncx_P700048580600075E">
 						<navLabel>
-							<text>Conclusion sub-section This is the subtitle</text>
+							<text>4.1 Introduction Section Label</text>
 						</navLabel>
-						<content src="xhtml/body-content.xhtml#P7000485806000776"/>
+						<content src="xhtml/body-content.xhtml#P700048580600075E"/>
+					</navPoint>
+
+					<navPoint id="ncx_P7000485806000760">
+						<navLabel>
+							<text>4.2 Learning Objectives Section Label</text>
+						</navLabel>
+						<content src="xhtml/body-content.xhtml#P7000485806000760"/>
+					</navPoint>
+
+					<navPoint id="ncx_P7000485806000766">
+						<navLabel>
+							<text>4.3 Case Study Case Study Title</text>
+						</navLabel>
+						<content src="xhtml/body-content.xhtml#P7000485806000766"/>
+					</navPoint>
+
+					<navPoint id="ncx_d6e5627">
+						<navLabel>
+							<text>4.4 Section Heading</text>
+						</navLabel>
+						<content src="xhtml/body-content.xhtml#d6e5627"/>
+
+						<navPoint id="ncx_d6e5641">
+							<navLabel>
+								<text>4.4.1 Example 1</text>
+							</navLabel>
+							<content src="xhtml/body-content.xhtml#d6e5641"/>
+						</navPoint>
+
+						<navPoint id="ncx_P7000485806000767">
+							<navLabel>
+								<text>4.4.2 Feature Section</text>
+							</navLabel>
+							<content src="xhtml/body-content.xhtml#P7000485806000767"/>
+
+							<navPoint id="ncx_P7000485806000769">
+								<navLabel>
+									<text>feature section heading</text>
+								</navLabel>
+								<content src="xhtml/body-content.xhtml#P7000485806000769"/>
+							</navPoint>
+						</navPoint>
+					</navPoint>
+
+					<navPoint id="ncx_d6e5727">
+						<navLabel>
+							<text>4.5 Blockquotes</text>
+						</navLabel>
+						<content src="xhtml/body-content.xhtml#d6e5727"/>
+					</navPoint>
+
+					<navPoint id="ncx_P700048580600076D">
+						<navLabel>
+							<text>4.6 Misc Other Structures</text>
+						</navLabel>
+						<content src="xhtml/body-content.xhtml#P700048580600076D"/>
+
+						<navPoint id="ncx_P700048580600076E">
+							<navLabel>
+								<text>Abstract</text>
+							</navLabel>
+							<content src="xhtml/body-content.xhtml#P700048580600076E"/>
+						</navPoint>
+
+					</navPoint>
+
+					<navPoint id="ncx_P7000485806000774">
+						<navLabel>
+							<text>4.7 Misc</text>
+						</navLabel>
+						<content src="xhtml/body-content.xhtml#P7000485806000774"/>
+					</navPoint>
+
+					<navPoint id="ncx_P7000485806000775">
+						<navLabel>
+							<text>4.8 Conclusion Section</text>
+						</navLabel>
+						<content src="xhtml/body-content.xhtml#P7000485806000775"/>
+
+						<navPoint id="ncx_P7000485806000776">
+							<navLabel>
+								<text>Conclusion sub-section This is the subtitle</text>
+							</navLabel>
+							<content src="xhtml/body-content.xhtml#P7000485806000776"/>
+						</navPoint>
+					</navPoint>
+
+					<navPoint id="ncx_P7000485806000777">
+						<navLabel>
+							<text>4.9 Answers</text>
+						</navLabel>
+						<content src="xhtml/body-content.xhtml#P7000485806000777"/>
+					</navPoint>
+
+					<navPoint id="ncx_P7000485806000778">
+						<navLabel>
+							<text>4.10 Exercises</text>
+						</navLabel>
+						<content src="xhtml/body-content.xhtml#P7000485806000778"/>
+					</navPoint>
+
+					<navPoint id="ncx_P700048580600077A">
+						<navLabel>
+							<text>4.11 Keywords</text>
+						</navLabel>
+						<content src="xhtml/body-content.xhtml#P700048580600077A"/>
 					</navPoint>
 				</navPoint>
 
-				<navPoint id="ncx_P7000485806000777">
-					<navLabel>
-						<text>4.9 Answers</text>
-					</navLabel>
-					<content src="xhtml/body-content.xhtml#P7000485806000777"/>
-				</navPoint>
-
-				<navPoint id="ncx_P7000485806000778">
-					<navLabel>
-						<text>4.10 Exercises</text>
-					</navLabel>
-					<content src="xhtml/body-content.xhtml#P7000485806000778"/>
-				</navPoint>
-
-				<navPoint id="ncx_P700048580600077A">
-					<navLabel>
-						<text>4.11 Keywords</text>
-					</navLabel>
-					<content src="xhtml/body-content.xhtml#P700048580600077A"/>
-				</navPoint>
 			</navPoint>
-
 		</navPoint>
 
 		<navPoint id="P70004858060007A3">
