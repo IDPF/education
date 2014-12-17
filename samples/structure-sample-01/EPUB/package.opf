@@ -53,6 +53,7 @@
 		<item id="P70004858060007CF" href="xhtml/name-index.xhtml" media-type="application/xhtml+xml"/>
 		<item id="P70004858060007D1" href="xhtml/endnotes.xhtml" media-type="application/xhtml+xml"/>
 		<item id="P70004858060007D6" href="xhtml/credits.xhtml" media-type="application/xhtml+xml"/>
+		<item id="d8e435" href="xhtml/colophon.xhtml" media-type="application/xhtml+xml"/>
 		<item href="images/pub1.jpg" media-type="image/jpeg" id="idpub1_jpg"/>
 		<item href="images/f00xi-01.jpg" media-type="image/jpeg" id="idf00xi-01_jpg"/>
 		<item href="images/f00xi-02.jpg" media-type="image/jpeg" id="idf00xi-02_jpg"/>
@@ -97,5 +98,6 @@
 		<itemref idref="P70004858060007CF"/>
 		<itemref idref="P70004858060007D1"/>
 		<itemref idref="P70004858060007D6"/>
+		<itemref idref="d8e435"/>
 	</spine>
 </package>
