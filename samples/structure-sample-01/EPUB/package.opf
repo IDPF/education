@@ -39,6 +39,7 @@
 		<item id="d6e435" href="xhtml/dedication.xhtml" media-type="application/xhtml+xml"/>
 		<item id="d1e435" href="xhtml/foreword.xhtml" media-type="application/xhtml+xml"/>
 		<item id="P70004858060006A7" href="xhtml/preface.xhtml" media-type="application/xhtml+xml"/>
+		<item id="P70004858060006BF" href="xhtml/vol01.xhtml" media-type="application/xhtml+xml"/>
 		<item id="P70004858060006B5" href="xhtml/part01.xhtml" media-type="application/xhtml+xml"/>
 		<item id="P70004858060006F9" href="xhtml/asides.xhtml" media-type="application/xhtml+xml"/>
 		<item id="P700048580600071E" href="xhtml/figures-tables.xhtml" media-type="application/xhtml+xml"/>
@@ -82,6 +83,7 @@
 		<itemref idref="d6e435"/>
 		<itemref idref="d1e435"/>
 		<itemref idref="P70004858060006A7"/>
+		<itemref idref="P70004858060006BF"/>
 		<itemref idref="P70004858060006B5"/>
 		<itemref idref="P70004858060006F9"/>
 		<itemref idref="P700048580600071E"/>
