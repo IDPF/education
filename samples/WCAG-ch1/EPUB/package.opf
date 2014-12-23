@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" prefix="dc: http://purl.org/dc/elements/1.1/"
+    unique-identifier="d21041e30" version="3.0">
+    <metadata>
+        <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:f="http://www.daisy.org/ns/pipeline/internal-functions"
+            xmlns:d="http://www.daisy.org/ns/pipeline/data" id="d20201e20">World Cultures and
+            Geography</dc:title>
+        <meta xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:f="http://www.daisy.org/ns/pipeline/internal-functions"
+            xmlns:d="http://www.daisy.org/ns/pipeline/data" property="title-type"
+            refines="#d20201e20">main</meta>
+        <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:f="http://www.daisy.org/ns/pipeline/internal-functions"
+            xmlns:d="http://www.daisy.org/ns/pipeline/data" id="d20201e1149">Legends of
+            Landforms</dc:title>
+        <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:f="http://www.daisy.org/ns/pipeline/internal-functions"
+            xmlns:d="http://www.daisy.org/ns/pipeline/data" id="d20201e1158">Why Snails Have
+            Shells</dc:title>
+        <dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/" id="d21041e30"
+            >41f1328c-0571-4e71-8be8-e65bc148281a</dc:identifier>
+        <dc:language xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:f="http://www.daisy.org/ns/pipeline/internal-functions"
+            xmlns:d="http://www.daisy.org/ns/pipeline/data">En-US</dc:language>
+        <meta property="dcterms:modified">2014-12-11T09:12:55Z</meta>
+        <meta xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:f="http://www.daisy.org/ns/pipeline/internal-functions"
+            xmlns:d="http://www.daisy.org/ns/pipeline/data" property="dc:publisher">Anonymous</meta>
+        <meta xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:f="http://www.daisy.org/ns/pipeline/internal-functions"
+            xmlns:d="http://www.daisy.org/ns/pipeline/data" property="dc:date"
+            >2014-12-11T09:12:52+00:00</meta>
+        <meta xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:f="http://www.daisy.org/ns/pipeline/internal-functions"
+            xmlns:d="http://www.daisy.org/ns/pipeline/data" property="dcterms:title">World Cultures
+            and Geography</meta>
+        <meta xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:f="http://www.daisy.org/ns/pipeline/internal-functions"
+            xmlns:d="http://www.daisy.org/ns/pipeline/data" property="dcterms:creator">DAISY XML
+            Techniques Team</meta>
+        <link xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:f="http://www.daisy.org/ns/pipeline/internal-functions"
+            xmlns:d="http://www.daisy.org/ns/pipeline/data" rel="mods-record" href="zedai-mods.xml"
+        />
+    </metadata>
+    <manifest>
+        <item id="item_1" media-type="image/jpeg" href="wcag-p2-1.jpg"/>
+        <item id="item_2" media-type="image/jpeg" href="wcag-p14-1.jpg"/>
+        <item id="item_3" media-type="image/jpeg" href="wcag-p15-1-1.jpg"/>
+        <item id="item_4" media-type="image/jpeg" href="wcag-p16-1.jpg"/>
+        <item id="item_5" media-type="image/jpeg" href="wcag-p16-2.jpg"/>
+        <item id="item_6" media-type="image/jpeg" href="wcag-p17-1.jpg"/>
+        <item id="item_7" media-type="image/jpeg" href="wcag-p17-2.jpg"/>
+        <item id="item_8" media-type="image/jpeg" href="wcag-p18-1.jpg"/>
+        <item id="item_9" media-type="image/jpeg" href="wcag-p18-2.jpg"/>
+        <item id="item_10" media-type="image/jpeg" href="wcag-p19-1.jpg"/>
+        <item id="item_11" media-type="image/jpeg" href="wcag-p19-2.jpg"/>
+        <item id="item_12" media-type="image/jpeg" href="wcag-p19-3.jpg"/>
+        <item id="item_13" media-type="image/jpeg" href="wcag-p19-4.jpg"/>
+        <item id="item_14" media-type="image/jpeg" href="wcag-p19-5.jpg"/>
+        <item id="item_15" media-type="image/jpeg" href="wcag-p20-1.jpg"/>
+        <item id="item_16" media-type="image/jpeg" href="wcag-p20-2.jpg"/>
+        <item id="item_17" media-type="image/jpeg" href="wcag-p21-1.jpg"/>
+        <item id="item_18" media-type="image/jpeg" href="wcag-p22-1.jpg"/>
+        <item id="item_19" media-type="image/jpeg" href="wcag-p22-2.jpg"/>
+        <item id="item_20" media-type="image/jpeg" href="wcag-p22-3.jpg"/>
+        <item id="item_21" media-type="image/jpeg" href="wcag-p22-4.jpg"/>
+        <item id="item_22" media-type="image/jpeg" href="wcag-p24-1.jpg"/>
+        <item id="item_23" media-type="image/jpeg" href="wcag-p24-2.jpg"/>
+        <item id="item_24" media-type="image/jpeg" href="wcag-p25-1.jpg"/>
+        <item id="item_25" media-type="image/jpeg" href="wcag-p25-2.jpg"/>
+        <item id="item_26" media-type="image/jpeg" href="wcag-p26-1.jpg"/>
+        <item id="item_27" media-type="image/jpeg" href="wcag-p26-2.jpg"/>
+        <item id="item_28" media-type="image/jpeg" href="wcag-p26-3.jpg"/>
+        <item id="item_29" media-type="image/jpeg" href="wcag-p27-1.jpg"/>
+        <item id="item_30" media-type="image/jpeg" href="wcag-p30-1.jpg"/>
+        <item id="item_31" media-type="image/jpeg" href="wcag-p30-2.jpg"/>
+        <item id="item_32" media-type="image/jpeg" href="wcag-p31-1.jpg"/>
+        <item id="item_33" media-type="image/jpeg" href="wcag-p31-2.jpg"/>
+        <item media-type="application/xhtml+xml" id="item_34" href="WCAG-ch1-1.xhtml"/>
+        <item media-type="application/xhtml+xml" id="item_35" href="WCAG-ch1-2.xhtml"/>
+        <item properties="nav" media-type="application/xhtml+xml" id="item_36" href="toc.xhtml"/>
+    </manifest>
+    <spine>
+        <itemref idref="item_34" id="itemref_1"/>
+        <itemref idref="item_35" id="itemref_2"/>
+        <itemref idref="item_36" id="itemref_3"/>
+    </spine>
+</package>
