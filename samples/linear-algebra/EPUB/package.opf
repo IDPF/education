@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package version="3.0" xml:lang="en" unique-identifier="uid" prefix="cc: http://creativecommons.org/ns#" xmlns="http://www.idpf.org/2007/opf">
+   <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+      <dc:title id="title">A First Course in Linear Algebra</dc:title>
+      <dc:type>edupub</dc:type>
+      <dc:identifier id="uid">https://github.com/IDPF/edupub/tree/master/samples/linear-algebra</dc:identifier>
+      <dc:language>en</dc:language>
+      <dc:creator>Robert A. Beezer</dc:creator>
+      <meta property="dcterms:modified">2015-01-09T12:47:00Z</meta>
+      <dc:rights>This work is shared with the public using the GNU Free Documentation License, Version 1.2.</dc:rights>
+      <dc:rights>© 2004 by Robert A. Beezer.</dc:rights>
+      <link rel="cc:license" href="http://www.gnu.org/copyleft/fdl.xhtml"/>
+      <meta property="dcterms:source">http://linear.ups.edu</meta>
+      <meta property="schema:accessibilityFeature">mathml</meta>
+      <meta property="schema:accessibilityFeature">readingOrder</meta>
+      <meta property="schema:accessibilityFeature">structuralNavigation</meta>
+      <meta property="schema:accessibilityFeature">tableOfContents</meta>
+      <meta property="schema:accessibilityFeature">unlocked</meta>
+      <meta property="schema:educationalRole">student</meta>
+      <meta property="schema:typicalAgeRange">18+</meta>
+   </metadata>
+   <manifest>
+      <item id="id000" media-type="application/xhtml+xml" href="content/000_Titlepage.xhtml"/>
+      <item id="id001" media-type="application/xhtml+xml" href="content/001_Table_of_Contents.xhtml" properties="nav mathml"/>
+      <item id="id002" media-type="application/xhtml+xml" href="content/002_Front_Matter.xhtml"/>
+      <item id="id003" media-type="application/xhtml+xml" href="content/003_Author_Biography.xhtml"/>
+      <item id="id004" media-type="application/xhtml+xml" href="content/004_Edition.xhtml"/>
+      <item id="id005" media-type="application/xhtml+xml" href="content/005_Publisher.xhtml"/>
+      <item id="id006" media-type="application/xhtml+xml" href="content/006_Dedication.xhtml"/>
+      <item id="id007" media-type="application/xhtml+xml" href="content/007_Contributors.xhtml"/>
+      <item id="id010" media-type="application/xhtml+xml" href="content/010_Notation.xhtml" properties="mathml"/>
+      <item id="id013" media-type="application/xhtml+xml" href="content/013_Preface.xhtml" properties="mathml"/>
+      <item id="id014" media-type="application/xhtml+xml" href="content/014_Acknowledgements.xhtml"/>
+      <item id="id015" media-type="application/xhtml+xml" href="content/015_Part_C_Core.xhtml"/>
+      <item id="id016" media-type="application/xhtml+xml" href="content/016_Chapter_SLE_Systems_of_Linear_Equations.xhtml"/>
+      <item id="id017" media-type="application/xhtml+xml" href="content/017_Section_WILA_What_is_Linear_Algebra.xhtml" properties="mathml"/>
+      <item id="id018" media-type="application/xhtml+xml" href="content/018_Section_SSLE_Solving_Systems_of_Linear_Equations.xhtml" properties="mathml"/>
+      <item id="id019" media-type="application/xhtml+xml" href="content/019_Section_RREF_Reduced_Row-Echelon_Form.xhtml" properties="mathml"/>
+      <item id="id020" media-type="application/xhtml+xml" href="content/020_Section_TSS_Types_of_Solution_Sets.xhtml" properties="mathml"/>
+      <item id="id021" media-type="application/xhtml+xml" href="content/021_Section_HSE_Homogeneous_Systems_of_Equations.xhtml" properties="mathml"/>
+      <item id="id022" media-type="application/xhtml+xml" href="content/022_Section_NM_Nonsingular_Matrices.xhtml" properties="mathml"/>
+      <item id="id023" media-type="application/xhtml+xml" href="content/023_Chapter_V_Vectors.xhtml"/>
+      <item id="id024" media-type="application/xhtml+xml" href="content/024_Section_VO_Vector_Operations.xhtml" properties="mathml"/>
+      <item id="id025" media-type="application/xhtml+xml" href="content/025_Section_LC_Linear_Combinations.xhtml" properties="mathml"/>
+      <item id="id026" media-type="application/xhtml+xml" href="content/026_Section_SS_Spanning_Sets.xhtml" properties="mathml"/>
+      <item id="id027" media-type="application/xhtml+xml" href="content/027_Section_LI_Linear_Independence.xhtml" properties="mathml"/>
+      <item id="id028" media-type="application/xhtml+xml" href="content/028_Section_LDS_Linear_Dependence_and_Spans.xhtml" properties="mathml"/>
+      <item id="id029" media-type="application/xhtml+xml" href="content/029_Section_O_Orthogonality.xhtml" properties="mathml"/>
+      <item id="id030" media-type="application/xhtml+xml" href="content/030_Chapter_M_Matrices.xhtml"/>
+      <item id="id031" media-type="application/xhtml+xml" href="content/031_Section_MO_Matrix_Operations.xhtml" properties="mathml"/>
+      <item id="id032" media-type="application/xhtml+xml" href="content/032_Section_MM_Matrix_Multiplication.xhtml" properties="mathml"/>
+      <item id="id033" media-type="application/xhtml+xml" href="content/033_Section_MISLE_Matrix_Inverses_and_Systems_of_Linear_Equations.xhtml" properties="mathml"/>
+      <item id="id034" media-type="application/xhtml+xml" href="content/034_Section_MINM_Matrix_Inverses_and_Nonsingular_Matrices.xhtml" properties="mathml"/>
+      <item id="id035" media-type="application/xhtml+xml" href="content/035_Section_CRS_Column_and_Row_Spaces.xhtml" properties="mathml"/>
+      <item id="id036" media-type="application/xhtml+xml" href="content/036_Section_FS_Four_Subsets.xhtml" properties="mathml"/>
+      <item id="id037" media-type="application/xhtml+xml" href="content/037_Chapter_VS_Vector_Spaces.xhtml"/>
+      <item id="id038" media-type="application/xhtml+xml" href="content/038_Section_VS_Vector_Spaces.xhtml" properties="mathml"/>
+      <item id="id039" media-type="application/xhtml+xml" href="content/039_Section_S_Subspaces.xhtml" properties="mathml"/>
+      <item id="id040" media-type="application/xhtml+xml" href="content/040_Section_LISS_Linear_Independence_and_Spanning_Sets.xhtml" properties="mathml"/>
+      <item id="id041" media-type="application/xhtml+xml" href="content/041_Section_B_Bases.xhtml" properties="mathml"/>
+      <item id="id042" media-type="application/xhtml+xml" href="content/042_Section_D_Dimension.xhtml" properties="mathml"/>
+      <item id="id043" media-type="application/xhtml+xml" href="content/043_Section_PD_Properties_of_Dimension.xhtml" properties="mathml"/>
+      <item id="id044" media-type="application/xhtml+xml" href="content/044_Chapter_D_Determinants.xhtml"/>
+      <item id="id045" media-type="application/xhtml+xml" href="content/045_Section_DM_Determinant_of_a_Matrix.xhtml" properties="mathml"/>
+      <item id="id046" media-type="application/xhtml+xml" href="content/046_Section_PDM_Properties_of_Determinants_of_Matrices.xhtml" properties="mathml"/>
+      <item id="id047" media-type="application/xhtml+xml" href="content/047_Chapter_E_Eigenvalues.xhtml" properties="mathml"/>
+      <item id="id048" media-type="application/xhtml+xml" href="content/048_Section_EE_Eigenvalues_and_Eigenvectors.xhtml" properties="mathml"/>
+      <item id="id049" media-type="application/xhtml+xml" href="content/049_Section_PEE_Properties_of_Eigenvalues_and_Eigenvectors.xhtml" properties="mathml"/>
+      <item id="id050" media-type="application/xhtml+xml" href="content/050_Section_SD_Similarity_and_Diagonalization.xhtml" properties="mathml"/>
+      <item id="id051" media-type="application/xhtml+xml" href="content/051_Chapter_LT_Linear_Transformations.xhtml"/>
+      <item id="id052" media-type="application/xhtml+xml" href="content/052_Section_LT_Linear_Transformations.xhtml" properties="mathml"/>
+      <item id="id053" media-type="application/xhtml+xml" href="content/053_Section_ILT_Injective_Linear_Transformations.xhtml" properties="mathml"/>
+      <item id="id054" media-type="application/xhtml+xml" href="content/054_Section_SLT_Surjective_Linear_Transformations.xhtml" properties="mathml"/>
+      <item id="id055" media-type="application/xhtml+xml" href="content/055_Section_IVLT_Invertible_Linear_Transformations.xhtml" properties="mathml"/>
+      <item id="id056" media-type="application/xhtml+xml" href="content/056_Chapter_R_Representations.xhtml" properties="mathml"/>
+      <item id="id057" media-type="application/xhtml+xml" href="content/057_Section_VR_Vector_Representations.xhtml" properties="mathml"/>
+      <item id="id058" media-type="application/xhtml+xml" href="content/058_Section_MR_Matrix_Representations.xhtml" properties="mathml"/>
+      <item id="id059" media-type="application/xhtml+xml" href="content/059_Section_CB_Change_of_Basis.xhtml" properties="mathml"/>
+      <item id="id060" media-type="application/xhtml+xml" href="content/060_Section_OD_Orthonormal_Diagonalization.xhtml" properties="mathml"/>
+      <item id="id061" media-type="application/xhtml+xml" href="content/061_Section_NLT_Nilpotent_Linear_Transformations.xhtml" properties="mathml"/>
+      <item id="id062" media-type="application/xhtml+xml" href="content/062_Section_IS_Invariant_Subspaces.xhtml" properties="mathml"/>
+      <item id="id063" media-type="application/xhtml+xml" href="content/063_Section_JCF_Jordan_Canonical_Form.xhtml" properties="mathml"/>
+      <item id="id064" media-type="application/xhtml+xml" href="content/064_Appendix_CN_Computation_Notes.xhtml"/>
+      <item id="id065" media-type="application/xhtml+xml" href="content/065_Section_MMA_Mathematica.xhtml" properties="mathml"/>
+      <item id="id066" media-type="application/xhtml+xml" href="content/066_Section_TI86_Texas_Instruments_86.xhtml" properties="mathml"/>
+      <item id="id067" media-type="application/xhtml+xml" href="content/067_Section_TI83_Texas_Instruments_83.xhtml" properties="mathml"/>
+      <item id="id068" media-type="application/xhtml+xml" href="content/068_Section_SAGE_SAGE_Open_Source_Mathematics_Software.xhtml" properties="mathml"/>
+      <item id="id069" media-type="application/xhtml+xml" href="content/069_Appendix_P_Preliminaries.xhtml" properties="mathml"/>
+      <item id="id070" media-type="application/xhtml+xml" href="content/070_Section_CNO_Complex_Number_Operations.xhtml" properties="mathml"/>
+      <item id="id071" media-type="application/xhtml+xml" href="content/071_Section_SET_Sets.xhtml" properties="mathml"/>
+      <item id="id072" media-type="application/xhtml+xml" href="content/072_Section_PT_Proof_Techniques.xhtml" properties="mathml"/>
+      <item id="id073" media-type="application/xhtml+xml" href="content/073_Appendix_A_Archetypes.xhtml"/>
+      <item id="id074" media-type="application/xhtml+xml" href="content/074_Archetype_A.xhtml" properties="mathml"/>
+      <item id="id075" media-type="application/xhtml+xml" href="content/075_Archetype_B.xhtml" properties="mathml"/>
+      <item id="id076" media-type="application/xhtml+xml" href="content/076_Archetype_C.xhtml" properties="mathml"/>
+      <item id="id077" media-type="application/xhtml+xml" href="content/077_Archetype_D.xhtml" properties="mathml"/>
+      <item id="id078" media-type="application/xhtml+xml" href="content/078_Archetype_E.xhtml" properties="mathml"/>
+      <item id="id079" media-type="application/xhtml+xml" href="content/079_Archetype_F.xhtml" properties="mathml"/>
+      <item id="id080" media-type="application/xhtml+xml" href="content/080_Archetype_G.xhtml" properties="mathml"/>
+      <item id="id081" media-type="application/xhtml+xml" href="content/081_Archetype_H.xhtml" properties="mathml"/>
+      <item id="id082" media-type="application/xhtml+xml" href="content/082_Archetype_I.xhtml" properties="mathml"/>
+      <item id="id083" media-type="application/xhtml+xml" href="content/083_Archetype_J.xhtml" properties="mathml"/>
+      <item id="id084" media-type="application/xhtml+xml" href="content/084_Archetype_K.xhtml" properties="mathml"/>
+      <item id="id085" media-type="application/xhtml+xml" href="content/085_Archetype_L.xhtml" properties="mathml"/>
+      <item id="id086" media-type="application/xhtml+xml" href="content/086_Archetype_M.xhtml" properties="mathml"/>
+      <item id="id087" media-type="application/xhtml+xml" href="content/087_Archetype_N.xhtml" properties="mathml"/>
+      <item id="id088" media-type="application/xhtml+xml" href="content/088_Archetype_O.xhtml" properties="mathml"/>
+      <item id="id089" media-type="application/xhtml+xml" href="content/089_Archetype_P.xhtml" properties="mathml"/>
+      <item id="id090" media-type="application/xhtml+xml" href="content/090_Archetype_Q.xhtml" properties="mathml"/>
+      <item id="id091" media-type="application/xhtml+xml" href="content/091_Archetype_R.xhtml" properties="mathml"/>
+      <item id="id092" media-type="application/xhtml+xml" href="content/092_Archetype_S.xhtml" properties="mathml"/>
+      <item id="id093" media-type="application/xhtml+xml" href="content/093_Archetype_T.xhtml" properties="mathml"/>
+      <item id="id094" media-type="application/xhtml+xml" href="content/094_Archetype_U.xhtml" properties="mathml"/>
+      <item id="id095" media-type="application/xhtml+xml" href="content/095_Archetype_V.xhtml" properties="mathml"/>
+      <item id="id096" media-type="application/xhtml+xml" href="content/096_Archetype_W.xhtml" properties="mathml"/>
+      <item id="id097" media-type="application/xhtml+xml" href="content/097_Archetype_X.xhtml" properties="mathml"/>
+      <item id="id098" media-type="application/xhtml+xml" href="content/098_Appendix_GFDL_GNU_Free_Documentation_License.xhtml"/>
+      <item id="id099" media-type="application/xhtml+xml" href="content/099_Part_T_Topics.xhtml"/>
+      <item id="id100" media-type="application/xhtml+xml" href="content/100_Section_F_Fields.xhtml" properties="mathml"/>
+      <item id="id101" media-type="application/xhtml+xml" href="content/101_Section_T_Trace.xhtml" properties="mathml"/>
+      <item id="id102" media-type="application/xhtml+xml" href="content/102_Section_HP_Hadamard_Product.xhtml" properties="mathml"/>
+      <item id="id103" media-type="application/xhtml+xml" href="content/103_Section_VM_Vandermonde_Matrix.xhtml" properties="mathml"/>
+      <item id="id104" media-type="application/xhtml+xml" href="content/104_Section_PSM_Positive_Semi-definite_Matrices.xhtml" properties="mathml"/>
+      <item id="id105" media-type="application/xhtml+xml" href="content/105_Chapter_MD_Matrix_Decompositions.xhtml" properties="mathml"/>
+      <item id="id106" media-type="application/xhtml+xml" href="content/106_Section_ROD_Rank_One_Decomposition.xhtml" properties="mathml"/>
+      <item id="id107" media-type="application/xhtml+xml" href="content/107_Section_TD_Triangular_Decomposition.xhtml" properties="mathml"/>
+      <item id="id108" media-type="application/xhtml+xml" href="content/108_Section_SVD_Singular_Value_Decomposition.xhtml" properties="mathml"/>
+      <item id="id109" media-type="application/xhtml+xml" href="content/109_Section_SR_Square_Roots.xhtml" properties="mathml"/>
+      <item id="id110" media-type="application/xhtml+xml" href="content/110_Section_POD_Polar_Decomposition.xhtml" properties="mathml"/>
+      <item id="id111" media-type="application/xhtml+xml" href="content/111_Part_A_Applications.xhtml"/>
+      <item id="id112" media-type="application/xhtml+xml" href="content/112_Section_CF_Curve_Fitting.xhtml" properties="mathml"/>
+      <item id="id113" media-type="application/xhtml+xml" href="content/113_Section_SAS_Sharing_A_Secret.xhtml" properties="mathml"/>
+      <item id="id114" media-type="application/xhtml+xml" href="content/114_Index.xhtml" properties="mathml"/>
+      <item id="id115" media-type="image/png" href="images/CSRST.png"/>
+   	  <item id="id116" media-type="image/png" href="images/DLTA.png"/>
+   	  <item id="id117" media-type="image/png" href="images/DLTM.png"/>
+   	  <item id="id118" media-type="image/png" href="images/DTSLS.png"/>
+   	  <item id="id119" media-type="image/png" href="images/FTMR.png"/>
+   	  <item id="id120" media-type="image/png" href="images/FTMRA.png"/>
+   	  <item id="id121" media-type="image/png" href="images/GLT.png"/>
+   	  <item id="id122" media-type="image/png" href="images/ILT.png"/>
+   	  <item id="id123" media-type="image/png" href="images/MRCLT.png"/>
+   	  <item id="id124" media-type="image/png" href="images/NILT.png"/>
+      <item id="id125" media-type="text/css" href="css/edupub.css"/>
+      <item id="id126" media-type="text/css" href="css/fcla-xml-2.99.css"/>   	
+	  <item id="id127" media-type="image/png" href="css/images/iconmonstr-info-8-icon-20x20.png"/>
+	  <item id="id128" media-type="image/png" href="css/images/iconmonstr-info-8-icon.png"/>
+	  <item id="id129" media-type="image/png" href="css/images/iconmonstr-window-new-icon-20x20.png"/>
+	  <item id="id130" media-type="image/png" href="css/images/iconmonstr-window-new-icon.png"/>
+   </manifest>
+   <spine>
+      <itemref idref="id000"/>
+      <itemref idref="id001"/>
+      <itemref idref="id002"/>
+      <itemref idref="id003"/>
+      <itemref idref="id004"/>
+      <itemref idref="id005"/>
+      <itemref idref="id006"/>
+      <itemref idref="id007"/>
+      <itemref idref="id010"/>
+      <itemref idref="id013"/>
+      <itemref idref="id014"/>
+      <itemref idref="id015"/>
+      <itemref idref="id016"/>
+      <itemref idref="id017"/>
+      <itemref idref="id018"/>
+      <itemref idref="id019"/>
+      <itemref idref="id020"/>
+      <itemref idref="id021"/>
+      <itemref idref="id022"/>
+      <itemref idref="id023"/>
+      <itemref idref="id024"/>
+      <itemref idref="id025"/>
+      <itemref idref="id026"/>
+      <itemref idref="id027"/>
+      <itemref idref="id028"/>
+      <itemref idref="id029"/>
+      <itemref idref="id030"/>
+      <itemref idref="id031"/>
+      <itemref idref="id032"/>
+      <itemref idref="id033"/>
+      <itemref idref="id034"/>
+      <itemref idref="id035"/>
+      <itemref idref="id036"/>
+      <itemref idref="id037"/>
+      <itemref idref="id038"/>
+      <itemref idref="id039"/>
+      <itemref idref="id040"/>
+      <itemref idref="id041"/>
+      <itemref idref="id042"/>
+      <itemref idref="id043"/>
+      <itemref idref="id044"/>
+      <itemref idref="id045"/>
+      <itemref idref="id046"/>
+      <itemref idref="id047"/>
+      <itemref idref="id048"/>
+      <itemref idref="id049"/>
+      <itemref idref="id050"/>
+      <itemref idref="id051"/>
+      <itemref idref="id052"/>
+      <itemref idref="id053"/>
+      <itemref idref="id054"/>
+      <itemref idref="id055"/>
+      <itemref idref="id056"/>
+      <itemref idref="id057"/>
+      <itemref idref="id058"/>
+      <itemref idref="id059"/>
+      <itemref idref="id060"/>
+      <itemref idref="id061"/>
+      <itemref idref="id062"/>
+      <itemref idref="id063"/>
+      <itemref idref="id064"/>
+      <itemref idref="id065"/>
+      <itemref idref="id066"/>
+      <itemref idref="id067"/>
+      <itemref idref="id068"/>
+      <itemref idref="id069"/>
+      <itemref idref="id070"/>
+      <itemref idref="id071"/>
+      <itemref idref="id072"/>
+      <itemref idref="id073"/>
+      <itemref idref="id074"/>
+      <itemref idref="id075"/>
+      <itemref idref="id076"/>
+      <itemref idref="id077"/>
+      <itemref idref="id078"/>
+      <itemref idref="id079"/>
+      <itemref idref="id080"/>
+      <itemref idref="id081"/>
+      <itemref idref="id082"/>
+      <itemref idref="id083"/>
+      <itemref idref="id084"/>
+      <itemref idref="id085"/>
+      <itemref idref="id086"/>
+      <itemref idref="id087"/>
+      <itemref idref="id088"/>
+      <itemref idref="id089"/>
+      <itemref idref="id090"/>
+      <itemref idref="id091"/>
+      <itemref idref="id092"/>
+      <itemref idref="id093"/>
+      <itemref idref="id094"/>
+      <itemref idref="id095"/>
+      <itemref idref="id096"/>
+      <itemref idref="id097"/>
+      <itemref idref="id098"/>
+      <itemref idref="id099"/>
+      <itemref idref="id100"/>
+      <itemref idref="id101"/>
+      <itemref idref="id102"/>
+      <itemref idref="id103"/>
+      <itemref idref="id104"/>
+      <itemref idref="id105"/>
+      <itemref idref="id106"/>
+      <itemref idref="id107"/>
+      <itemref idref="id108"/>
+      <itemref idref="id109"/>
+      <itemref idref="id110"/>
+      <itemref idref="id111"/>
+      <itemref idref="id112"/>
+      <itemref idref="id113"/>
+      <itemref idref="id114"/>
+   </spine>
+   <collection role="distributable-object">
+      <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <dc:title>Chapter SLE Systems of Linear Equations</dc:title>
+         <dc:title>A First Course in Linear Algebra</dc:title>
+         <dc:type>distributable-object</dc:type>
+         <dc:type>edupub</dc:type>
+         <dc:identifier>https://github.com/IDPF/edupub/tree/master/samples/linear-algebra/chapterSLE</dc:identifier>
+         <dc:language>en</dc:language>
+         <dc:creator>Robert A. Beezer</dc:creator>
+         <meta property="dcterms:modified">2015-01-09T12:47:00Z</meta>
+         <dc:rights>This work is shared with the public using the GNU Free Documentation License, Version 1.2.</dc:rights>
+         <dc:rights>© 2004 by Robert A. Beezer.</dc:rights>
+         <link rel="cc:license" href="http://www.gnu.org/copyleft/fdl.xhtml"/>
+         <meta property="dcterms:source">http://linear.ups.edu</meta>
+         <meta property="schema:accessibilityFeature">mathml</meta>
+         <meta property="schema:accessibilityFeature">unlocked</meta>
+         <meta property="schema:educationalRole">student</meta>
+         <meta property="schema:typicalAgeRange">18+</meta>
+      </metadata>
+      <collection role="manifest">
+         <link href="content/016_Chapter_SLE_Systems_of_Linear_Equations.xhtml"/>
+         <link href="content/017_Section_WILA_What_is_Linear_Algebra.xhtml"/>
+         <link href="content/018_Section_SSLE_Solving_Systems_of_Linear_Equations.xhtml"/>
+         <link href="content/019_Section_RREF_Reduced_Row-Echelon_Form.xhtml"/>
+         <link href="content/020_Section_TSS_Types_of_Solution_Sets.xhtml"/>
+         <link href="content/021_Section_HSE_Homogeneous_Systems_of_Equations.xhtml"/>
+         <link href="content/022_Section_NM_Nonsingular_Matrices.xhtml"/>
+         <link href="css/edupub.css"/>
+         <link href="css/fcla-xml-2.99.css"/>
+      </collection>
+      <link href="content/016_Chapter_SLE_Systems_of_Linear_Equations.xhtml"/>
+      <link href="content/017_Section_WILA_What_is_Linear_Algebra.xhtml"/>
+      <link href="content/018_Section_SSLE_Solving_Systems_of_Linear_Equations.xhtml"/>
+      <link href="content/019_Section_RREF_Reduced_Row-Echelon_Form.xhtml"/>
+      <link href="content/020_Section_TSS_Types_of_Solution_Sets.xhtml"/>
+      <link href="content/021_Section_HSE_Homogeneous_Systems_of_Equations.xhtml"/>
+      <link href="content/022_Section_NM_Nonsingular_Matrices.xhtml"/>
+   </collection>
+</package>

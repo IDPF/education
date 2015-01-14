@@ -1,0 +1,1391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html id="section.SAGE" xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+   <head>
+      <title>Section SAGE SAGE: Open Source Mathematics Software</title>
+      <link rel="stylesheet" type="text/css" href="../css/fcla-xml-2.99.css"/>
+      <link rel="stylesheet" type="text/css" href="../css/edupub.css"/>
+   </head>
+   <body epub:type="bodymatter" id="x68-335000doc">
+      <h1 class="likesectionHead" id="x68-335000">Section SAGE  SAGE: Open Source Mathematics Software</h1>
+      <section>
+         <h2 class="likesubsectionHead" id="x68-336000">Computation Note R.SAGE: Rings</h2>
+         <p>
+            <span id="computation.R.SAGE"/>
+            <span id="dx68-336001"/>
+            <span id="dx68-336002"/>
+            <span id="dx68-336003"/> Contributed by  
+            <a href="007_Contributors.xhtml#CanfieldSteve">Steve Canfield</a>
+            <br/>SAGE uses different rings to denote the type of an object. The rings are as follows: 
+            <br/>
+         </p>
+         <math alttext="Alternative text not available" display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mtable columnalign="left" class="align-star">
+               <mtr>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mtext> ZZ: The set of integers</mtext>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+               </mtr>
+               <mtr>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mtext> QQ: The set of rational numbers</mtext>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+               </mtr>
+               <mtr>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mtext> RR: The real numbers</mtext>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+               </mtr>
+               <mtr>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mtext> CC: The complex numbers</mtext>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+               </mtr>
+               <mtr>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"> </mtd>
+               </mtr>
+            </mtable>
+         </math>
+         <p>Most objects in SAGE will tell you which they are using with the 
+            <span class="cmtt-12">base</span>
+            <span class="cmtt-12">_ring()</span> command. Keep this in mind, especially when row reducing or factoring. Here’s a quick example of where you might go wrong. 
+         </p>
+         <math alttext="Alternative text not available" display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mtable columnalign="left" class="align-star">
+               <mtr>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mi>m</mi>
+                     <mo class="MathClass-rel">=</mo>
+                     <mi>m</mi>
+                     <mi>a</mi>
+                     <mi>t</mi>
+                     <mi>r</mi>
+                     <mi>i</mi>
+                     <mi>x</mi>
+                     <mrow>
+                        <mo class="MathClass-open">(</mo>
+                        <mrow>
+                           <mrow>
+                              <mo class="MathClass-open">[</mo>
+                              <mrow>
+                                 <mrow>
+                                    <mo class="MathClass-open">[</mo>
+                                    <mrow>
+                                       <mn>2</mn>
+                                       <mo class="MathClass-punc">,</mo>
+                                       <mn>3</mn>
+                                    </mrow>
+                                    <mo class="MathClass-close">]</mo>
+                                 </mrow>
+                                 <mo class="MathClass-punc">,</mo>
+                                 <mrow>
+                                    <mo class="MathClass-open">[</mo>
+                                    <mrow>
+                                       <mn>4</mn>
+                                       <mo class="MathClass-punc">,</mo>
+                                       <mn>7</mn>
+                                    </mrow>
+                                    <mo class="MathClass-close">]</mo>
+                                 </mrow>
+                              </mrow>
+                              <mo class="MathClass-close">]</mo>
+                           </mrow>
+                        </mrow>
+                        <mo class="MathClass-close">)</mo>
+                     </mrow>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+               </mtr>
+               <mtr>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mi>m</mi>
+                     <mo class="MathClass-punc">.</mo>
+                     <mi>b</mi>
+                     <mi>a</mi>
+                     <mi>s</mi>
+                     <mi>e</mi>
+                     <mtext> _</mtext>
+                     <mi>r</mi>
+                     <mi>i</mi>
+                     <mi>n</mi>
+                     <mi>g</mi>
+                     <mrow>
+                        <mo class="MathClass-open">(</mo>
+                        <mrow/>
+                        <mo class="MathClass-close">)</mo>
+                     </mrow>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+               </mtr>
+               <mtr>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mi>I</mi>
+                     <mi>n</mi>
+                     <mi>t</mi>
+                     <mi>e</mi>
+                     <mi>g</mi>
+                     <mi>e</mi>
+                     <mi>r</mi>
+                     <mi>R</mi>
+                     <mi>i</mi>
+                     <mi>n</mi>
+                     <mi>g</mi>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+               </mtr>
+               <mtr>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mi>m</mi>
+                     <mo class="MathClass-punc">.</mo>
+                     <mi>e</mi>
+                     <mi>c</mi>
+                     <mi>h</mi>
+                     <mi>e</mi>
+                     <mi>l</mi>
+                     <mi>o</mi>
+                     <mi>n</mi>
+                     <mtext> _</mtext>
+                     <mi>f</mi>
+                     <mi>o</mi>
+                     <mi>r</mi>
+                     <mi>m</mi>
+                     <mrow>
+                        <mo class="MathClass-open">(</mo>
+                        <mrow/>
+                        <mo class="MathClass-close">)</mo>
+                     </mrow>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+               </mtr>
+               <mtr>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mfenced separators="" open="[" close="]">
+                        <mrow>
+                           <mtable style="text-align:axis;" equalrows="false" columnlines="none none none none none none none none none none none" equalcolumns="false" class="array">
+                              <mtr>
+                                 <mtd class="array" columnalign="center">
+                                    <mn>2</mn>
+                                 </mtd>
+                                 <mtd class="array" columnalign="center">
+                                    <mn>0</mn>
+                                 </mtd>
+                              </mtr>
+                              <mtr>
+                                 <mtd class="array" columnalign="center">
+                                    <mn>0</mn>
+                                 </mtd>
+                                 <mtd class="array" columnalign="center">
+                                    <mn>1</mn>
+                                 </mtd>
+                              </mtr>
+                           </mtable>
+                        </mrow>
+                     </mfenced>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+               </mtr>
+            </mtable>
+         </math>
+         <p>As you can clearly see, 
+            <span class="cmtt-12">m </span>isn’t even in reduced row-echelon form. This is because 
+            <span class="cmtt-12">m </span>is defined over the ZZ. You have to create matrices with the correct ring or you will get this type of odd result. This problem comes up in more places than just calculating the reduced row-echelon form, so unless you are specifically working with integers take note. 
+         </p>
+      </section>
+      <section>
+         <h2 class="likesubsectionHead" id="x68-337000">Computation Note ME.SAGE: Matrix Entry</h2>
+         <p>
+            <span id="computation.ME.SAGE"/>
+            <span id="dx68-337001"/>
+            <span id="dx68-337002"/>
+            <span id="dx68-337003"/> Contributed by  
+            <a href="007_Contributors.xhtml#CanfieldSteve">Steve Canfield</a>
+            <br/>A matrix in 
+            <span class="cmsl-12">SAGE </span>can be made a few ways. The first is simply to define the matrix as an array of rows. 
+            <span class="cmsl-12">SAGE </span>uses brackets ( 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mfenced separators="" open="[" close="">
+                  <mrow/>
+               </mfenced>
+            </math> ,  
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mfenced separators="" open="" close="]">
+                  <mrow/>
+               </mfenced>
+            </math>) to delimit arrays. So the input 
+         </p>
+         <math alttext="Alternative text not available" display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mtable columnalign="left" class="align-star">
+               <mtr>
+                  <mtd columnalign="right" class="align-odd">
+                     <mi>a</mi>
+                     <mo class="MathClass-rel">=</mo>
+                     <mi>m</mi>
+                     <mi>a</mi>
+                     <mi>t</mi>
+                     <mi>r</mi>
+                     <mi>i</mi>
+                     <mi>x</mi>
+                     <mrow>
+                        <mo class="MathClass-open">(</mo>
+                        <mrow>
+                           <mrow>
+                              <mo class="MathClass-open">[</mo>
+                              <mrow>
+                                 <mrow>
+                                    <mo class="MathClass-open">[</mo>
+                                    <mrow>
+                                       <mn>1</mn>
+                                       <mo class="MathClass-punc">,</mo>
+                                       <mn>2</mn>
+                                       <mo class="MathClass-punc">,</mo>
+                                       <mn>3</mn>
+                                       <mo class="MathClass-punc">,</mo>
+                                       <mn>4</mn>
+                                    </mrow>
+                                    <mo class="MathClass-close">]</mo>
+                                 </mrow>
+                                 <mo class="MathClass-punc">,</mo>
+                                 <mrow>
+                                    <mo class="MathClass-open">[</mo>
+                                    <mrow>
+                                       <mn>5</mn>
+                                       <mo class="MathClass-punc">,</mo>
+                                       <mn>6</mn>
+                                       <mo class="MathClass-punc">,</mo>
+                                       <mn>7</mn>
+                                       <mo class="MathClass-punc">,</mo>
+                                       <mn>8</mn>
+                                    </mrow>
+                                    <mo class="MathClass-close">]</mo>
+                                 </mrow>
+                                 <mo class="MathClass-punc">,</mo>
+                                 <mrow>
+                                    <mo class="MathClass-open">[</mo>
+                                    <mrow>
+                                       <mn>9</mn>
+                                       <mo class="MathClass-punc">,</mo>
+                                       <mn>1</mn>
+                                       <mn>0</mn>
+                                       <mo class="MathClass-punc">,</mo>
+                                       <mn>1</mn>
+                                       <mn>1</mn>
+                                       <mo class="MathClass-punc">,</mo>
+                                       <mn>1</mn>
+                                       <mn>2</mn>
+                                    </mrow>
+                                    <mo class="MathClass-close">]</mo>
+                                 </mrow>
+                              </mrow>
+                              <mo class="MathClass-close">]</mo>
+                           </mrow>
+                        </mrow>
+                        <mo class="MathClass-close">)</mo>
+                     </mrow>
+                  </mtd>
+                  <mtd class="align-even">
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"> </mtd>
+               </mtr>
+            </mtable>
+         </math>
+         <p>would create a 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mn>3</mn>
+               <mo class="MathClass-bin">×</mo>
+               <mn>4</mn>
+            </math> matrix named 
+            <span class="cmtt-12">a </span>that is equal to 
+         </p>
+         <table class="equation-star">
+            <tr>
+               <td>
+                  <math alttext="Alternative text not available" display="block" class="equation" xmlns="http://www.w3.org/1998/Math/MathML">
+                     <mfenced separators="" open="[" close="]">
+                        <mrow>
+                           <mtable style="text-align:axis;" equalrows="false" columnlines="none none none none none none none none none none none" equalcolumns="false" class="array">
+                              <mtr>
+                                 <mtd class="array" columnalign="center">
+                                    <mn>1</mn>
+                                 </mtd>
+                                 <mtd class="array" columnalign="center">
+                                    <mn>2</mn>
+                                 </mtd>
+                                 <mtd class="array" columnalign="center">
+                                    <mn>3</mn>
+                                 </mtd>
+                                 <mtd class="array" columnalign="center">
+                                    <mn>4</mn>
+                                 </mtd>
+                              </mtr>
+                              <mtr>
+                                 <mtd class="array" columnalign="center">
+                                    <mn>5</mn>
+                                 </mtd>
+                                 <mtd class="array" columnalign="center">
+                                    <mn>6</mn>
+                                 </mtd>
+                                 <mtd class="array" columnalign="center">
+                                    <mn>7</mn>
+                                 </mtd>
+                                 <mtd class="array" columnalign="center">
+                                    <mn>8</mn>
+                                 </mtd>
+                              </mtr>
+                              <mtr>
+                                 <mtd class="array" columnalign="center">
+                                    <mn>9</mn>
+                                 </mtd>
+                                 <mtd class="array" columnalign="center">
+                                    <mn>1</mn>
+                                    <mn>0</mn>
+                                 </mtd>
+                                 <mtd class="array" columnalign="center">
+                                    <mn>1</mn>
+                                    <mn>1</mn>
+                                 </mtd>
+                                 <mtd class="array" columnalign="center">
+                                    <mn>1</mn>
+                                    <mn>2</mn>
+                                 </mtd>
+                              </mtr>
+                           </mtable>
+                        </mrow>
+                     </mfenced>
+                  </math>
+               </td>
+            </tr>
+         </table>
+         <p>
+            <span class="cmsl-12">SAGE </span>will guess what type of matrix you are working with based on the inputs. If all the entries are integers, you will get back an integer matrix. If your matrix contains an entry in the 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <msup>
+                  <mrow>
+                     <mi>ℝ</mi>
+                  </mrow>
+                  <mrow/>
+               </msup>
+            </math> or 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>ℂ</mi>
+            </math>space, the matrix will be of those types. This can cause problems as integers cannot become fractions, which is an issue when calculating reduced row-echelon form. We therefore recommend using the following construction to make your matrices, 
+         </p>
+         <table class="equation-star">
+            <tr>
+               <td>
+                  <math alttext="Alternative text not available" display="block" class="equation" xmlns="http://www.w3.org/1998/Math/MathML">
+                     <mi>a</mi>
+                     <mo class="MathClass-rel">=</mo>
+                     <mi>m</mi>
+                     <mi>a</mi>
+                     <mi>t</mi>
+                     <mi>r</mi>
+                     <mi>i</mi>
+                     <mi>x</mi>
+                     <mrow>
+                        <mo class="MathClass-open">(</mo>
+                        <mrow>
+                           <mi>Q</mi>
+                           <mi>Q</mi>
+                           <mo class="MathClass-punc">,</mo>
+                           <mrow>
+                              <mo class="MathClass-open">[</mo>
+                              <mrow>
+                                 <mrow>
+                                    <mo class="MathClass-open">[</mo>
+                                    <mrow>
+                                       <mn>1</mn>
+                                       <mo class="MathClass-punc">,</mo>
+                                       <mn>2</mn>
+                                       <mo class="MathClass-punc">,</mo>
+                                       <mn>3</mn>
+                                       <mo class="MathClass-punc">,</mo>
+                                       <mn>4</mn>
+                                    </mrow>
+                                    <mo class="MathClass-close">]</mo>
+                                 </mrow>
+                                 <mo class="MathClass-punc">,</mo>
+                                 <mrow>
+                                    <mo class="MathClass-open">[</mo>
+                                    <mrow>
+                                       <mn>5</mn>
+                                       <mo class="MathClass-punc">,</mo>
+                                       <mn>6</mn>
+                                       <mo class="MathClass-punc">,</mo>
+                                       <mn>7</mn>
+                                       <mo class="MathClass-punc">,</mo>
+                                       <mn>8</mn>
+                                    </mrow>
+                                    <mo class="MathClass-close">]</mo>
+                                 </mrow>
+                                 <mo class="MathClass-punc">,</mo>
+                                 <mrow>
+                                    <mo class="MathClass-open">[</mo>
+                                    <mrow>
+                                       <mn>9</mn>
+                                       <mo class="MathClass-punc">,</mo>
+                                       <mn>1</mn>
+                                       <mn>0</mn>
+                                       <mo class="MathClass-punc">,</mo>
+                                       <mn>1</mn>
+                                       <mn>1</mn>
+                                       <mo class="MathClass-punc">,</mo>
+                                       <mn>1</mn>
+                                       <mn>2</mn>
+                                    </mrow>
+                                    <mo class="MathClass-close">]</mo>
+                                 </mrow>
+                              </mrow>
+                              <mo class="MathClass-close">]</mo>
+                           </mrow>
+                        </mrow>
+                        <mo class="MathClass-close">)</mo>
+                     </mrow>
+                  </math>
+               </td>
+            </tr>
+         </table>
+         <p> This gives you a matrix over the rational numbers which will be sufficient for most of the course. If your matrix has entries that are complex numbers you would replace the 
+            <span class="cmtt-12">QQ </span>with 
+            <span class="cmtt-12">CC </span>. 
+            <br/>To display a matrix named 
+            <span class="cmtt-12">a </span>, type 
+            <span class="cmtt-12">a </span>, and the output will be displayed with rows and columns. If you type 
+            <span class="cmtt-12">latex(a) </span>you will get 
+            <span class="LATEX">L 
+               <span class="A">A</span>
+               <span class="TEX">T 
+                  <span class="E">E</span>X 
+               </span>
+            </span> code to display the matrix. Very handy. 
+         </p>
+      </section>
+      <section>
+         <h2 class="likesubsectionHead" id="x68-338000">Computation Note RR.SAGE: Row Reduce</h2>
+         <p>
+            <span id="computation.RR.SAGE"/>
+            <span id="dx68-338001"/>
+            <span id="dx68-338002"/>
+            <span id="dx68-338003"/> Contributed by  
+            <a href="007_Contributors.xhtml#CanfieldSteve">Steve Canfield</a> and 
+            <a href="007_Contributors.xhtml#BeezerRobert">Robert Beezer</a>
+            <br/>Row-reducing a matrix is a simple operation in SAGE. However, because of Sage’s flexibility with different types of numbers (integers, rationals, reals, complexes), we need to be a bit more careful. 
+         </p>
+         <p> If 
+            <span class="cmtt-12">a </span>is a matrix entered in in SAGE (see 
+            <a href="#computation.ME.SAGE">Computation ME.SAGE</a>) then 
+            <span class="cmtt-12">a.echelon</span>
+            <span class="cmtt-12">_form() </span>will return a new matrix that is the reduced row-echelon form of 
+            <span class="cmtt-12">a </span>( 
+            <a href="019_Section_RREF_Reduced_Row-Echelon_Form.xhtml#definition.RREF">Definition RREF</a>). 
+         </p>
+         <p> If your matrix has only integer entries (as is the case with many examples and exercises in this book), then row operations might introduce rational numbers (“fractions”). So when you enter your matrix, you need to tell SAGE that rational numbers are allowable in its calculations. This is the advice in 
+            <a href="#computation.R.SAGE">Computation R.SAGE</a> to use the ring 
+            <span class="cmtt-12">QQ </span>. As an illustration create 
+         </p>
+         <math alttext="Alternative text not available" display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mtable columnalign="left" class="align-star">
+               <mtr>
+                  <mtd columnalign="right" class="align-odd">
+                     <mi>a</mi>
+                     <mo class="MathClass-rel">=</mo>
+                     <mi>m</mi>
+                     <mi>a</mi>
+                     <mi>t</mi>
+                     <mi>r</mi>
+                     <mi>i</mi>
+                     <mi>x</mi>
+                     <mrow>
+                        <mo class="MathClass-open">(</mo>
+                        <mrow>
+                           <mi>Q</mi>
+                           <mi>Q</mi>
+                           <mo class="MathClass-punc">,</mo>
+                           <mrow>
+                              <mo class="MathClass-open">[</mo>
+                              <mrow>
+                                 <mrow>
+                                    <mo class="MathClass-open">[</mo>
+                                    <mrow>
+                                       <mn>1</mn>
+                                       <mo class="MathClass-punc">,</mo>
+                                       <mn>2</mn>
+                                       <mo class="MathClass-punc">,</mo>
+                                       <mn>3</mn>
+                                       <mo class="MathClass-punc">,</mo>
+                                       <mn>4</mn>
+                                    </mrow>
+                                    <mo class="MathClass-close">]</mo>
+                                 </mrow>
+                                 <mo class="MathClass-punc">,</mo>
+                                 <mrow>
+                                    <mo class="MathClass-open">[</mo>
+                                    <mrow>
+                                       <mn>5</mn>
+                                       <mo class="MathClass-punc">,</mo>
+                                       <mn>6</mn>
+                                       <mo class="MathClass-punc">,</mo>
+                                       <mn>7</mn>
+                                       <mo class="MathClass-punc">,</mo>
+                                       <mn>8</mn>
+                                    </mrow>
+                                    <mo class="MathClass-close">]</mo>
+                                 </mrow>
+                                 <mo class="MathClass-punc">,</mo>
+                                 <mrow>
+                                    <mo class="MathClass-open">[</mo>
+                                    <mrow>
+                                       <mn>9</mn>
+                                       <mo class="MathClass-punc">,</mo>
+                                       <mn>1</mn>
+                                       <mn>0</mn>
+                                       <mo class="MathClass-punc">,</mo>
+                                       <mn>1</mn>
+                                       <mn>1</mn>
+                                       <mo class="MathClass-punc">,</mo>
+                                       <mn>1</mn>
+                                       <mn>2</mn>
+                                    </mrow>
+                                    <mo class="MathClass-close">]</mo>
+                                 </mrow>
+                              </mrow>
+                              <mo class="MathClass-close">]</mo>
+                           </mrow>
+                        </mrow>
+                        <mo class="MathClass-close">)</mo>
+                     </mrow>
+                  </mtd>
+                  <mtd class="align-even">
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"> </mtd>
+               </mtr>
+            </mtable>
+         </math>
+         <p>and issue the command 
+            <span class="cmtt-12">a.echelon</span>
+            <span class="cmtt-12">_form() </span>. The result is 
+         </p>
+         <math alttext="Alternative text not available" display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mtable columnalign="left" class="align-star">
+               <mtr>
+                  <mtd columnalign="right" class="align-odd">
+                     <mfenced separators="" open="[" close="]">
+                        <mrow>
+                           <mtable style="text-align:axis;" equalrows="false" columnlines="none none none none none none none none none none none" equalcolumns="false" class="array">
+                              <mtr>
+                                 <mtd class="array" columnalign="center">
+                                    <mn>1</mn>
+                                 </mtd>
+                                 <mtd class="array" columnalign="center">
+                                    <mn>0</mn>
+                                 </mtd>
+                                 <mtd class="array" columnalign="center">
+                                    <mo class="MathClass-bin">−</mo>
+                                    <mn>1</mn>
+                                 </mtd>
+                                 <mtd class="array" columnalign="center">
+                                    <mo class="MathClass-bin">−</mo>
+                                    <mn>2</mn>
+                                 </mtd>
+                              </mtr>
+                              <mtr>
+                                 <mtd class="array" columnalign="center">
+                                    <mn>0</mn>
+                                 </mtd>
+                                 <mtd class="array" columnalign="center">
+                                    <mn>1</mn>
+                                 </mtd>
+                                 <mtd class="array" columnalign="center">
+                                    <mn>2</mn>
+                                 </mtd>
+                                 <mtd class="array" columnalign="center">
+                                    <mn>3</mn>
+                                 </mtd>
+                              </mtr>
+                              <mtr>
+                                 <mtd class="array" columnalign="center">
+                                    <mn>0</mn>
+                                 </mtd>
+                                 <mtd class="array" columnalign="center">
+                                    <mn>0</mn>
+                                 </mtd>
+                                 <mtd class="array" columnalign="center">
+                                    <mn>0</mn>
+                                 </mtd>
+                                 <mtd class="array" columnalign="center">
+                                    <mn>0</mn>
+                                 </mtd>
+                              </mtr>
+                           </mtable>
+                        </mrow>
+                     </mfenced>
+                  </mtd>
+                  <mtd class="align-even">
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"> </mtd>
+               </mtr>
+            </mtable>
+         </math>
+         <p>However, if we adjust the entry by neglecting to specify 
+            <span class="cmtt-12">QQ </span>, then SAGE assumes that we only want to work with integers, since every entry of the matrix is an integer. So as an experiment, enter 
+         </p>
+         <math alttext="Alternative text not available" display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mtable columnalign="left" class="align-star">
+               <mtr>
+                  <mtd columnalign="right" class="align-odd">
+                     <mi>b</mi>
+                     <mo class="MathClass-rel">=</mo>
+                     <mi>m</mi>
+                     <mi>a</mi>
+                     <mi>t</mi>
+                     <mi>r</mi>
+                     <mi>i</mi>
+                     <mi>x</mi>
+                     <mrow>
+                        <mo class="MathClass-open">(</mo>
+                        <mrow>
+                           <mrow>
+                              <mo class="MathClass-open">[</mo>
+                              <mrow>
+                                 <mrow>
+                                    <mo class="MathClass-open">[</mo>
+                                    <mrow>
+                                       <mn>1</mn>
+                                       <mo class="MathClass-punc">,</mo>
+                                       <mn>2</mn>
+                                       <mo class="MathClass-punc">,</mo>
+                                       <mn>3</mn>
+                                       <mo class="MathClass-punc">,</mo>
+                                       <mn>4</mn>
+                                    </mrow>
+                                    <mo class="MathClass-close">]</mo>
+                                 </mrow>
+                                 <mo class="MathClass-punc">,</mo>
+                                 <mrow>
+                                    <mo class="MathClass-open">[</mo>
+                                    <mrow>
+                                       <mn>5</mn>
+                                       <mo class="MathClass-punc">,</mo>
+                                       <mn>6</mn>
+                                       <mo class="MathClass-punc">,</mo>
+                                       <mn>7</mn>
+                                       <mo class="MathClass-punc">,</mo>
+                                       <mn>8</mn>
+                                    </mrow>
+                                    <mo class="MathClass-close">]</mo>
+                                 </mrow>
+                                 <mo class="MathClass-punc">,</mo>
+                                 <mrow>
+                                    <mo class="MathClass-open">[</mo>
+                                    <mrow>
+                                       <mn>9</mn>
+                                       <mo class="MathClass-punc">,</mo>
+                                       <mn>1</mn>
+                                       <mn>0</mn>
+                                       <mo class="MathClass-punc">,</mo>
+                                       <mn>1</mn>
+                                       <mn>1</mn>
+                                       <mo class="MathClass-punc">,</mo>
+                                       <mn>1</mn>
+                                       <mn>2</mn>
+                                    </mrow>
+                                    <mo class="MathClass-close">]</mo>
+                                 </mrow>
+                              </mrow>
+                              <mo class="MathClass-close">]</mo>
+                           </mrow>
+                        </mrow>
+                        <mo class="MathClass-close">)</mo>
+                     </mrow>
+                  </mtd>
+                  <mtd class="align-even">
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"> </mtd>
+               </mtr>
+            </mtable>
+         </math>
+         <p>and issue the command 
+            <span class="cmtt-12">b.echelon</span>
+            <span class="cmtt-12">_form() </span>. The result is 
+         </p>
+         <math alttext="Alternative text not available" display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mtable columnalign="left" class="align-star">
+               <mtr>
+                  <mtd columnalign="right" class="align-odd">
+                     <mfenced separators="" open="[" close="]">
+                        <mrow>
+                           <mtable style="text-align:axis;" equalrows="false" columnlines="none none none none none none none none none none none" equalcolumns="false" class="array">
+                              <mtr>
+                                 <mtd class="array" columnalign="center">
+                                    <mn>1</mn>
+                                 </mtd>
+                                 <mtd class="array" columnalign="center">
+                                    <mn>2</mn>
+                                 </mtd>
+                                 <mtd class="array" columnalign="center">
+                                    <mn>3</mn>
+                                 </mtd>
+                                 <mtd class="array" columnalign="center">
+                                    <mn>4</mn>
+                                 </mtd>
+                              </mtr>
+                              <mtr>
+                                 <mtd class="array" columnalign="center">
+                                    <mn>0</mn>
+                                 </mtd>
+                                 <mtd class="array" columnalign="center">
+                                    <mn>4</mn>
+                                 </mtd>
+                                 <mtd class="array" columnalign="center">
+                                    <mn>8</mn>
+                                 </mtd>
+                                 <mtd class="array" columnalign="center">
+                                    <mn>1</mn>
+                                    <mn>2</mn>
+                                 </mtd>
+                              </mtr>
+                              <mtr>
+                                 <mtd class="array" columnalign="center">
+                                    <mn>0</mn>
+                                 </mtd>
+                                 <mtd class="array" columnalign="center">
+                                    <mn>0</mn>
+                                 </mtd>
+                                 <mtd class="array" columnalign="center">
+                                    <mn>0</mn>
+                                 </mtd>
+                                 <mtd class="array" columnalign="center">
+                                    <mn>0</mn>
+                                 </mtd>
+                              </mtr>
+                           </mtable>
+                        </mrow>
+                     </mfenced>
+                  </mtd>
+                  <mtd class="align-even">
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"> </mtd>
+               </mtr>
+            </mtable>
+         </math>
+         <p>You can now clearly see Sage’s reluctance to multiply row 2 by 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mfrac>
+                  <mrow>
+                     <mn>1</mn>
+                  </mrow>
+                  <mrow>
+                     <mn>4</mn>
+                  </mrow>
+               </mfrac>
+            </math>. 
+         </p>
+         <p> The ring 
+            <span class="cmtt-12">QQ </span>will of course suffice if your matrix has rational numbers for entries. Decimal entries are another place to be careful. If an entry of your matrix is the real number 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mn>2</mn>
+               <mo class="MathClass-punc">.</mo>
+               <mn>1</mn>
+               <mn>7</mn>
+            </math>, you are free to enter it as the rational number 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mfrac>
+                  <mrow>
+                     <mn>2</mn>
+                     <mn>1</mn>
+                     <mn>7</mn>
+                  </mrow>
+                  <mrow>
+                     <mn>1</mn>
+                     <mn>0</mn>
+                     <mn>0</mn>
+                  </mrow>
+               </mfrac>
+            </math> and keep the ring 
+            <span class="cmtt-12">QQ </span>in the specification of your matrix. If you want to consider your entries as real numbers, then you might as well just specify your ring as the complex numbers 
+            <span class="cmtt-12">CC </span>. This advice also applies if you have complex numbers as entries. 
+         </p>
+         <p> If you allow SAGE to work with real or complex numbers, then the problem of round-off error becomes relevant. Computer arithmetic with real numbers is, of necessity, subject to minor inaccuracies and errors. This becomes problematic when row-reducing a matrix. If a zero entry is computed instead as an extremely small number, such as 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mn>1</mn>
+               <mo class="MathClass-punc">.</mo>
+               <mn>2</mn>
+               <mn>8</mn>
+               <mn>7</mn>
+               <mo class="MathClass-bin">×</mo>
+               <mn>1</mn>
+               <msup>
+                  <mrow>
+                     <mn>0</mn>
+                  </mrow>
+                  <mrow>
+                     <mo class="MathClass-bin">−</mo>
+                     <mn>1</mn>
+                     <mn>8</mn>
+                  </mrow>
+               </msup>
+            </math>, then an incorrect sequence of row operations will follow (with further incorrect results). So if you use 
+            <span class="cmtt-12">CC </span>be on the lookout for these kinds of potential pitfalls. 
+         </p>
+         <p> So, in summary, remember to always specify the ring you will be using for your matrices, and most matrices can be handled with a choice of 
+            <span class="cmtt-12">QQ </span>or 
+            <span class="cmtt-12">CC</span> . 
+         </p>
+         <p> When you need to do significant scientific computing with SAGE, there are extra facilities that will help you work with these subtleties. </p>
+         <p> Finally, you can also use a command of the form 
+            <span class="cmtt-12">a.echelonize() </span>to replace 
+            <span class="cmtt-12">a </span>with its reduced row-echelon form. 
+         </p>
+      </section>
+      <section>
+         <h2 class="likesubsectionHead" id="x68-339000">Computation Note LS.SAGE: Linear Solve</h2>
+         <p>
+            <span id="computation.LS.SAGE"/>
+            <span id="dx68-339001"/>
+            <span id="dx68-339002"/>
+            <span id="dx68-339003"/>
+            <span class="cmsl-12">SAGE </span>can solve a variety of systems of equations with the 
+            <span class="cmtt-12">solve( )</span> command, even when the equations are not linear (see 
+            <a href="018_Section_SSLE_Solving_Systems_of_Linear_Equations.xhtml#exercise.SSLE.M70">Exercise SSLE.M70</a>). But we can afford to specialize here to just linear systems. First, you must specify your variables in advance, so for example, 
+            <span class="cmtt-12">var(’x1,x2,x3’)</span> might precede a system with three equations. Equations are then written just as you might expect, except that equality is written as 
+            <span class="cmtt-12">== </span>, since computer programs have traditionally reserved 
+            <span class="cmtt-12">= </span>to assign values to variables. And remember to use a 
+            <span class="cmtt-12">* </span>to indicate that a coefficient multiplies a variable. 
+         </p>
+         <p> The example below illustrates the use of the command and the possibilities for results. Each system would be preceded by establishing the variables with the command 
+            <span class="cmtt-12">var(’x,y’) </span>. In the case of an infinite solution set, free variables are denoted as 
+            <span class="cmtt-12">rx </span>where 
+            <span class="cmtt-12">x </span>is an integer that increases throughout a session. The style of this description of a solution set is reminiscent of the style we used in 
+            <a href="016_Chapter_SLE_Systems_of_Linear_Equations.xhtml#chapter.SLE">Chapter SLE</a> before we were accustomed to using linear combinations of vectors ( 
+            <a href="025_Section_LC_Linear_Combinations.xhtml#theorem.VFSLS">Theorem VFSLS</a>). 
+         </p>
+         <div class="center">
+            <div class="tabular">
+               <table id="TBL-4572" class="tabular">
+                  <colgroup id="TBL-4572-1g">
+                     <col id="TBL-4572-1"/>
+                     <col id="TBL-4572-2"/>
+                     <col id="TBL-4572-3"/>
+                  </colgroup>
+                  <tr style="vertical-align:baseline;" id="TBL-4572-1-">
+                     <td style="text-align:center; white-space:nowrap;" id="TBL-4572-1-1" class="td11">
+                        <div class="multicolumn" style="text-align:center; white-space:nowrap;">System</div>
+                     </td>
+                     <td style="text-align:center; white-space:nowrap;" id="TBL-4572-1-2" class="td11">
+                        <div class="multicolumn" style="text-align:center; white-space:nowrap;">Solution Set</div>
+                     </td>
+                     <td style="text-align:center; white-space:nowrap;" id="TBL-4572-1-3" class="td11">
+                        <div class="multicolumn" style="text-align:center; white-space:nowrap;">Result</div>
+                     </td>
+                  </tr>
+                  <tr style="vertical-align:baseline;" id="TBL-4572-2-">
+                     <td style="text-align:left; white-space:nowrap;" id="TBL-4572-2-1" class="td11">
+                        <span class="cmtt-12">solve([2*x+y==5, 3*x+2*y==15], x, y) </span>
+                     </td>
+                     <td style="text-align:center; white-space:nowrap;" id="TBL-4572-2-2" class="td11"> Unique </td>
+                     <td style="text-align:left; white-space:nowrap;" id="TBL-4572-2-3" class="td11">
+                        <span class="cmtt-12">[[x == -5, y == 15]] </span>
+                     </td>
+                  </tr>
+                  <tr style="vertical-align:baseline;" id="TBL-4572-3-">
+                     <td style="text-align:left; white-space:nowrap;" id="TBL-4572-3-1" class="td11">
+                        <span class="cmtt-12">solve([2*x+y==5, 6*x+3*y==15], x, y) </span>
+                     </td>
+                     <td style="text-align:center; white-space:nowrap;" id="TBL-4572-3-2" class="td11"> Infinite </td>
+                     <td style="text-align:left; white-space:nowrap;" id="TBL-4572-3-3" class="td11">
+                        <span class="cmtt-12">[[x == (5 - r1)/2, y == r1]] </span>
+                     </td>
+                  </tr>
+                  <tr style="vertical-align:baseline;" id="TBL-4572-4-">
+                     <td style="text-align:left; white-space:nowrap;" id="TBL-4572-4-1" class="td11">
+                        <span class="cmtt-12">solve([2*x+y==5, 6*x+3*y==10], x, y) </span>
+                     </td>
+                     <td style="text-align:center; white-space:nowrap;" id="TBL-4572-4-2" class="td11"> Empty </td>
+                     <td style="text-align:left; white-space:nowrap;" id="TBL-4572-4-3" class="td11">
+                        <span class="cmtt-12">ValueError: Unable to solve</span>
+                        <span class="cmtt-12">… </span>
+                     </td>
+                  </tr>
+               </table>
+            </div>
+         </div>
+         <p>Notice how the output contains equations written a format that might be suitable as input for further use within 
+            <span class="cmsl-12">SAGE</span>. 
+         </p>
+      </section>
+      <section>
+         <h2 class="likesubsectionHead" id="x68-340000">Computation Note VLC.SAGE: Vector Linear Combinations</h2>
+         <p>
+            <span id="computation.VLC.SAGE"/>
+            <span id="dx68-340001"/>
+            <span id="dx68-340002"/>
+            <span id="dx68-340003"/> Contributed by  
+            <a href="007_Contributors.xhtml#BeezerRobert">Robert Beezer</a>
+            <br/>Vectors in 
+            <span class="cmsl-12">SAGE </span>are constructed from lists, and are displayed horizontally. For example, the vector 
+         </p>
+         <table class="equation-star">
+            <tr>
+               <td>
+                  <math alttext="Alternative text not available" display="block" class="equation" xmlns="http://www.w3.org/1998/Math/MathML">
+                     <mi>v</mi>
+                     <mo class="MathClass-rel">=</mo>
+                     <mfenced separators="" open="[" close="]">
+                        <mrow>
+                           <mtable style="text-align:axis;" equalrows="false" columnlines="none none none none none none none none none none none" equalcolumns="false" class="array">
+                              <mtr>
+                                 <mtd class="array" columnalign="center">
+                                    <mn>1</mn>
+                                 </mtd>
+                              </mtr>
+                              <mtr>
+                                 <mtd class="array" columnalign="center">
+                                    <mn>2</mn>
+                                 </mtd>
+                              </mtr>
+                              <mtr>
+                                 <mtd class="array" columnalign="center">
+                                    <mn>3</mn>
+                                 </mtd>
+                              </mtr>
+                              <mtr>
+                                 <mtd class="array" columnalign="center">
+                                    <mn>4</mn>
+                                 </mtd>
+                              </mtr>
+                           </mtable>
+                        </mrow>
+                     </mfenced>
+                  </math>
+               </td>
+            </tr>
+         </table>
+         <p> would be entered and named via the command </p>
+         <table class="equation-star">
+            <tr>
+               <td>
+                  <math alttext="Alternative text not available" display="block" class="equation" xmlns="http://www.w3.org/1998/Math/MathML">
+                     <mi>v</mi>
+                     <mo class="MathClass-rel">=</mo>
+                     <mi>v</mi>
+                     <mi>e</mi>
+                     <mi>c</mi>
+                     <mi>t</mi>
+                     <mi>o</mi>
+                     <mi>r</mi>
+                     <mrow>
+                        <mo class="MathClass-open">(</mo>
+                        <mrow>
+                           <mi>Q</mi>
+                           <mi>Q</mi>
+                           <mo class="MathClass-punc">,</mo>
+                           <mrow>
+                              <mo class="MathClass-open">[</mo>
+                              <mrow>
+                                 <mn>1</mn>
+                                 <mo class="MathClass-punc">,</mo>
+                                 <mspace width="0.3em" class="thinspace"/>
+                                 <mn>2</mn>
+                                 <mo class="MathClass-punc">,</mo>
+                                 <mspace width="0.3em" class="thinspace"/>
+                                 <mn>3</mn>
+                                 <mo class="MathClass-punc">,</mo>
+                                 <mspace width="0.3em" class="thinspace"/>
+                                 <mn>4</mn>
+                              </mrow>
+                              <mo class="MathClass-close">]</mo>
+                           </mrow>
+                        </mrow>
+                        <mo class="MathClass-close">)</mo>
+                     </mrow>
+                  </math>
+               </td>
+            </tr>
+         </table>
+         <p> See the notes about rings ( 
+            <a href="#computation.R.SAGE">Computation R.SAGE</a>) and matrix entry ( 
+            <a href="#computation.ME.SAGE">Computation ME.SAGE</a>) for reminders about specifying the relevant ring. 
+         </p>
+         <p> Vector addition and scalar multiplication are then very natural. If 
+            <span class="cmtt-12">u </span>and 
+            <span class="cmtt-12">v</span> are two vectors of the same size, then 
+         </p>
+         <table class="equation-star">
+            <tr>
+               <td>
+                  <math alttext="Alternative text not available" display="block" class="equation" xmlns="http://www.w3.org/1998/Math/MathML">
+                     <mn>2</mn>
+                     <mo class="MathClass-bin">∗</mo>
+                     <mi>u</mi>
+                     <mo class="MathClass-bin">+</mo>
+                     <mrow>
+                        <mo class="MathClass-open">(</mo>
+                        <mrow>
+                           <mo class="MathClass-bin">−</mo>
+                           <mn>3</mn>
+                        </mrow>
+                        <mo class="MathClass-close">)</mo>
+                     </mrow>
+                     <mo class="MathClass-bin">∗</mo>
+                     <mi>v</mi>
+                  </math>
+               </td>
+            </tr>
+         </table>
+         <p> will compute the correct vector. The result can be assigned to a variable (which will then contain a vector), or be printed. If printed, it will be written horizontally with parentheses for grouping. If 
+            <span class="cmtt-12">u </span>and 
+            <span class="cmtt-12">v </span>have different sizes, then 
+            <span class="cmsl-12">SAGE </span>will complain about “unsupported operand(s).” 
+         </p>
+      </section>
+      <section>
+         <h2 class="likesubsectionHead" id="x68-341000">Computation Note MI.SAGE: Matrix Inverse</h2>
+         <p>
+            <span id="computation.MI.SAGE"/>
+            <span id="dx68-341001"/>
+            <span id="dx68-341002"/>
+            <span id="dx68-341003"/> Contributed by  
+            <a href="007_Contributors.xhtml#CanfieldSteve">Steve Canfield</a>
+            <br/>If 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>a</mi>
+            </math> is a matrix defined in 
+            <span class="cmsl-12">SAGE</span>, then 
+            <span class="cmtt-12">a.inverse() </span>will return the inverse of 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>a</mi>
+            </math>, should it exist. In the case where 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>a</mi>
+            </math> does not have an inverse 
+            <span class="cmsl-12">SAGE </span>will tell you the matrix must be nonsingular (see 
+            <a href="034_Section_MINM_Matrix_Inverses_and_Nonsingular_Matrices.xhtml#theorem.NI">Theorem NI</a>). 
+         </p>
+      </section>
+      <section>
+         <h2 class="likesubsectionHead" id="x68-342000">Computation Note TM.SAGE: Transpose of a Matrix</h2>
+         <p>
+            <span id="computation.TM.SAGE"/>
+            <span id="dx68-342001"/>
+            <span id="dx68-342002"/>
+            <span id="dx68-342003"/>Suppose 
+            <span class="cmtt-12">a </span>is the name of a matrix stored in 
+            <span class="cmsl-12">SAGE</span>. Then 
+            <span class="cmtt-12">a.transpose()</span> will return the transpose of 
+            <span class="cmtt-12">a </span>. 
+         </p>
+      </section>
+      <section>
+         <h2 class="likesubsectionHead" id="x68-343000">Computation Note E.SAGE: Eigenspaces</h2>
+         <p>
+            <span id="computation.E.SAGE"/>
+            <span id="dx68-343001"/>
+            <span id="dx68-343002"/>
+            <span id="dx68-343003"/> Contributed by  
+            <a href="007_Contributors.xhtml#CanfieldSteve">Steve Canfield</a>
+            <br/>SAGE can compute eigenspaces and eigenvalues for you. If you have a matrix named 
+            <span class="cmtt-12">a </span>and you type 
+         </p>
+         <table class="equation-star">
+            <tr>
+               <td>
+                  <math alttext="Alternative text not available" display="block" class="equation" xmlns="http://www.w3.org/1998/Math/MathML">
+                     <mi>a</mi>
+                     <mo class="MathClass-punc">.</mo>
+                     <mi>e</mi>
+                     <mi>i</mi>
+                     <mi>g</mi>
+                     <mi>e</mi>
+                     <mi>n</mi>
+                     <mi>s</mi>
+                     <mi>p</mi>
+                     <mi>a</mi>
+                     <mi>c</mi>
+                     <mi>e</mi>
+                     <mi>s</mi>
+                     <mrow>
+                        <mo class="MathClass-open">(</mo>
+                        <mrow/>
+                        <mo class="MathClass-close">)</mo>
+                     </mrow>
+                  </math>
+               </td>
+            </tr>
+         </table>
+         <p> you will get a listing of the eigenvalues and the eigenspace for each. Let’s do an example. Your output may be formatted slightly different from what we have here. </p>
+         <math alttext="Alternative text not available" display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mtable columnalign="left" class="align-star">
+               <mtr>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mi>m</mi>
+                     <mo class="MathClass-rel">=</mo>
+                     <mi>m</mi>
+                     <mi>a</mi>
+                     <mi>t</mi>
+                     <mi>r</mi>
+                     <mi>i</mi>
+                     <mi>x</mi>
+                     <mrow>
+                        <mo class="MathClass-open">(</mo>
+                        <mrow>
+                           <mi>Q</mi>
+                           <mi>Q</mi>
+                           <mo class="MathClass-punc">,</mo>
+                           <mrow>
+                              <mo class="MathClass-open">[</mo>
+                              <mrow>
+                                 <mrow>
+                                    <mo class="MathClass-open">[</mo>
+                                    <mrow>
+                                       <mo class="MathClass-bin">−</mo>
+                                       <mn>1</mn>
+                                       <mn>3</mn>
+                                       <mo class="MathClass-punc">,</mo>
+                                       <mo class="MathClass-bin">−</mo>
+                                       <mn>8</mn>
+                                       <mo class="MathClass-punc">,</mo>
+                                       <mo class="MathClass-bin">−</mo>
+                                       <mn>4</mn>
+                                    </mrow>
+                                    <mo class="MathClass-close">]</mo>
+                                 </mrow>
+                                 <mo class="MathClass-punc">,</mo>
+                                 <mrow>
+                                    <mo class="MathClass-open">[</mo>
+                                    <mrow>
+                                       <mn>1</mn>
+                                       <mn>2</mn>
+                                       <mo class="MathClass-punc">,</mo>
+                                       <mn>7</mn>
+                                       <mo class="MathClass-punc">,</mo>
+                                       <mn>4</mn>
+                                    </mrow>
+                                    <mo class="MathClass-close">]</mo>
+                                 </mrow>
+                                 <mo class="MathClass-punc">,</mo>
+                                 <mrow>
+                                    <mo class="MathClass-open">[</mo>
+                                    <mrow>
+                                       <mn>2</mn>
+                                       <mn>4</mn>
+                                       <mo class="MathClass-punc">,</mo>
+                                       <mn>1</mn>
+                                       <mn>6</mn>
+                                       <mo class="MathClass-punc">,</mo>
+                                       <mn>7</mn>
+                                    </mrow>
+                                    <mo class="MathClass-close">]</mo>
+                                 </mrow>
+                              </mrow>
+                              <mo class="MathClass-close">]</mo>
+                           </mrow>
+                        </mrow>
+                        <mo class="MathClass-close">)</mo>
+                     </mrow>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+               </mtr>
+               <mtr>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mi>m</mi>
+                     <mo class="MathClass-punc">.</mo>
+                     <mi>e</mi>
+                     <mi>i</mi>
+                     <mi>g</mi>
+                     <mi>e</mi>
+                     <mi>n</mi>
+                     <mi>s</mi>
+                     <mi>p</mi>
+                     <mi>a</mi>
+                     <mi>c</mi>
+                     <mi>e</mi>
+                     <mi>s</mi>
+                     <mrow>
+                        <mo class="MathClass-open">(</mo>
+                        <mrow/>
+                        <mo class="MathClass-close">)</mo>
+                     </mrow>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+               </mtr>
+               <mtr>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mrow>
+                        <mo class="MathClass-open">[</mo>
+                        <mrow>
+                           <mrow>
+                              <mo class="MathClass-open">(</mo>
+                              <mrow>
+                                 <mn>3</mn>
+                                 <mo class="MathClass-punc">,</mo>
+                                 <mrow>
+                                    <mo class="MathClass-open">[</mo>
+                                    <mrow>
+                                       <mrow>
+                                          <mo class="MathClass-open">(</mo>
+                                          <mrow>
+                                             <mn>1</mn>
+                                             <mo class="MathClass-punc">,</mo>
+                                             <mn>2</mn>
+                                             <mo class="MathClass-bin">∕</mo>
+                                             <mn>3</mn>
+                                             <mo class="MathClass-punc">,</mo>
+                                             <mn>1</mn>
+                                             <mo class="MathClass-bin">∕</mo>
+                                             <mn>3</mn>
+                                          </mrow>
+                                          <mo class="MathClass-close">)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo class="MathClass-close">]</mo>
+                                 </mrow>
+                              </mrow>
+                              <mo class="MathClass-close">)</mo>
+                           </mrow>
+                           <mo class="MathClass-punc">,</mo>
+                           <mrow>
+                              <mo class="MathClass-open">(</mo>
+                              <mrow>
+                                 <mo class="MathClass-bin">−</mo>
+                                 <mn>1</mn>
+                                 <mo class="MathClass-punc">,</mo>
+                                 <mrow>
+                                    <mo class="MathClass-open">[</mo>
+                                    <mrow>
+                                       <mrow>
+                                          <mo class="MathClass-open">(</mo>
+                                          <mrow>
+                                             <mn>1</mn>
+                                             <mo class="MathClass-punc">,</mo>
+                                             <mn>0</mn>
+                                             <mo class="MathClass-punc">,</mo>
+                                             <mn>1</mn>
+                                             <mo class="MathClass-bin">∕</mo>
+                                             <mn>2</mn>
+                                          </mrow>
+                                          <mo class="MathClass-close">)</mo>
+                                       </mrow>
+                                       <mo class="MathClass-punc">,</mo>
+                                       <mrow>
+                                          <mo class="MathClass-open">(</mo>
+                                          <mrow>
+                                             <mn>0</mn>
+                                             <mo class="MathClass-punc">,</mo>
+                                             <mn>1</mn>
+                                             <mo class="MathClass-punc">,</mo>
+                                             <mo class="MathClass-bin">−</mo>
+                                             <mn>1</mn>
+                                             <mo class="MathClass-bin">∕</mo>
+                                             <mn>2</mn>
+                                          </mrow>
+                                          <mo class="MathClass-close">)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo class="MathClass-close">]</mo>
+                                 </mrow>
+                              </mrow>
+                              <mo class="MathClass-close">)</mo>
+                           </mrow>
+                        </mrow>
+                        <mo class="MathClass-close">]</mo>
+                     </mrow>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+               </mtr>
+               <mtr>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"> </mtd>
+               </mtr>
+            </mtable>
+         </math>
+         <p>Whew, that looks like a mess. At the top level, eigenspaces() returns a dictionary whose keys are the eigenvalues. So in this case we have eigenvalues 3 and -1. Each eigenvalue has an array after it that forms the basis of the eigenspace. In our example, there is 1 vector for 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>λ</mi>
+               <mo class="MathClass-rel">=</mo>
+               <mn>3</mn>
+            </math> and 2 vectors for 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>λ</mi>
+               <mo class="MathClass-rel">=</mo>
+               <mo class="MathClass-bin">−</mo>
+               <mn>1</mn>
+            </math>. Finally, the vectors SAGE spits out may not be the nicest ones to work with. In particular, we might want to scale the vectors to get rid of fractions. 
+         </p>
+      </section>
+   </body>
+</html>

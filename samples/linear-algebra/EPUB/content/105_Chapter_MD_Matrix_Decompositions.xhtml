@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html id="chapter.MD" xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+   <head>
+      <title>Chapter MD Matrix Decompositions</title>
+      <link rel="stylesheet" type="text/css" href="../css/fcla-xml-2.99.css"/>
+      <link rel="stylesheet" type="text/css" href="../css/edupub.css"/>
+   </head>
+   <body epub:type="bodymatter chapter" id="x105-437000doc">
+      <h1 class="likechapterHead" id="x105-437000">Chapter MD  Matrix Decompositions</h1>
+      <p>
+         <span class="cmcsc-10x-x-144">I 
+            <span class="small-caps">n</span>
+            <span class="small-caps">n</span>
+            <span class="small-caps">e</span>
+            <span class="small-caps">r</span>
+            <span class="small-caps">p</span>
+            <span class="small-caps">r</span>
+            <span class="small-caps">o</span>
+            <span class="small-caps">d</span>
+            <span class="small-caps">u</span>
+            <span class="small-caps">c</span>
+            <span class="small-caps">t</span>
+            <span class="small-caps">i</span>
+            <span class="small-caps">s</span> \ 
+            <span class="small-caps">r</span>
+            <span class="small-caps">e</span>
+            <span class="small-caps">v</span>
+            <span class="small-caps">e</span>
+            <span class="small-caps">r</span>
+            <span class="small-caps">s</span>
+            <span class="small-caps">e</span>
+            <span class="small-caps">d</span>” 
+            <span class="small-caps">f</span>
+            <span class="small-caps">r</span>
+            <span class="small-caps">o</span>
+            <span class="small-caps">m</span>
+            <span class="small-caps">p</span>
+            <span class="small-caps">r</span>
+            <span class="small-caps">i</span>
+            <span class="small-caps">o</span>
+            <span class="small-caps">r</span>
+            <span class="small-caps">m</span>
+            <span class="small-caps">a</span>
+            <span class="small-caps">t</span>
+            <span class="small-caps">e</span>
+            <span class="small-caps">r</span>
+            <span class="small-caps">i</span>
+            <span class="small-caps">a</span>
+            <span class="small-caps">l</span>, 
+            <span class="small-caps">s</span>
+            <span class="small-caps">e</span>
+            <span class="small-caps">e</span>
+         </span>
+         <span class="cmcsc-10x-x-144">
+            <span class="small-caps">c</span>
+            <span class="small-caps">h</span>
+            <span class="small-caps">a</span>
+            <span class="small-caps">n</span>
+            <span class="small-caps">g</span>
+            <span class="small-caps">e</span>
+            <span class="small-caps">l</span>
+            <span class="small-caps">o</span>
+            <span class="small-caps">g</span>
+            <span class="small-caps">e</span>
+            <span class="small-caps">x</span>
+            <span class="small-caps">p</span>
+            <span class="small-caps">l</span>
+            <span class="small-caps">a</span>
+            <span class="small-caps">n</span>
+            <span class="small-caps">a</span>
+            <span class="small-caps">t</span>
+            <span class="small-caps">i</span>
+            <span class="small-caps">o</span>
+            <span class="small-caps">n</span>
+         </span>
+      </p>
+      <p> This chapter is about breaking up a matrix 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>A</mi>
+         </math> into pieces that somehow combine to recreate 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>A</mi>
+         </math>. Usually the pieces are again matrices, and usually they are then combined via matrix multiplication ( 
+         <a href="032_Section_MM_Matrix_Multiplication.xhtml#definition.MM">Definition MM</a>). In some cases, the decomposition will be valid for any matrix, but often we might need extra conditions on 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>A</mi>
+         </math>, such as being square ( 
+         <a href="022_Section_NM_Nonsingular_Matrices.xhtml#definition.SQM">Definition SQM</a>), nonsingular ( 
+         <a href="022_Section_NM_Nonsingular_Matrices.xhtml#definition.NM">Definition NM</a>) or diagonalizable ( 
+         <a href="050_Section_SD_Similarity_and_Diagonalization.xhtml#definition.DZM">Definition DZM</a>) before we can guarantee the decomposition. If you are comfortable with topics like decomposing a solution vector into linear combinations ( 
+         <a href="025_Section_LC_Linear_Combinations.xhtml#subsection.LC.VFSS">Subsection LC.VFSS</a>) or decomposing vector spaces into direct sums ( 
+         <a href="043_Section_PD_Properties_of_Dimension.xhtml#subsection.PD.DS">Subsection PD.DS</a>), then we will be doing similar things in this chapter. If not, review these ideas and take another look at 
+         <a href="072_Section_PT_Proof_Techniques.xhtml#technique.DC">Technique DC</a> on decompositions. 
+      </p>
+      <p> We have studied one matrix decomposition already, so we will review that here in this introduction, both as a way of previewing the topic in a familiar setting, but also since it does not deserve another section all of its own. </p>
+      <p> A diagonalizable matrix ( 
+         <a href="050_Section_SD_Similarity_and_Diagonalization.xhtml#definition.DZM">Definition DZM</a>) is defined to be a square matrix 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>A</mi>
+         </math> such that there is an invertible matrix 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>S</mi>
+         </math> and a diagonal matrix 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>D</mi>
+         </math> where 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <msup>
+               <mrow>
+                  <mi>S</mi>
+               </mrow>
+               <mrow>
+                  <mo class="MathClass-bin">−</mo>
+                  <mn>1</mn>
+               </mrow>
+            </msup>
+            <mi>A</mi>
+            <mi>S</mi>
+            <mo class="MathClass-rel">=</mo>
+            <mi>D</mi>
+         </math>. We can re-write this as 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>A</mi>
+            <mo class="MathClass-rel">=</mo>
+            <mi>S</mi>
+            <mi>D</mi>
+            <msup>
+               <mrow>
+                  <mi>S</mi>
+               </mrow>
+               <mrow>
+                  <mo class="MathClass-bin">−</mo>
+                  <mn>1</mn>
+               </mrow>
+            </msup>
+         </math>. Here we have a decomposition of 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>A</mi>
+         </math> into three matrices, 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>S</mi>
+         </math>, 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>D</mi>
+         </math> and 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <msup>
+               <mrow>
+                  <mi>S</mi>
+               </mrow>
+               <mrow>
+                  <mo class="MathClass-bin">−</mo>
+                  <mn>1</mn>
+               </mrow>
+            </msup>
+         </math>, which recombine through matrix multiplication to recreate 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>A</mi>
+         </math>. We also know that the diagonal entries of 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>D</mi>
+         </math> are the eigenvalues of 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>A</mi>
+         </math>. We cannot form this decomposition for just any matrix — 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>A</mi>
+         </math> must be square and we know from 
+         <a href="050_Section_SD_Similarity_and_Diagonalization.xhtml#theorem.DC">Theorem DC</a> that a matrix of size 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>n</mi>
+         </math> is diagonalizable if and only if there is a basis for 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <msup>
+               <mrow>
+                  <mi>ℂ</mi>
+               </mrow>
+               <mrow>
+                  <mi>n</mi>
+               </mrow>
+            </msup>
+         </math> composed entirely of eigenvectors of 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>A</mi>
+         </math>, or by 
+         <a href="050_Section_SD_Similarity_and_Diagonalization.xhtml#theorem.DMFE">Theorem DMFE</a> we know that 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>A</mi>
+         </math> is diagonalizable if and only if each eigenvalue of 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>A</mi>
+         </math> has a geometric multiplicity equal to its algebraic multiplicity. Some authors prefer to call this an 
+         <span class="cmbx-12">eigen decomposition </span>of 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>A</mi>
+         </math> rather than a 
+         <span class="cmbx-12">matrix diagonalization</span>. 
+      </p>
+      <p> Another decomposition, which is similar in flavor to matrix diagonalization, is orthonormal diagonalization ( 
+         <a href="060_Section_OD_Orthonormal_Diagonalization.xhtml#theorem.OD">Theorem OD</a>). Here we require the matrix 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>A</mi>
+         </math> to be normal and we get the decomposition 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>A</mi>
+            <mo class="MathClass-rel">=</mo>
+            <mi>U</mi>
+            <mi>D</mi>
+            <msup>
+               <mrow>
+                  <mi>U</mi>
+               </mrow>
+               <mrow>
+                  <mo class="MathClass-bin">∗</mo>
+               </mrow>
+            </msup>
+         </math>, where 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>D</mi>
+         </math> is a diagonal matrix with the eigenvalues of 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>A</mi>
+         </math> on the diagonal, and 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>U</mi>
+         </math> is unitary. The hypothesis that 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>A</mi>
+         </math> is normal guarantees the decomposition and we get the extra information that 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>U</mi>
+         </math> is unitary. 
+      </p>
+      <p> Each section of this chapter features a different matrix decomposition, with the exception of 
+         <a href="104_Section_PSM_Positive_Semi-definite_Matrices.xhtml#section.PSM">Section PSM</a>, which presents background information on positive semi-definite matrices required for singular value decompositions, square roots and polar decompositions. 
+      </p>
+      <nav epub:type="toc">
+         <h2>Table of Contents</h2>
+         <ol class="nomark">
+            <li>
+               <a href="106_Section_ROD_Rank_One_Decomposition.xhtml#x106-438000">Section ROD Rank One Decomposition</a>
+            </li>
+            <li>
+               <a href="107_Section_TD_Triangular_Decomposition.xhtml#x107-439000">Section TD Triangular Decomposition</a>
+            </li>
+            <li>
+               <a href="107_Section_TD_Triangular_Decomposition.xhtml#x107-440000" id="QQ2-107-451">Subsection TD: Triangular Decomposition</a>
+            </li>
+            <li>
+               <a href="107_Section_TD_Triangular_Decomposition.xhtml#x107-441000" id="QQ2-107-452">Subsection TDSSE: Triangular Decomposition and Solving Systems of Equations</a>
+            </li>
+            <li>
+               <a href="107_Section_TD_Triangular_Decomposition.xhtml#x107-442000" id="QQ2-107-453">Subsection CTD: Computing Triangular Decompositions</a>
+            </li>
+            <li>
+               <a href="108_Section_SVD_Singular_Value_Decomposition.xhtml#x108-443000">Section SVD Singular Value Decomposition</a>
+            </li>
+            <li>
+               <a href="108_Section_SVD_Singular_Value_Decomposition.xhtml#x108-444000" id="QQ2-108-455">Subsection MAP: Matrix-Adjoint Product</a>
+            </li>
+            <li>
+               <a href="108_Section_SVD_Singular_Value_Decomposition.xhtml#x108-445000" id="QQ2-108-456">Subsection SVD: Singular Value Decomposition</a>
+            </li>
+            <li>
+               <a href="109_Section_SR_Square_Roots.xhtml#x109-446000">Section SR Square Roots</a>
+            </li>
+            <li>
+               <a href="109_Section_SR_Square_Roots.xhtml#x109-447000" id="QQ2-109-458">Subsection SRM: Square Root of a Matrix</a>
+            </li>
+            <li>
+               <a href="110_Section_POD_Polar_Decomposition.xhtml#x110-448000">Section POD Polar Decomposition</a>
+            </li>
+            <li>
+               <a href="112_Section_CF_Curve_Fitting.xhtml#x112-450000">Section CF Curve Fitting</a>
+            </li>
+            <li>
+               <a href="112_Section_CF_Curve_Fitting.xhtml#x112-451000" id="QQ2-112-462">Subsection DF: Data Fitting</a>
+            </li>
+            <li>
+               <a href="112_Section_CF_Curve_Fitting.xhtml#x112-452000" id="QQ2-112-463">Subsection EXC: Exercises</a>
+            </li>
+            <li>
+               <a href="113_Section_SAS_Sharing_A_Secret.xhtml#x113-453000">Section SAS Sharing A Secret</a>
+            </li>
+         </ol>
+      </nav>
+   </body>
+</html>

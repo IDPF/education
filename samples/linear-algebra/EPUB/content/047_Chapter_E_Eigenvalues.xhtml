@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html id="chapter.E" xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+   <head>
+      <title>Chapter E Eigenvalues</title>
+      <link rel="stylesheet" type="text/css" href="../css/fcla-xml-2.99.css"/>
+      <link rel="stylesheet" type="text/css" href="../css/edupub.css"/>
+   </head>
+   <body epub:type="bodymatter chapter" id="x47-211000doc">
+      <h1 class="likechapterHead" id="x47-211000">Chapter E  Eigenvalues</h1>
+      <p> When we have a square matrix of size 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>n</mi>
+         </math>, 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>A</mi>
+         </math>, and we multiply it by a vector 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>x</mi>
+         </math> from 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <msup>
+               <mrow>
+                  <mi>ℂ</mi>
+               </mrow>
+               <mrow>
+                  <mi>n</mi>
+               </mrow>
+            </msup>
+         </math> to form the matrix-vector product ( 
+         <a href="032_Section_MM_Matrix_Multiplication.xhtml#definition.MVP">Definition MVP</a>), the result is another vector in 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <msup>
+               <mrow>
+                  <mi>ℂ</mi>
+               </mrow>
+               <mrow>
+                  <mi>n</mi>
+               </mrow>
+            </msup>
+         </math>. So we can adopt a functional view of this computation — the act of multiplying by a square matrix is a function that converts one vector ( 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>x</mi>
+         </math>) into another one ( 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>A</mi>
+            <mi>x</mi>
+         </math>) of the same size. For some vectors, this seemingly complicated computation is really no more complicated than scalar multiplication. The vectors vary according to the choice of 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>A</mi>
+         </math>, so the question is to determine, for an individual choice of 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>A</mi>
+         </math>, if there are any such vectors, and if so, which ones. It happens in a variety of situations that these vectors (and the scalars that go along with them) are of special interest. 
+      </p>
+      <p> We will be solving polynomial equations in this chapter, which raises the specter of roots that are complex numbers. This distinct possibility is our main reason for entertaining the complex numbers throughout the course. You might be moved to revisit 
+         <a href="070_Section_CNO_Complex_Number_Operations.xhtml#section.CNO">Section CNO</a> and 
+         <a href="029_Section_O_Orthogonality.xhtml#section.O">Section O</a>. 
+      </p>
+      <nav epub:type="toc">
+         <h2>Table of Contents</h2>
+         <ol class="nomark">
+            <li>
+               <a href="048_Section_EE_Eigenvalues_and_Eigenvectors.xhtml#x48-212000">Section EE Eigenvalues and Eigenvectors</a>
+            </li>
+            <li>
+               <a href="048_Section_EE_Eigenvalues_and_Eigenvectors.xhtml#x48-213000" id="QQ2-48-213">Subsection EEM: Eigenvalues and Eigenvectors of a Matrix</a>
+            </li>
+            <li>
+               <a href="048_Section_EE_Eigenvalues_and_Eigenvectors.xhtml#x48-214000" id="QQ2-48-214">Subsection PM: Polynomials and Matrices</a>
+            </li>
+            <li>
+               <a href="048_Section_EE_Eigenvalues_and_Eigenvectors.xhtml#x48-215000" id="QQ2-48-215">Subsection EEE: Existence of Eigenvalues and Eigenvectors</a>
+            </li>
+            <li>
+               <a href="048_Section_EE_Eigenvalues_and_Eigenvectors.xhtml#x48-216000" id="QQ2-48-216">Subsection CEE: Computing Eigenvalues and Eigenvectors</a>
+            </li>
+            <li>
+               <a href="048_Section_EE_Eigenvalues_and_Eigenvectors.xhtml#x48-217000" id="QQ2-48-217">Subsection ECEE: Examples of Computing Eigenvalues and Eigenvectors</a>
+            </li>
+            <li>
+               <a href="048_Section_EE_Eigenvalues_and_Eigenvectors.xhtml#x48-218000" id="QQ2-48-218">Subsection READ: Reading Questions</a>
+            </li>
+            <li>
+               <a href="048_Section_EE_Eigenvalues_and_Eigenvectors.xhtml#x48-219000" id="QQ2-48-219">Subsection EXC: Exercises</a>
+            </li>
+            <li>
+               <a href="048_Section_EE_Eigenvalues_and_Eigenvectors.xhtml#x48-220000" id="QQ2-48-220">Subsection SOL: Solutions</a>
+            </li>
+            <li>
+               <a href="049_Section_PEE_Properties_of_Eigenvalues_and_Eigenvectors.xhtml#x49-221000">Section PEE Properties of Eigenvalues and Eigenvectors</a>
+            </li>
+            <li>
+               <a href="049_Section_PEE_Properties_of_Eigenvalues_and_Eigenvectors.xhtml#x49-222000" id="QQ2-49-222">Subsection ME: Multiplicities of Eigenvalues</a>
+            </li>
+            <li>
+               <a href="049_Section_PEE_Properties_of_Eigenvalues_and_Eigenvectors.xhtml#x49-223000" id="QQ2-49-223">Subsection EHM: Eigenvalues of Hermitian Matrices</a>
+            </li>
+            <li>
+               <a href="049_Section_PEE_Properties_of_Eigenvalues_and_Eigenvectors.xhtml#x49-224000" id="QQ2-49-224">Subsection READ: Reading Questions</a>
+            </li>
+            <li>
+               <a href="049_Section_PEE_Properties_of_Eigenvalues_and_Eigenvectors.xhtml#x49-225000" id="QQ2-49-225">Subsection EXC: Exercises</a>
+            </li>
+            <li>
+               <a href="049_Section_PEE_Properties_of_Eigenvalues_and_Eigenvectors.xhtml#x49-226000" id="QQ2-49-226">Subsection SOL: Solutions</a>
+            </li>
+            <li>
+               <a href="050_Section_SD_Similarity_and_Diagonalization.xhtml#x50-227000">Section SD Similarity and Diagonalization</a>
+            </li>
+            <li>
+               <a href="050_Section_SD_Similarity_and_Diagonalization.xhtml#x50-228000" id="QQ2-50-228">Subsection SM: Similar Matrices</a>
+            </li>
+            <li>
+               <a href="050_Section_SD_Similarity_and_Diagonalization.xhtml#x50-229000" id="QQ2-50-229">Subsection PSM: Properties of Similar Matrices</a>
+            </li>
+            <li>
+               <a href="050_Section_SD_Similarity_and_Diagonalization.xhtml#x50-230000" id="QQ2-50-230">Subsection D: Diagonalization</a>
+            </li>
+            <li>
+               <a href="050_Section_SD_Similarity_and_Diagonalization.xhtml#x50-231000" id="QQ2-50-231">Subsection FS: Fibonacci Sequences</a>
+            </li>
+            <li>
+               <a href="050_Section_SD_Similarity_and_Diagonalization.xhtml#x50-232000" id="QQ2-50-232">Subsection READ: Reading Questions</a>
+            </li>
+            <li>
+               <a href="050_Section_SD_Similarity_and_Diagonalization.xhtml#x50-233000" id="QQ2-50-233">Subsection EXC: Exercises</a>
+            </li>
+            <li>
+               <a href="050_Section_SD_Similarity_and_Diagonalization.xhtml#x50-234000" id="QQ2-50-234">Subsection SOL: Solutions</a>
+            </li>
+         </ol>
+      </nav>
+   </body>
+</html>

@@ -1,0 +1,1744 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html id="section.POD" xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+   <head>
+      <title>Section POD Polar Decomposition</title>
+      <link rel="stylesheet" type="text/css" href="../css/fcla-xml-2.99.css"/>
+      <link rel="stylesheet" type="text/css" href="../css/edupub.css"/>
+   </head>
+   <body epub:type="bodymatter" id="x110-448000doc">
+      <h1 class="likesectionHead" id="x110-448000">Section POD  Polar Decomposition</h1>
+      <p id="dx110-448001">
+         <span class="cmcsc-10x-x-144">T 
+            <span class="small-caps">h</span>
+            <span class="small-caps">i</span>
+            <span class="small-caps">s</span> S 
+            <span class="small-caps">e</span>
+            <span class="small-caps">c</span>
+            <span class="small-caps">t</span>
+            <span class="small-caps">i</span>
+            <span class="small-caps">o</span>
+            <span class="small-caps">n</span>
+            <span class="small-caps">i</span>
+            <span class="small-caps">s</span>
+            <span class="small-caps">a</span> D 
+            <span class="small-caps">r</span>
+            <span class="small-caps">a</span>
+            <span class="small-caps">f</span>
+            <span class="small-caps">t</span>, S 
+            <span class="small-caps">u</span>
+            <span class="small-caps">b</span>
+            <span class="small-caps">j</span>
+            <span class="small-caps">e</span>
+            <span class="small-caps">c</span>
+            <span class="small-caps">t</span>
+            <span class="small-caps">t</span>
+            <span class="small-caps">o</span> C 
+            <span class="small-caps">h</span>
+            <span class="small-caps">a</span>
+            <span class="small-caps">n</span>
+            <span class="small-caps">g</span>
+            <span class="small-caps">e</span>
+            <span class="small-caps">s</span>
+         </span>
+         <span class="cmcsc-10x-x-144">N 
+            <span class="small-caps">e</span>
+            <span class="small-caps">e</span>
+            <span class="small-caps">d</span>
+            <span class="small-caps">s</span> N 
+            <span class="small-caps">u</span>
+            <span class="small-caps">m</span>
+            <span class="small-caps">e</span>
+            <span class="small-caps">r</span>
+            <span class="small-caps">i</span>
+            <span class="small-caps">c</span>
+            <span class="small-caps">a</span>
+            <span class="small-caps">l</span> E 
+            <span class="small-caps">x</span>
+            <span class="small-caps">a</span>
+            <span class="small-caps">m</span>
+            <span class="small-caps">p</span>
+            <span class="small-caps">l</span>
+            <span class="small-caps">e</span>
+            <span class="small-caps">s</span>
+         </span>
+      </p>
+      <p> The polar decomposition of a matrix writes any matrix as the product of a unitary matrix ( 
+         <a href="034_Section_MINM_Matrix_Inverses_and_Nonsingular_Matrices.xhtml#definition.UM">Definition UM</a>)and a positive semi-definite matrix ( 
+         <a href="104_Section_PSM_Positive_Semi-definite_Matrices.xhtml#definition.PSM">Definition PSM</a>). It takes its name from a special way to write complex numbers. If you’ve had a basic course in complex analysis, the next paragraph will help explain the name. If the next paragraph makes no sense to you, there’s no harm in skipping it. 
+      </p>
+      <p> Any complex number 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>z</mi>
+            <mo class="MathClass-rel">∈</mo>
+            <mi>ℂ</mi>
+         </math> can be written as 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>z</mi>
+            <mo class="MathClass-rel">=</mo>
+            <mi>r</mi>
+            <msup>
+               <mrow>
+                  <mi>e</mi>
+               </mrow>
+               <mrow>
+                  <mi>i</mi>
+                  <mi>θ</mi>
+               </mrow>
+            </msup>
+         </math> where 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>r</mi>
+         </math> is a positive number (computed as a square root of a function of the real amd imaginary parts of 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>z</mi>
+         </math>) and 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>θ</mi>
+         </math> is an angle of rotation that converts 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mn>1</mn>
+         </math> to the complex number 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <msup>
+               <mrow>
+                  <mi>e</mi>
+               </mrow>
+               <mrow>
+                  <mi>i</mi>
+                  <mi>θ</mi>
+               </mrow>
+            </msup>
+            <mo class="MathClass-rel">=</mo>
+            <mo class="qopname"> cos</mo>
+            <mrow>
+               <mo class="MathClass-open">(</mo>
+               <mrow>
+                  <mi>θ</mi>
+               </mrow>
+               <mo class="MathClass-close">)</mo>
+            </mrow>
+            <mo class="MathClass-bin">+</mo>
+            <mi>i</mi>
+            <mo class="qopname"> sin</mo>
+            <mrow>
+               <mo class="MathClass-open">(</mo>
+               <mrow>
+                  <mi>θ</mi>
+               </mrow>
+               <mo class="MathClass-close">)</mo>
+            </mrow>
+         </math>. The polar form of a square matrix is a product of a positive semi-definite matrix that is a square root of a function of the matrix together with a unitary matrix, which can be viewed as achieving a rotation ( 
+         <a href="034_Section_MINM_Matrix_Inverses_and_Nonsingular_Matrices.xhtml#theorem.UMPIP">Theorem UMPIP</a>). 
+      </p>
+      <p> OK, enough preliminaries. We have all the tools in place to jump straight to our main theorem. </p>
+      <p>
+         <span class="cmbx-12">Theorem</span>
+         <span class="cmbx-12"> PDM</span>
+         <br/>
+         <a id="theorem.PDM">
+            <span class="cmbx-12">Polar Decomposition of a Matrix</span>
+         </a>
+         <span id="dx110-448002"/>
+         <span id="dx110-448003"/>
+         <span id="dx110-448004"/>
+         <br/> Suppose that 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>A</mi>
+         </math> is a square matrix. Then there is a unitary matrix 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>U</mi>
+         </math> such that 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>A</mi>
+            <mo class="MathClass-rel">=</mo>
+            <msup>
+               <mrow>
+                  <mfenced separators="" open="(" close=")">
+                     <mrow>
+                        <mi>A</mi>
+                        <msup>
+                           <mrow>
+                              <mi>A</mi>
+                           </mrow>
+                           <mrow>
+                              <mo class="MathClass-bin">∗</mo>
+                           </mrow>
+                        </msup>
+                     </mrow>
+                  </mfenced>
+               </mrow>
+               <mrow>
+                  <mn>1</mn>
+                  <mo class="MathClass-bin">∕</mo>
+                  <mn>2</mn>
+               </mrow>
+            </msup>
+            <mi>U</mi>
+         </math>. 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mo class="MathClass-ord">□</mo>
+         </math>
+      </p>
+      <p>
+         <span class="cmbx-12">Proof</span>   This theorem only claims the existence of a unitary matrix 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>U</mi>
+         </math> that does a certain job. We will manufacture 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>U</mi>
+         </math> and check that it meets the requirements. 
+      </p>
+      <p> Suppose 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>A</mi>
+         </math> has size 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>n</mi>
+         </math> and rank 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>r</mi>
+         </math>. We begin by applying 
+         <a href="108_Section_SVD_Singular_Value_Decomposition.xhtml#theorem.EEMAP">Theorem EEMAP</a> to 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>A</mi>
+         </math>. Let 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>B</mi>
+            <mo class="MathClass-rel">=</mo>
+            <mfenced separators="" open="{" close="}">
+               <mrow>
+                  <msub>
+                     <mrow>
+                        <mi>x</mi>
+                     </mrow>
+                     <mrow>
+                        <mn>1</mn>
+                     </mrow>
+                  </msub>
+                  <mo class="MathClass-punc">,</mo>
+                  <mspace width="0.3em" class="thinspace"/>
+                  <msub>
+                     <mrow>
+                        <mi>x</mi>
+                     </mrow>
+                     <mrow>
+                        <mn>2</mn>
+                     </mrow>
+                  </msub>
+                  <mo class="MathClass-punc">,</mo>
+                  <mspace width="0.3em" class="thinspace"/>
+                  <msub>
+                     <mrow>
+                        <mi>x</mi>
+                     </mrow>
+                     <mrow>
+                        <mn>3</mn>
+                     </mrow>
+                  </msub>
+                  <mo class="MathClass-punc">,</mo>
+                  <mspace width="0.3em" class="thinspace"/>
+                  <mo class="MathClass-op">…</mo>
+                  <mo class="MathClass-punc">,</mo>
+                  <mspace width="0.3em" class="thinspace"/>
+                  <msub>
+                     <mrow>
+                        <mi>x</mi>
+                     </mrow>
+                     <mrow>
+                        <mi>n</mi>
+                     </mrow>
+                  </msub>
+               </mrow>
+            </mfenced>
+         </math> be the orthonormal basis of 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <msup>
+               <mrow>
+                  <mi>ℂ</mi>
+               </mrow>
+               <mrow>
+                  <mi>n</mi>
+               </mrow>
+            </msup>
+         </math> composed of eigenvectors for 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <msup>
+               <mrow>
+                  <mi>A</mi>
+               </mrow>
+               <mrow>
+                  <mo class="MathClass-bin">∗</mo>
+               </mrow>
+            </msup>
+            <mi>A</mi>
+         </math>, and let 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>C</mi>
+            <mo class="MathClass-rel">=</mo>
+            <mfenced separators="" open="{" close="}">
+               <mrow>
+                  <msub>
+                     <mrow>
+                        <mi>y</mi>
+                     </mrow>
+                     <mrow>
+                        <mn>1</mn>
+                     </mrow>
+                  </msub>
+                  <mo class="MathClass-punc">,</mo>
+                  <mspace width="0.3em" class="thinspace"/>
+                  <msub>
+                     <mrow>
+                        <mi>y</mi>
+                     </mrow>
+                     <mrow>
+                        <mn>2</mn>
+                     </mrow>
+                  </msub>
+                  <mo class="MathClass-punc">,</mo>
+                  <mspace width="0.3em" class="thinspace"/>
+                  <msub>
+                     <mrow>
+                        <mi>y</mi>
+                     </mrow>
+                     <mrow>
+                        <mn>3</mn>
+                     </mrow>
+                  </msub>
+                  <mo class="MathClass-punc">,</mo>
+                  <mspace width="0.3em" class="thinspace"/>
+                  <mo class="MathClass-op">…</mo>
+                  <mo class="MathClass-punc">,</mo>
+                  <mspace width="0.3em" class="thinspace"/>
+                  <msub>
+                     <mrow>
+                        <mi>y</mi>
+                     </mrow>
+                     <mrow>
+                        <mi>n</mi>
+                     </mrow>
+                  </msub>
+               </mrow>
+            </mfenced>
+         </math> be the orthonormal basis of 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <msup>
+               <mrow>
+                  <mi>ℂ</mi>
+               </mrow>
+               <mrow>
+                  <mi>n</mi>
+               </mrow>
+            </msup>
+         </math> composed of eigenvectors for 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>A</mi>
+            <msup>
+               <mrow>
+                  <mi>A</mi>
+               </mrow>
+               <mrow>
+                  <mo class="MathClass-bin">∗</mo>
+               </mrow>
+            </msup>
+         </math>. We have 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>A</mi>
+            <msub>
+               <mrow>
+                  <mi>x</mi>
+               </mrow>
+               <mrow>
+                  <mi>i</mi>
+               </mrow>
+            </msub>
+            <mo class="MathClass-rel">=</mo>
+            <msqrt>
+               <mrow>
+                  <msub>
+                     <mrow>
+                        <mi>δ</mi>
+                     </mrow>
+                     <mrow>
+                        <mi>i</mi>
+                     </mrow>
+                  </msub>
+               </mrow>
+            </msqrt>
+            <msub>
+               <mrow>
+                  <mi>x</mi>
+               </mrow>
+               <mrow>
+                  <mi>i</mi>
+               </mrow>
+            </msub>
+         </math>, 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mn>1</mn>
+            <mo class="MathClass-rel">≤</mo>
+            <mi>i</mi>
+            <mo class="MathClass-rel">≤</mo>
+            <mi>r</mi>
+         </math>, and 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>A</mi>
+            <msub>
+               <mrow>
+                  <mi>x</mi>
+               </mrow>
+               <mrow>
+                  <mi>i</mi>
+               </mrow>
+            </msub>
+            <mo class="MathClass-rel">=</mo>
+            <mn>0</mn>
+         </math>, 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>r</mi>
+            <mo class="MathClass-bin">+</mo>
+            <mn>1</mn>
+            <mo class="MathClass-rel">≤</mo>
+            <mi>i</mi>
+            <mo class="MathClass-rel">≤</mo>
+            <mi>n</mi>
+         </math>, where 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <msub>
+               <mrow>
+                  <mi>δ</mi>
+               </mrow>
+               <mrow>
+                  <mi>i</mi>
+               </mrow>
+            </msub>
+         </math>, 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mn>1</mn>
+            <mo class="MathClass-rel">≤</mo>
+            <mi>i</mi>
+            <mo class="MathClass-rel">≤</mo>
+            <mi>r</mi>
+         </math> are the distinct nonzero eigenvalues of 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <msup>
+               <mrow>
+                  <mi>A</mi>
+               </mrow>
+               <mrow>
+                  <mo class="MathClass-bin">∗</mo>
+               </mrow>
+            </msup>
+            <mi>A</mi>
+         </math>. 
+      </p>
+      <p> Define 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>T</mi>
+            <mo class="MathClass-punc">:</mo>
+            <msup>
+               <mrow>
+                  <mi>ℂ</mi>
+               </mrow>
+               <mrow>
+                  <mi>n</mi>
+               </mrow>
+            </msup>
+            <mo class="MathClass-rel">→</mo>
+            <msup>
+               <mrow>
+                  <mi>ℂ</mi>
+               </mrow>
+               <mrow>
+                  <mi>n</mi>
+               </mrow>
+            </msup>
+         </math> to be the unique linear transformation such that 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>T</mi>
+            <mfenced separators="" open="(" close=")">
+               <mrow>
+                  <msub>
+                     <mrow>
+                        <mi>x</mi>
+                     </mrow>
+                     <mrow>
+                        <mi>i</mi>
+                     </mrow>
+                  </msub>
+               </mrow>
+            </mfenced>
+            <mo class="MathClass-rel">=</mo>
+            <msub>
+               <mrow>
+                  <mi>y</mi>
+               </mrow>
+               <mrow>
+                  <mi>i</mi>
+               </mrow>
+            </msub>
+         </math>, 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mn>1</mn>
+            <mo class="MathClass-rel">≤</mo>
+            <mi>i</mi>
+            <mo class="MathClass-rel">≤</mo>
+            <mi>n</mi>
+         </math>, as guaranteed by 
+         <a href="052_Section_LT_Linear_Transformations.xhtml#theorem.LTDB">Theorem LTDB</a>. Let 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>E</mi>
+         </math> be the basis of standard unit vectors for 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <msup>
+               <mrow>
+                  <mi>ℂ</mi>
+               </mrow>
+               <mrow>
+                  <mi>n</mi>
+               </mrow>
+            </msup>
+         </math> ( 
+         <a href="029_Section_O_Orthogonality.xhtml#definition.SUV">Definition SUV</a>), and define 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>U</mi>
+         </math> to be the matrix representation ( 
+         <a href="058_Section_MR_Matrix_Representations.xhtml#definition.MR">Definition MR</a>) of 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>T</mi>
+         </math> with respect to 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>E</mi>
+         </math>, more carefully 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>U</mi>
+            <mo class="MathClass-rel">=</mo>
+            <msubsup>
+               <mrow>
+                  <mi>M</mi>
+               </mrow>
+               <mrow>
+                  <mi>E</mi>
+                  <mo class="MathClass-punc">,</mo>
+                  <mi>E</mi>
+               </mrow>
+               <mrow>
+                  <mi>T</mi>
+               </mrow>
+            </msubsup>
+         </math>. This is the matrix we are after. Notice that 
+      </p>
+      <math alttext="Alternative text not available" display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+         <mtable columnalign="left" class="align-star">
+            <mtr>
+               <mtd columnalign="right" class="align-odd">
+                  <mi>U</mi>
+                  <msub>
+                     <mrow>
+                        <mi>x</mi>
+                     </mrow>
+                     <mrow>
+                        <mi>i</mi>
+                     </mrow>
+                  </msub>
+               </mtd>
+               <mtd class="align-even">
+                  <mo class="MathClass-rel">=</mo>
+                  <msubsup>
+                     <mrow>
+                        <mi>M</mi>
+                     </mrow>
+                     <mrow>
+                        <mi>E</mi>
+                        <mo class="MathClass-punc">,</mo>
+                        <mi>E</mi>
+                     </mrow>
+                     <mrow>
+                        <mi>T</mi>
+                     </mrow>
+                  </msubsup>
+                  <msub>
+                     <mrow>
+                        <mi>ρ</mi>
+                     </mrow>
+                     <mrow>
+                        <mi>E</mi>
+                     </mrow>
+                  </msub>
+                  <mfenced separators="" open="(" close=")">
+                     <mrow>
+                        <msub>
+                           <mrow>
+                              <mi>x</mi>
+                           </mrow>
+                           <mrow>
+                              <mi>i</mi>
+                           </mrow>
+                        </msub>
+                     </mrow>
+                  </mfenced>
+                  <mspace width="2em"/>
+               </mtd>
+               <mtd columnalign="right" class="align-odd"/>
+               <mtd class="align-even">
+                  <mtext> </mtext>
+                  <mtext xlink:type="simple" xlink:href="057_Section_VR_Vector_Representations.xhtml#definition.VR" class="label" xmlns:xlink="http://www.w3.org/1999/xlink">Definition VR</mtext>
+                  <mtext class="endlabel"/>
+                  <mspace width="2em"/>
+               </mtd>
+               <mtd columnalign="right" class="align-label"/>
+               <mtd class="align-label">
+                  <mspace width="2em"/>
+               </mtd>
+               <mtd columnalign="right" class="align-label"/>
+               <mtd class="align-label">
+                  <mspace width="2em"/>
+               </mtd>
+            </mtr>
+            <mtr>
+               <mtd columnalign="right" class="align-odd"/>
+               <mtd class="align-even">
+                  <mo class="MathClass-rel">=</mo>
+                  <msub>
+                     <mrow>
+                        <mi>ρ</mi>
+                     </mrow>
+                     <mrow>
+                        <mi>E</mi>
+                     </mrow>
+                  </msub>
+                  <mfenced separators="" open="(" close=")">
+                     <mrow>
+                        <mi>T</mi>
+                        <mfenced separators="" open="(" close=")">
+                           <mrow>
+                              <msub>
+                                 <mrow>
+                                    <mi>x</mi>
+                                 </mrow>
+                                 <mrow>
+                                    <mi>i</mi>
+                                 </mrow>
+                              </msub>
+                           </mrow>
+                        </mfenced>
+                     </mrow>
+                  </mfenced>
+                  <mspace width="2em"/>
+               </mtd>
+               <mtd columnalign="right" class="align-odd"/>
+               <mtd class="align-even">
+                  <mtext> </mtext>
+                  <mtext xlink:type="simple" xlink:href="058_Section_MR_Matrix_Representations.xhtml#theorem.FTMR" class="label" xmlns:xlink="http://www.w3.org/1999/xlink">Theorem FTMR</mtext>
+                  <mtext class="endlabel"/>
+                  <mspace width="2em"/>
+               </mtd>
+               <mtd columnalign="right" class="align-label"/>
+               <mtd class="align-label">
+                  <mspace width="2em"/>
+               </mtd>
+               <mtd columnalign="right" class="align-label"/>
+               <mtd class="align-label">
+                  <mspace width="2em"/>
+               </mtd>
+            </mtr>
+            <mtr>
+               <mtd columnalign="right" class="align-odd"/>
+               <mtd class="align-even">
+                  <mo class="MathClass-rel">=</mo>
+                  <msub>
+                     <mrow>
+                        <mi>ρ</mi>
+                     </mrow>
+                     <mrow>
+                        <mi>E</mi>
+                     </mrow>
+                  </msub>
+                  <mfenced separators="" open="(" close=")">
+                     <mrow>
+                        <msub>
+                           <mrow>
+                              <mi>y</mi>
+                           </mrow>
+                           <mrow>
+                              <mi>i</mi>
+                           </mrow>
+                        </msub>
+                     </mrow>
+                  </mfenced>
+                  <mspace width="2em"/>
+               </mtd>
+               <mtd columnalign="right" class="align-odd"/>
+               <mtd class="align-even">
+                  <mtext> </mtext>
+                  <mtext xlink:type="simple" xlink:href="058_Section_MR_Matrix_Representations.xhtml#theorem.FTMR" class="label" xmlns:xlink="http://www.w3.org/1999/xlink">Theorem FTMR</mtext>
+                  <mtext class="endlabel"/>
+                  <mspace width="2em"/>
+               </mtd>
+               <mtd columnalign="right" class="align-label"/>
+               <mtd class="align-label">
+                  <mspace width="2em"/>
+               </mtd>
+               <mtd columnalign="right" class="align-label"/>
+               <mtd class="align-label">
+                  <mspace width="2em"/>
+               </mtd>
+            </mtr>
+            <mtr>
+               <mtd columnalign="right" class="align-odd"/>
+               <mtd class="align-even">
+                  <mo class="MathClass-rel">=</mo>
+                  <msub>
+                     <mrow>
+                        <mi>y</mi>
+                     </mrow>
+                     <mrow>
+                        <mi>i</mi>
+                     </mrow>
+                  </msub>
+                  <mspace width="2em"/>
+               </mtd>
+               <mtd columnalign="right" class="align-odd"/>
+               <mtd class="align-even">
+                  <mtext> </mtext>
+                  <mtext xlink:type="simple" xlink:href="057_Section_VR_Vector_Representations.xhtml#definition.VR" class="label" xmlns:xlink="http://www.w3.org/1999/xlink">Definition VR</mtext>
+                  <mtext class="endlabel"/>
+                  <mspace width="2em"/>
+               </mtd>
+               <mtd columnalign="right" class="align-label"/>
+               <mtd class="align-label">
+                  <mspace width="2em"/>
+               </mtd>
+               <mtd columnalign="right" class="align-label"/>
+               <mtd class="align-label">
+                  <mspace width="2em"/>
+               </mtd>
+            </mtr>
+         </mtable>
+      </math>
+      <p>Since 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>B</mi>
+         </math> and 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>C</mi>
+         </math> are orthonormal bases, and 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>C</mi>
+         </math> is the result of multiplying the vectors of 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>B</mi>
+         </math> by 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>U</mi>
+         </math>, we conclude that 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>U</mi>
+         </math> is unitary by 
+         <a href="041_Section_B_Bases.xhtml#theorem.UMCOB">Theorem UMCOB</a>. So once again, 
+         <a href="108_Section_SVD_Singular_Value_Decomposition.xhtml#theorem.EEMAP">Theorem EEMAP</a> is a big part of the setup for a decomposition. 
+      </p>
+      <p> Let 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>x</mi>
+            <mo class="MathClass-rel">∈</mo>
+            <msup>
+               <mrow>
+                  <mi>ℂ</mi>
+               </mrow>
+               <mrow>
+                  <mi>n</mi>
+               </mrow>
+            </msup>
+         </math> be any vector. Since 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>B</mi>
+         </math> is a basis of 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <msup>
+               <mrow>
+                  <mi>ℂ</mi>
+               </mrow>
+               <mrow>
+                  <mi>n</mi>
+               </mrow>
+            </msup>
+         </math>, there are scalars 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <msub>
+               <mrow>
+                  <mi>a</mi>
+               </mrow>
+               <mrow>
+                  <mn>1</mn>
+               </mrow>
+            </msub>
+            <mo class="MathClass-punc">,</mo>
+            <mspace width="0.3em" class="thinspace"/>
+            <msub>
+               <mrow>
+                  <mi>a</mi>
+               </mrow>
+               <mrow>
+                  <mn>2</mn>
+               </mrow>
+            </msub>
+            <mo class="MathClass-punc">,</mo>
+            <mspace width="0.3em" class="thinspace"/>
+            <msub>
+               <mrow>
+                  <mi>a</mi>
+               </mrow>
+               <mrow>
+                  <mn>3</mn>
+               </mrow>
+            </msub>
+            <mo class="MathClass-punc">,</mo>
+            <mspace width="0.3em" class="thinspace"/>
+            <mo class="MathClass-op">…</mo>
+            <mo class="MathClass-punc">,</mo>
+            <mspace width="0.3em" class="thinspace"/>
+            <msub>
+               <mrow>
+                  <mi>a</mi>
+               </mrow>
+               <mrow>
+                  <mi>n</mi>
+               </mrow>
+            </msub>
+         </math> expressing 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>x</mi>
+         </math> as a linear combination of the vectors in 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>B</mi>
+         </math>. then 
+      </p>
+      <math alttext="Alternative text not available" display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+         <mtable columnalign="left" class="align-star">
+            <mtr>
+               <mtd columnalign="right" class="align-odd">
+                  <msup>
+                     <mrow>
+                        <mfenced separators="" open="(" close=")">
+                           <mrow>
+                              <mi>A</mi>
+                              <msup>
+                                 <mrow>
+                                    <mi>A</mi>
+                                 </mrow>
+                                 <mrow>
+                                    <mo class="MathClass-bin">∗</mo>
+                                 </mrow>
+                              </msup>
+                           </mrow>
+                        </mfenced>
+                     </mrow>
+                     <mrow>
+                        <mn>1</mn>
+                        <mo class="MathClass-bin">∕</mo>
+                        <mn>2</mn>
+                     </mrow>
+                  </msup>
+                  <mi>U</mi>
+                  <mi>x</mi>
+               </mtd>
+               <mtd class="align-even">
+                  <mo class="MathClass-rel">=</mo>
+                  <msup>
+                     <mrow>
+                        <mfenced separators="" open="(" close=")">
+                           <mrow>
+                              <mi>A</mi>
+                              <msup>
+                                 <mrow>
+                                    <mi>A</mi>
+                                 </mrow>
+                                 <mrow>
+                                    <mo class="MathClass-bin">∗</mo>
+                                 </mrow>
+                              </msup>
+                           </mrow>
+                        </mfenced>
+                     </mrow>
+                     <mrow>
+                        <mn>1</mn>
+                        <mo class="MathClass-bin">∕</mo>
+                        <mn>2</mn>
+                     </mrow>
+                  </msup>
+                  <mi>U</mi>
+                  <munderover accentunder="false" accent="false">
+                     <mrow>
+                        <mo mathsize="big">∑</mo>
+                     </mrow>
+                     <mrow>
+                        <mi>i</mi>
+                        <mo class="MathClass-rel">=</mo>
+                        <mn>1</mn>
+                     </mrow>
+                     <mrow>
+                        <mi>n</mi>
+                     </mrow>
+                  </munderover>
+                  <msub>
+                     <mrow>
+                        <mi>a</mi>
+                     </mrow>
+                     <mrow>
+                        <mi>i</mi>
+                     </mrow>
+                  </msub>
+                  <msub>
+                     <mrow>
+                        <mi>x</mi>
+                     </mrow>
+                     <mrow>
+                        <mi>i</mi>
+                     </mrow>
+                  </msub>
+                  <mspace width="2em"/>
+               </mtd>
+               <mtd columnalign="right" class="align-odd"/>
+               <mtd class="align-even">
+                  <mtext> </mtext>
+                  <mtext xlink:type="simple" xlink:href="041_Section_B_Bases.xhtml#definition.B" class="label" xmlns:xlink="http://www.w3.org/1999/xlink">Definition B</mtext>
+                  <mtext class="endlabel"/>
+                  <mspace width="2em"/>
+               </mtd>
+               <mtd columnalign="right" class="align-label"/>
+               <mtd class="align-label">
+                  <mspace width="2em"/>
+               </mtd>
+               <mtd columnalign="right" class="align-label"/>
+               <mtd class="align-label">
+                  <mspace width="2em"/>
+               </mtd>
+            </mtr>
+            <mtr>
+               <mtd columnalign="right" class="align-odd"/>
+               <mtd class="align-even">
+                  <mo class="MathClass-rel">=</mo>
+                  <munderover accentunder="false" accent="false">
+                     <mrow>
+                        <mo mathsize="big"> ∑</mo>
+                     </mrow>
+                     <mrow>
+                        <mi>i</mi>
+                        <mo class="MathClass-rel">=</mo>
+                        <mn>1</mn>
+                     </mrow>
+                     <mrow>
+                        <mi>n</mi>
+                     </mrow>
+                  </munderover>
+                  <msup>
+                     <mrow>
+                        <mfenced separators="" open="(" close=")">
+                           <mrow>
+                              <mi>A</mi>
+                              <msup>
+                                 <mrow>
+                                    <mi>A</mi>
+                                 </mrow>
+                                 <mrow>
+                                    <mo class="MathClass-bin">∗</mo>
+                                 </mrow>
+                              </msup>
+                           </mrow>
+                        </mfenced>
+                     </mrow>
+                     <mrow>
+                        <mn>1</mn>
+                        <mo class="MathClass-bin">∕</mo>
+                        <mn>2</mn>
+                     </mrow>
+                  </msup>
+                  <mi>U</mi>
+                  <msub>
+                     <mrow>
+                        <mi>a</mi>
+                     </mrow>
+                     <mrow>
+                        <mi>i</mi>
+                     </mrow>
+                  </msub>
+                  <msub>
+                     <mrow>
+                        <mi>x</mi>
+                     </mrow>
+                     <mrow>
+                        <mi>i</mi>
+                     </mrow>
+                  </msub>
+                  <mspace width="2em"/>
+               </mtd>
+               <mtd columnalign="right" class="align-odd"/>
+               <mtd class="align-even">
+                  <mtext> </mtext>
+                  <mtext xlink:type="simple" xlink:href="032_Section_MM_Matrix_Multiplication.xhtml#theorem.MMDAA" class="label" xmlns:xlink="http://www.w3.org/1999/xlink">Theorem MMDAA</mtext>
+                  <mtext class="endlabel"/>
+                  <mspace width="2em"/>
+               </mtd>
+               <mtd columnalign="right" class="align-label"/>
+               <mtd class="align-label">
+                  <mspace width="2em"/>
+               </mtd>
+               <mtd columnalign="right" class="align-label"/>
+               <mtd class="align-label">
+                  <mspace width="2em"/>
+               </mtd>
+            </mtr>
+            <mtr>
+               <mtd columnalign="right" class="align-odd"/>
+               <mtd class="align-even">
+                  <mo class="MathClass-rel">=</mo>
+                  <munderover accentunder="false" accent="false">
+                     <mrow>
+                        <mo mathsize="big"> ∑</mo>
+                     </mrow>
+                     <mrow>
+                        <mi>i</mi>
+                        <mo class="MathClass-rel">=</mo>
+                        <mn>1</mn>
+                     </mrow>
+                     <mrow>
+                        <mi>n</mi>
+                     </mrow>
+                  </munderover>
+                  <msub>
+                     <mrow>
+                        <mi>a</mi>
+                     </mrow>
+                     <mrow>
+                        <mi>i</mi>
+                     </mrow>
+                  </msub>
+                  <msup>
+                     <mrow>
+                        <mfenced separators="" open="(" close=")">
+                           <mrow>
+                              <mi>A</mi>
+                              <msup>
+                                 <mrow>
+                                    <mi>A</mi>
+                                 </mrow>
+                                 <mrow>
+                                    <mo class="MathClass-bin">∗</mo>
+                                 </mrow>
+                              </msup>
+                           </mrow>
+                        </mfenced>
+                     </mrow>
+                     <mrow>
+                        <mn>1</mn>
+                        <mo class="MathClass-bin">∕</mo>
+                        <mn>2</mn>
+                     </mrow>
+                  </msup>
+                  <mi>U</mi>
+                  <msub>
+                     <mrow>
+                        <mi>x</mi>
+                     </mrow>
+                     <mrow>
+                        <mi>i</mi>
+                     </mrow>
+                  </msub>
+                  <mspace width="2em"/>
+               </mtd>
+               <mtd columnalign="right" class="align-odd"/>
+               <mtd class="align-even">
+                  <mtext> </mtext>
+                  <mtext xlink:type="simple" xlink:href="032_Section_MM_Matrix_Multiplication.xhtml#theorem.MMSMM" class="label" xmlns:xlink="http://www.w3.org/1999/xlink">Theorem MMSMM</mtext>
+                  <mtext class="endlabel"/>
+                  <mspace width="2em"/>
+               </mtd>
+               <mtd columnalign="right" class="align-label"/>
+               <mtd class="align-label">
+                  <mspace width="2em"/>
+               </mtd>
+               <mtd columnalign="right" class="align-label"/>
+               <mtd class="align-label">
+                  <mspace width="2em"/>
+               </mtd>
+            </mtr>
+            <mtr>
+               <mtd columnalign="right" class="align-odd"/>
+               <mtd class="align-even">
+                  <mo class="MathClass-rel">=</mo>
+                  <munderover accentunder="false" accent="false">
+                     <mrow>
+                        <mo mathsize="big"> ∑</mo>
+                     </mrow>
+                     <mrow>
+                        <mi>i</mi>
+                        <mo class="MathClass-rel">=</mo>
+                        <mn>1</mn>
+                     </mrow>
+                     <mrow>
+                        <mi>n</mi>
+                     </mrow>
+                  </munderover>
+                  <msub>
+                     <mrow>
+                        <mi>a</mi>
+                     </mrow>
+                     <mrow>
+                        <mi>i</mi>
+                     </mrow>
+                  </msub>
+                  <msup>
+                     <mrow>
+                        <mfenced separators="" open="(" close=")">
+                           <mrow>
+                              <mi>A</mi>
+                              <msup>
+                                 <mrow>
+                                    <mi>A</mi>
+                                 </mrow>
+                                 <mrow>
+                                    <mo class="MathClass-bin">∗</mo>
+                                 </mrow>
+                              </msup>
+                           </mrow>
+                        </mfenced>
+                     </mrow>
+                     <mrow>
+                        <mn>1</mn>
+                        <mo class="MathClass-bin">∕</mo>
+                        <mn>2</mn>
+                     </mrow>
+                  </msup>
+                  <msub>
+                     <mrow>
+                        <mi>y</mi>
+                     </mrow>
+                     <mrow>
+                        <mi>i</mi>
+                     </mrow>
+                  </msub>
+                  <mspace width="2em"/>
+               </mtd>
+               <mtd columnalign="right" class="align-odd"/>
+               <mtd class="align-even">
+                  <mspace width="2em"/>
+               </mtd>
+               <mtd columnalign="right" class="align-label"/>
+               <mtd class="align-label">
+                  <mspace width="2em"/>
+               </mtd>
+            </mtr>
+            <mtr>
+               <mtd columnalign="right" class="align-odd"/>
+               <mtd class="align-even">
+                  <mo class="MathClass-rel">=</mo>
+                  <munderover accentunder="false" accent="false">
+                     <mrow>
+                        <mo mathsize="big"> ∑</mo>
+                     </mrow>
+                     <mrow>
+                        <mi>i</mi>
+                        <mo class="MathClass-rel">=</mo>
+                        <mn>1</mn>
+                     </mrow>
+                     <mrow>
+                        <mi>r</mi>
+                     </mrow>
+                  </munderover>
+                  <msub>
+                     <mrow>
+                        <mi>a</mi>
+                     </mrow>
+                     <mrow>
+                        <mi>i</mi>
+                     </mrow>
+                  </msub>
+                  <msup>
+                     <mrow>
+                        <mfenced separators="" open="(" close=")">
+                           <mrow>
+                              <mi>A</mi>
+                              <msup>
+                                 <mrow>
+                                    <mi>A</mi>
+                                 </mrow>
+                                 <mrow>
+                                    <mo class="MathClass-bin">∗</mo>
+                                 </mrow>
+                              </msup>
+                           </mrow>
+                        </mfenced>
+                     </mrow>
+                     <mrow>
+                        <mn>1</mn>
+                        <mo class="MathClass-bin">∕</mo>
+                        <mn>2</mn>
+                     </mrow>
+                  </msup>
+                  <msub>
+                     <mrow>
+                        <mi>y</mi>
+                     </mrow>
+                     <mrow>
+                        <mi>i</mi>
+                     </mrow>
+                  </msub>
+                  <mo class="MathClass-bin">+</mo>
+                  <munderover accentunder="false" accent="false">
+                     <mrow>
+                        <mo mathsize="big"> ∑</mo>
+                     </mrow>
+                     <mrow>
+                        <mi>i</mi>
+                        <mo class="MathClass-rel">=</mo>
+                        <mi>r</mi>
+                        <mo class="MathClass-bin">+</mo>
+                        <mn>1</mn>
+                     </mrow>
+                     <mrow>
+                        <mi>n</mi>
+                     </mrow>
+                  </munderover>
+                  <msub>
+                     <mrow>
+                        <mi>a</mi>
+                     </mrow>
+                     <mrow>
+                        <mi>i</mi>
+                     </mrow>
+                  </msub>
+                  <msup>
+                     <mrow>
+                        <mfenced separators="" open="(" close=")">
+                           <mrow>
+                              <mi>A</mi>
+                              <msup>
+                                 <mrow>
+                                    <mi>A</mi>
+                                 </mrow>
+                                 <mrow>
+                                    <mo class="MathClass-bin">∗</mo>
+                                 </mrow>
+                              </msup>
+                           </mrow>
+                        </mfenced>
+                     </mrow>
+                     <mrow>
+                        <mn>1</mn>
+                        <mo class="MathClass-bin">∕</mo>
+                        <mn>2</mn>
+                     </mrow>
+                  </msup>
+                  <msub>
+                     <mrow>
+                        <mi>y</mi>
+                     </mrow>
+                     <mrow>
+                        <mi>i</mi>
+                     </mrow>
+                  </msub>
+                  <mspace width="2em"/>
+               </mtd>
+               <mtd columnalign="right" class="align-odd"/>
+               <mtd class="align-even">
+                  <mtext> </mtext>
+                  <mtext xlink:type="simple" xlink:href="024_Section_VO_Vector_Operations.xhtml#property.AAC" class="label" xmlns:xlink="http://www.w3.org/1999/xlink">Property AAC</mtext>
+                  <mtext class="endlabel"/>
+                  <mspace width="2em"/>
+               </mtd>
+               <mtd columnalign="right" class="align-label"/>
+               <mtd class="align-label">
+                  <mspace width="2em"/>
+               </mtd>
+               <mtd columnalign="right" class="align-label"/>
+               <mtd class="align-label">
+                  <mspace width="2em"/>
+               </mtd>
+            </mtr>
+            <mtr>
+               <mtd columnalign="right" class="align-odd"/>
+               <mtd class="align-even">
+                  <mo class="MathClass-rel">=</mo>
+                  <munderover accentunder="false" accent="false">
+                     <mrow>
+                        <mo mathsize="big"> ∑</mo>
+                     </mrow>
+                     <mrow>
+                        <mi>i</mi>
+                        <mo class="MathClass-rel">=</mo>
+                        <mn>1</mn>
+                     </mrow>
+                     <mrow>
+                        <mi>r</mi>
+                     </mrow>
+                  </munderover>
+                  <msub>
+                     <mrow>
+                        <mi>a</mi>
+                     </mrow>
+                     <mrow>
+                        <mi>i</mi>
+                     </mrow>
+                  </msub>
+                  <msqrt>
+                     <mrow>
+                        <msub>
+                           <mrow>
+                              <mi>δ</mi>
+                           </mrow>
+                           <mrow>
+                              <mi>i</mi>
+                           </mrow>
+                        </msub>
+                     </mrow>
+                  </msqrt>
+                  <msub>
+                     <mrow>
+                        <mi>y</mi>
+                     </mrow>
+                     <mrow>
+                        <mi>i</mi>
+                     </mrow>
+                  </msub>
+                  <mo class="MathClass-bin">+</mo>
+                  <munderover accentunder="false" accent="false">
+                     <mrow>
+                        <mo mathsize="big"> ∑</mo>
+                     </mrow>
+                     <mrow>
+                        <mi>i</mi>
+                        <mo class="MathClass-rel">=</mo>
+                        <mi>r</mi>
+                        <mo class="MathClass-bin">+</mo>
+                        <mn>1</mn>
+                     </mrow>
+                     <mrow>
+                        <mi>n</mi>
+                     </mrow>
+                  </munderover>
+                  <msub>
+                     <mrow>
+                        <mi>a</mi>
+                     </mrow>
+                     <mrow>
+                        <mi>i</mi>
+                     </mrow>
+                  </msub>
+                  <mrow>
+                     <mo class="MathClass-open">(</mo>
+                     <mrow>
+                        <mn>0</mn>
+                     </mrow>
+                     <mo class="MathClass-close">)</mo>
+                  </mrow>
+                  <msub>
+                     <mrow>
+                        <mi>y</mi>
+                     </mrow>
+                     <mrow>
+                        <mi>i</mi>
+                     </mrow>
+                  </msub>
+                  <mspace width="2em"/>
+               </mtd>
+               <mtd columnalign="right" class="align-odd"/>
+               <mtd class="align-even">
+                  <mtext> </mtext>
+                  <mtext xlink:type="simple" xlink:href="109_Section_SR_Square_Roots.xhtml#theorem.EESR" class="label" xmlns:xlink="http://www.w3.org/1999/xlink">Theorem EESR</mtext>
+                  <mtext class="endlabel"/>
+                  <mspace width="2em"/>
+               </mtd>
+               <mtd columnalign="right" class="align-label"/>
+               <mtd class="align-label">
+                  <mspace width="2em"/>
+               </mtd>
+               <mtd columnalign="right" class="align-label"/>
+               <mtd class="align-label">
+                  <mspace width="2em"/>
+               </mtd>
+            </mtr>
+            <mtr>
+               <mtd columnalign="right" class="align-odd"/>
+               <mtd class="align-even">
+                  <mo class="MathClass-rel">=</mo>
+                  <munderover accentunder="false" accent="false">
+                     <mrow>
+                        <mo mathsize="big"> ∑</mo>
+                     </mrow>
+                     <mrow>
+                        <mi>i</mi>
+                        <mo class="MathClass-rel">=</mo>
+                        <mn>1</mn>
+                     </mrow>
+                     <mrow>
+                        <mi>r</mi>
+                     </mrow>
+                  </munderover>
+                  <msub>
+                     <mrow>
+                        <mi>a</mi>
+                     </mrow>
+                     <mrow>
+                        <mi>i</mi>
+                     </mrow>
+                  </msub>
+                  <msqrt>
+                     <mrow>
+                        <msub>
+                           <mrow>
+                              <mi>δ</mi>
+                           </mrow>
+                           <mrow>
+                              <mi>i</mi>
+                           </mrow>
+                        </msub>
+                     </mrow>
+                  </msqrt>
+                  <msub>
+                     <mrow>
+                        <mi>y</mi>
+                     </mrow>
+                     <mrow>
+                        <mi>i</mi>
+                     </mrow>
+                  </msub>
+                  <mo class="MathClass-bin">+</mo>
+                  <munderover accentunder="false" accent="false">
+                     <mrow>
+                        <mo mathsize="big"> ∑</mo>
+                     </mrow>
+                     <mrow>
+                        <mi>i</mi>
+                        <mo class="MathClass-rel">=</mo>
+                        <mi>r</mi>
+                        <mo class="MathClass-bin">+</mo>
+                        <mn>1</mn>
+                     </mrow>
+                     <mrow>
+                        <mi>n</mi>
+                     </mrow>
+                  </munderover>
+                  <msub>
+                     <mrow>
+                        <mi>a</mi>
+                     </mrow>
+                     <mrow>
+                        <mi>i</mi>
+                     </mrow>
+                  </msub>
+                  <mn>0</mn>
+                  <mspace width="2em"/>
+               </mtd>
+               <mtd columnalign="right" class="align-odd"/>
+               <mtd class="align-even">
+                  <mtext> </mtext>
+                  <mtext xlink:type="simple" xlink:href="038_Section_VS_Vector_Spaces.xhtml#theorem.ZSSM" class="label" xmlns:xlink="http://www.w3.org/1999/xlink">Theorem ZSSM</mtext>
+                  <mtext class="endlabel"/>
+                  <mspace width="2em"/>
+               </mtd>
+               <mtd columnalign="right" class="align-label"/>
+               <mtd class="align-label">
+                  <mspace width="2em"/>
+               </mtd>
+               <mtd columnalign="right" class="align-label"/>
+               <mtd class="align-label">
+                  <mspace width="2em"/>
+               </mtd>
+            </mtr>
+            <mtr>
+               <mtd columnalign="right" class="align-odd"/>
+               <mtd class="align-even">
+                  <mo class="MathClass-rel">=</mo>
+                  <munderover accentunder="false" accent="false">
+                     <mrow>
+                        <mo mathsize="big"> ∑</mo>
+                     </mrow>
+                     <mrow>
+                        <mi>i</mi>
+                        <mo class="MathClass-rel">=</mo>
+                        <mn>1</mn>
+                     </mrow>
+                     <mrow>
+                        <mi>r</mi>
+                     </mrow>
+                  </munderover>
+                  <msub>
+                     <mrow>
+                        <mi>a</mi>
+                     </mrow>
+                     <mrow>
+                        <mi>i</mi>
+                     </mrow>
+                  </msub>
+                  <mi>A</mi>
+                  <msub>
+                     <mrow>
+                        <mi>x</mi>
+                     </mrow>
+                     <mrow>
+                        <mi>i</mi>
+                     </mrow>
+                  </msub>
+                  <mo class="MathClass-bin">+</mo>
+                  <munderover accentunder="false" accent="false">
+                     <mrow>
+                        <mo mathsize="big"> ∑</mo>
+                     </mrow>
+                     <mrow>
+                        <mi>i</mi>
+                        <mo class="MathClass-rel">=</mo>
+                        <mi>r</mi>
+                        <mo class="MathClass-bin">+</mo>
+                        <mn>1</mn>
+                     </mrow>
+                     <mrow>
+                        <mi>n</mi>
+                     </mrow>
+                  </munderover>
+                  <msub>
+                     <mrow>
+                        <mi>a</mi>
+                     </mrow>
+                     <mrow>
+                        <mi>i</mi>
+                     </mrow>
+                  </msub>
+                  <mi>A</mi>
+                  <msub>
+                     <mrow>
+                        <mi>x</mi>
+                     </mrow>
+                     <mrow>
+                        <mi>i</mi>
+                     </mrow>
+                  </msub>
+                  <mspace width="2em"/>
+               </mtd>
+               <mtd columnalign="right" class="align-odd"/>
+               <mtd class="align-even">
+                  <mtext> </mtext>
+                  <mtext xlink:type="simple" xlink:href="108_Section_SVD_Singular_Value_Decomposition.xhtml#theorem.EEMAP" class="label" xmlns:xlink="http://www.w3.org/1999/xlink">Theorem EEMAP</mtext>
+                  <mtext class="endlabel"/>
+                  <mspace width="2em"/>
+               </mtd>
+               <mtd columnalign="right" class="align-label"/>
+               <mtd class="align-label">
+                  <mspace width="2em"/>
+               </mtd>
+               <mtd columnalign="right" class="align-label"/>
+               <mtd class="align-label">
+                  <mspace width="2em"/>
+               </mtd>
+            </mtr>
+            <mtr>
+               <mtd columnalign="right" class="align-odd"/>
+               <mtd class="align-even">
+                  <mo class="MathClass-rel">=</mo>
+                  <munderover accentunder="false" accent="false">
+                     <mrow>
+                        <mo mathsize="big"> ∑</mo>
+                     </mrow>
+                     <mrow>
+                        <mi>i</mi>
+                        <mo class="MathClass-rel">=</mo>
+                        <mn>1</mn>
+                     </mrow>
+                     <mrow>
+                        <mi>n</mi>
+                     </mrow>
+                  </munderover>
+                  <msub>
+                     <mrow>
+                        <mi>a</mi>
+                     </mrow>
+                     <mrow>
+                        <mi>i</mi>
+                     </mrow>
+                  </msub>
+                  <mi>A</mi>
+                  <msub>
+                     <mrow>
+                        <mi>x</mi>
+                     </mrow>
+                     <mrow>
+                        <mi>i</mi>
+                     </mrow>
+                  </msub>
+                  <mspace width="2em"/>
+               </mtd>
+               <mtd columnalign="right" class="align-odd"/>
+               <mtd class="align-even">
+                  <mtext> </mtext>
+                  <mtext xlink:type="simple" xlink:href="024_Section_VO_Vector_Operations.xhtml#property.AAC" class="label" xmlns:xlink="http://www.w3.org/1999/xlink">Property AAC</mtext>
+                  <mtext class="endlabel"/>
+                  <mspace width="2em"/>
+               </mtd>
+               <mtd columnalign="right" class="align-label"/>
+               <mtd class="align-label">
+                  <mspace width="2em"/>
+               </mtd>
+               <mtd columnalign="right" class="align-label"/>
+               <mtd class="align-label">
+                  <mspace width="2em"/>
+               </mtd>
+            </mtr>
+            <mtr>
+               <mtd columnalign="right" class="align-odd"/>
+               <mtd class="align-even">
+                  <mo class="MathClass-rel">=</mo>
+                  <munderover accentunder="false" accent="false">
+                     <mrow>
+                        <mo mathsize="big"> ∑</mo>
+                     </mrow>
+                     <mrow>
+                        <mi>i</mi>
+                        <mo class="MathClass-rel">=</mo>
+                        <mn>1</mn>
+                     </mrow>
+                     <mrow>
+                        <mi>n</mi>
+                     </mrow>
+                  </munderover>
+                  <mi>A</mi>
+                  <msub>
+                     <mrow>
+                        <mi>a</mi>
+                     </mrow>
+                     <mrow>
+                        <mi>i</mi>
+                     </mrow>
+                  </msub>
+                  <msub>
+                     <mrow>
+                        <mi>x</mi>
+                     </mrow>
+                     <mrow>
+                        <mi>i</mi>
+                     </mrow>
+                  </msub>
+                  <mspace width="2em"/>
+               </mtd>
+               <mtd columnalign="right" class="align-odd"/>
+               <mtd class="align-even">
+                  <mtext> </mtext>
+                  <mtext xlink:type="simple" xlink:href="032_Section_MM_Matrix_Multiplication.xhtml#theorem.MMSMM" class="label" xmlns:xlink="http://www.w3.org/1999/xlink">Theorem MMSMM</mtext>
+                  <mtext class="endlabel"/>
+                  <mspace width="2em"/>
+               </mtd>
+               <mtd columnalign="right" class="align-label"/>
+               <mtd class="align-label">
+                  <mspace width="2em"/>
+               </mtd>
+               <mtd columnalign="right" class="align-label"/>
+               <mtd class="align-label">
+                  <mspace width="2em"/>
+               </mtd>
+            </mtr>
+            <mtr>
+               <mtd columnalign="right" class="align-odd"/>
+               <mtd class="align-even">
+                  <mo class="MathClass-rel">=</mo>
+                  <mi>A</mi>
+                  <munderover accentunder="false" accent="false">
+                     <mrow>
+                        <mo mathsize="big">∑</mo>
+                     </mrow>
+                     <mrow>
+                        <mi>i</mi>
+                        <mo class="MathClass-rel">=</mo>
+                        <mn>1</mn>
+                     </mrow>
+                     <mrow>
+                        <mi>n</mi>
+                     </mrow>
+                  </munderover>
+                  <msub>
+                     <mrow>
+                        <mi>a</mi>
+                     </mrow>
+                     <mrow>
+                        <mi>i</mi>
+                     </mrow>
+                  </msub>
+                  <msub>
+                     <mrow>
+                        <mi>x</mi>
+                     </mrow>
+                     <mrow>
+                        <mi>i</mi>
+                     </mrow>
+                  </msub>
+                  <mspace width="2em"/>
+               </mtd>
+               <mtd columnalign="right" class="align-odd"/>
+               <mtd class="align-even">
+                  <mtext> </mtext>
+                  <mtext xlink:type="simple" xlink:href="032_Section_MM_Matrix_Multiplication.xhtml#theorem.MMDAA" class="label" xmlns:xlink="http://www.w3.org/1999/xlink">Theorem MMDAA</mtext>
+                  <mtext class="endlabel"/>
+                  <mspace width="2em"/>
+               </mtd>
+               <mtd columnalign="right" class="align-label"/>
+               <mtd class="align-label">
+                  <mspace width="2em"/>
+               </mtd>
+               <mtd columnalign="right" class="align-label"/>
+               <mtd class="align-label">
+                  <mspace width="2em"/>
+               </mtd>
+            </mtr>
+            <mtr>
+               <mtd columnalign="right" class="align-odd"/>
+               <mtd class="align-even">
+                  <mo class="MathClass-rel">=</mo>
+                  <mi>A</mi>
+                  <mi>x</mi>
+                  <mspace width="2em"/>
+               </mtd>
+               <mtd columnalign="right" class="align-odd"/>
+               <mtd class="align-even">
+                  <mspace width="2em"/>
+               </mtd>
+               <mtd columnalign="right" class="align-label"/>
+               <mtd class="align-label">
+                  <mspace width="2em"/>
+               </mtd>
+            </mtr>
+         </mtable>
+      </math>
+      <p>So by 
+         <a href="032_Section_MM_Matrix_Multiplication.xhtml#theorem.EMMVP">Theorem EMMVP</a> we have the matrix equality 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <msup>
+               <mrow>
+                  <mfenced separators="" open="(" close=")">
+                     <mrow>
+                        <mi>A</mi>
+                        <msup>
+                           <mrow>
+                              <mi>A</mi>
+                           </mrow>
+                           <mrow>
+                              <mo class="MathClass-bin">∗</mo>
+                           </mrow>
+                        </msup>
+                     </mrow>
+                  </mfenced>
+               </mrow>
+               <mrow>
+                  <mn>1</mn>
+                  <mo class="MathClass-bin">∕</mo>
+                  <mn>2</mn>
+               </mrow>
+            </msup>
+            <mi>U</mi>
+            <mo class="MathClass-rel">=</mo>
+            <mi>A</mi>
+         </math>. 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mo class="MathClass-ord">■</mo>
+         </math>
+      </p>
+   </body>
+</html>

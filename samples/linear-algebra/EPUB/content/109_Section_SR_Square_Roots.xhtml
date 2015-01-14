@@ -1,0 +1,3218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html id="section.SR" xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+   <head>
+      <title>Section SR Square Roots</title>
+      <link rel="stylesheet" type="text/css" href="../css/fcla-xml-2.99.css"/>
+      <link rel="stylesheet" type="text/css" href="../css/edupub.css"/>
+   </head>
+   <body epub:type="bodymatter" id="x109-446000doc">
+      <h1 class="likesectionHead" id="x109-446000">Section SR  Square Roots</h1>
+      <p id="dx109-446001">
+         <span class="cmcsc-10x-x-144">T 
+            <span class="small-caps">h</span>
+            <span class="small-caps">i</span>
+            <span class="small-caps">s</span> S 
+            <span class="small-caps">e</span>
+            <span class="small-caps">c</span>
+            <span class="small-caps">t</span>
+            <span class="small-caps">i</span>
+            <span class="small-caps">o</span>
+            <span class="small-caps">n</span>
+            <span class="small-caps">i</span>
+            <span class="small-caps">s</span>
+            <span class="small-caps">a</span> D 
+            <span class="small-caps">r</span>
+            <span class="small-caps">a</span>
+            <span class="small-caps">f</span>
+            <span class="small-caps">t</span>, S 
+            <span class="small-caps">u</span>
+            <span class="small-caps">b</span>
+            <span class="small-caps">j</span>
+            <span class="small-caps">e</span>
+            <span class="small-caps">c</span>
+            <span class="small-caps">t</span>
+            <span class="small-caps">t</span>
+            <span class="small-caps">o</span> C 
+            <span class="small-caps">h</span>
+            <span class="small-caps">a</span>
+            <span class="small-caps">n</span>
+            <span class="small-caps">g</span>
+            <span class="small-caps">e</span>
+            <span class="small-caps">s</span>
+         </span>
+         <span class="cmcsc-10x-x-144">N 
+            <span class="small-caps">e</span>
+            <span class="small-caps">e</span>
+            <span class="small-caps">d</span>
+            <span class="small-caps">s</span> N 
+            <span class="small-caps">u</span>
+            <span class="small-caps">m</span>
+            <span class="small-caps">e</span>
+            <span class="small-caps">r</span>
+            <span class="small-caps">i</span>
+            <span class="small-caps">c</span>
+            <span class="small-caps">a</span>
+            <span class="small-caps">l</span> E 
+            <span class="small-caps">x</span>
+            <span class="small-caps">a</span>
+            <span class="small-caps">m</span>
+            <span class="small-caps">p</span>
+            <span class="small-caps">l</span>
+            <span class="small-caps">e</span>
+            <span class="small-caps">s</span>
+         </span>
+      </p>
+      <p> With all our results about Hermitian matrices, their eigenvalues and their diagonalizations, it will be a nearly trivial matter to now construct a “square root” of a positive semi-definite matrix. We will describe the square root of a matrix 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>A</mi>
+         </math> as a matrix 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>S</mi>
+         </math> such that 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>A</mi>
+            <mo class="MathClass-rel">=</mo>
+            <msup>
+               <mrow>
+                  <mi>S</mi>
+               </mrow>
+               <mrow>
+                  <mn>2</mn>
+               </mrow>
+            </msup>
+         </math>. In general, a matrix 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>A</mi>
+         </math> might have many such square roots. But with a few results in hand we will be able to impose an extra condition on 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>S</mi>
+         </math> that will make a unique 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>S</mi>
+         </math> such that 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>A</mi>
+            <mo class="MathClass-rel">=</mo>
+            <msup>
+               <mrow>
+                  <mi>S</mi>
+               </mrow>
+               <mrow>
+                  <mn>2</mn>
+               </mrow>
+            </msup>
+         </math>. At that point we can define 
+         <span class="cmti-12">the </span>square root of 
+         <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>A</mi>
+         </math> formally. 
+      </p>
+      <section>
+         <h2 class="likesubsectionHead" id="x109-447000">Subsection SRM: Square Root of a Matrix</h2>
+         <p>
+            <span id="dx109-447001"/>
+         </p>
+         <p>
+            <span class="cmbx-12">Theorem</span>
+            <span class="cmbx-12"> PSMSR</span>
+            <br/>
+            <a id="theorem.PSMSR">
+               <span class="cmbx-12">Positive Semi-Definite Matrices and Square Roots</span>
+            </a>
+            <span id="dx109-447002"/>
+            <span id="dx109-447003"/>
+            <span id="dx109-447004"/>
+            <br/> Suppose 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>A</mi>
+            </math> is a square matrix. There is a positive semi-definite matrix 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>S</mi>
+            </math> such that 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>A</mi>
+               <mo class="MathClass-rel">=</mo>
+               <msup>
+                  <mrow>
+                     <mi>S</mi>
+                  </mrow>
+                  <mrow>
+                     <mn>2</mn>
+                  </mrow>
+               </msup>
+            </math> if and only if 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>A</mi>
+            </math> is positive semi-definite. 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mo class="MathClass-ord">□</mo>
+            </math>
+         </p>
+         <p>
+            <span class="cmbx-12">Proof</span>   Let 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>n</mi>
+            </math> denote the size of 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>A</mi>
+            </math>. 
+         </p>
+         <p> ( 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mo class="MathClass-rel">⇐</mo>
+            </math>) Suppose that 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>A</mi>
+            </math> is positive semi-definite. Since 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>A</mi>
+            </math> is Hermitian ( 
+            <a href="104_Section_PSM_Positive_Semi-definite_Matrices.xhtml#definition.PSM">Definition PSM</a>) we know 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>A</mi>
+            </math> is normal ( 
+            <a href="060_Section_OD_Orthonormal_Diagonalization.xhtml#definition.NRML">Definition NRML</a>) and so by 
+            <a href="060_Section_OD_Orthonormal_Diagonalization.xhtml#theorem.OD">Theorem OD</a> there is a unitary matrix 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>U</mi>
+            </math> and a diagonal matrix 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>D</mi>
+            </math>, whose diagonal entries are the eigenvalues of 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>A</mi>
+            </math>, such that 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>D</mi>
+               <mo class="MathClass-rel">=</mo>
+               <msup>
+                  <mrow>
+                     <mi>U</mi>
+                  </mrow>
+                  <mrow>
+                     <mo class="MathClass-bin">∗</mo>
+                  </mrow>
+               </msup>
+               <mi>A</mi>
+               <mi>U</mi>
+            </math>. The eigenvalues of 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>A</mi>
+            </math> are all non-negative ( 
+            <a href="104_Section_PSM_Positive_Semi-definite_Matrices.xhtml#theorem.EPSM">Theorem EPSM</a>), which allows us to define a diagonal matrix 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>E</mi>
+            </math> whose diagonal entries are the positive square roots of the eigenvalues of 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>A</mi>
+            </math>, in the same order as they appear in 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>D</mi>
+            </math>. More precisely, define 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>E</mi>
+            </math> to be the diagonal matrix with non-negative diagonal entries such that 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <msup>
+                  <mrow>
+                     <mi>E</mi>
+                  </mrow>
+                  <mrow>
+                     <mn>2</mn>
+                  </mrow>
+               </msup>
+               <mo class="MathClass-rel">=</mo>
+               <mi>D</mi>
+            </math>. Set 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>S</mi>
+               <mo class="MathClass-rel">=</mo>
+               <mi>U</mi>
+               <mi>E</mi>
+               <msup>
+                  <mrow>
+                     <mi>U</mi>
+                  </mrow>
+                  <mrow>
+                     <mo class="MathClass-bin">∗</mo>
+                  </mrow>
+               </msup>
+            </math>, and compute 
+         </p>
+         <math alttext="Alternative text not available" display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mtable columnalign="left" class="align-star">
+               <mtr>
+                  <mtd columnalign="right" class="align-odd">
+                     <msup>
+                        <mrow>
+                           <mi>S</mi>
+                        </mrow>
+                        <mrow>
+                           <mn>2</mn>
+                        </mrow>
+                     </msup>
+                  </mtd>
+                  <mtd class="align-even">
+                     <mo class="MathClass-rel">=</mo>
+                     <mi>U</mi>
+                     <mi>E</mi>
+                     <msup>
+                        <mrow>
+                           <mi>U</mi>
+                        </mrow>
+                        <mrow>
+                           <mo class="MathClass-bin">∗</mo>
+                        </mrow>
+                     </msup>
+                     <mi>U</mi>
+                     <mi>E</mi>
+                     <msup>
+                        <mrow>
+                           <mi>U</mi>
+                        </mrow>
+                        <mrow>
+                           <mo class="MathClass-bin">∗</mo>
+                        </mrow>
+                     </msup>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+               </mtr>
+               <mtr>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mo class="MathClass-rel">=</mo>
+                     <mi>U</mi>
+                     <mi>E</mi>
+                     <msub>
+                        <mrow>
+                           <mi>I</mi>
+                        </mrow>
+                        <mrow>
+                           <mi>n</mi>
+                        </mrow>
+                     </msub>
+                     <mi>E</mi>
+                     <msup>
+                        <mrow>
+                           <mi>U</mi>
+                        </mrow>
+                        <mrow>
+                           <mo class="MathClass-bin">∗</mo>
+                        </mrow>
+                     </msup>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mtext> </mtext>
+                     <mtext xlink:type="simple" xlink:href="034_Section_MINM_Matrix_Inverses_and_Nonsingular_Matrices.xhtml#definition.UM" class="label" xmlns:xlink="http://www.w3.org/1999/xlink">Definition UM</mtext>
+                     <mtext class="endlabel"/>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+               </mtr>
+               <mtr>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mo class="MathClass-rel">=</mo>
+                     <mi>U</mi>
+                     <mi>E</mi>
+                     <mi>E</mi>
+                     <msup>
+                        <mrow>
+                           <mi>U</mi>
+                        </mrow>
+                        <mrow>
+                           <mo class="MathClass-bin">∗</mo>
+                        </mrow>
+                     </msup>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mtext> </mtext>
+                     <mtext xlink:type="simple" xlink:href="032_Section_MM_Matrix_Multiplication.xhtml#theorem.MMIM" class="label" xmlns:xlink="http://www.w3.org/1999/xlink">Theorem MMIM</mtext>
+                     <mtext class="endlabel"/>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+               </mtr>
+               <mtr>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mo class="MathClass-rel">=</mo>
+                     <mi>U</mi>
+                     <mi>D</mi>
+                     <msup>
+                        <mrow>
+                           <mi>U</mi>
+                        </mrow>
+                        <mrow>
+                           <mo class="MathClass-bin">∗</mo>
+                        </mrow>
+                     </msup>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+               </mtr>
+               <mtr>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mo class="MathClass-rel">=</mo>
+                     <mi>U</mi>
+                     <msup>
+                        <mrow>
+                           <mi>U</mi>
+                        </mrow>
+                        <mrow>
+                           <mo class="MathClass-bin">∗</mo>
+                        </mrow>
+                     </msup>
+                     <mi>A</mi>
+                     <mi>U</mi>
+                     <msup>
+                        <mrow>
+                           <mi>U</mi>
+                        </mrow>
+                        <mrow>
+                           <mo class="MathClass-bin">∗</mo>
+                        </mrow>
+                     </msup>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mtext> </mtext>
+                     <mtext xlink:type="simple" xlink:href="060_Section_OD_Orthonormal_Diagonalization.xhtml#theorem.OD" class="label" xmlns:xlink="http://www.w3.org/1999/xlink">Theorem OD</mtext>
+                     <mtext class="endlabel"/>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+               </mtr>
+               <mtr>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mo class="MathClass-rel">=</mo>
+                     <msub>
+                        <mrow>
+                           <mi>I</mi>
+                        </mrow>
+                        <mrow>
+                           <mi>n</mi>
+                        </mrow>
+                     </msub>
+                     <mi>A</mi>
+                     <msub>
+                        <mrow>
+                           <mi>I</mi>
+                        </mrow>
+                        <mrow>
+                           <mi>n</mi>
+                        </mrow>
+                     </msub>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mtext> </mtext>
+                     <mtext xlink:type="simple" xlink:href="034_Section_MINM_Matrix_Inverses_and_Nonsingular_Matrices.xhtml#definition.UM" class="label" xmlns:xlink="http://www.w3.org/1999/xlink">Definition UM</mtext>
+                     <mtext class="endlabel"/>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+               </mtr>
+               <mtr>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mo class="MathClass-rel">=</mo>
+                     <mi>A</mi>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mtext> </mtext>
+                     <mtext xlink:type="simple" xlink:href="032_Section_MM_Matrix_Multiplication.xhtml#theorem.MMIM" class="label" xmlns:xlink="http://www.w3.org/1999/xlink">Theorem MMIM</mtext>
+                     <mtext class="endlabel"/>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+               </mtr>
+            </mtable>
+         </math>
+         <p>We need to first verify that 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>S</mi>
+            </math> is Hermitian. 
+         </p>
+         <math alttext="Alternative text not available" display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mtable columnalign="left" class="align-star">
+               <mtr>
+                  <mtd columnalign="right" class="align-odd">
+                     <msup>
+                        <mrow>
+                           <mi>S</mi>
+                        </mrow>
+                        <mrow>
+                           <mo class="MathClass-bin">∗</mo>
+                        </mrow>
+                     </msup>
+                  </mtd>
+                  <mtd class="align-even">
+                     <mo class="MathClass-rel">=</mo>
+                     <msup>
+                        <mrow>
+                           <mfenced separators="" open="(" close=")">
+                              <mrow>
+                                 <mi>U</mi>
+                                 <mi>E</mi>
+                                 <msup>
+                                    <mrow>
+                                       <mi>U</mi>
+                                    </mrow>
+                                    <mrow>
+                                       <mo class="MathClass-bin">∗</mo>
+                                    </mrow>
+                                 </msup>
+                              </mrow>
+                           </mfenced>
+                        </mrow>
+                        <mrow>
+                           <mo class="MathClass-bin">∗</mo>
+                        </mrow>
+                     </msup>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+               </mtr>
+               <mtr>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mo class="MathClass-rel">=</mo>
+                     <msup>
+                        <mrow>
+                           <mfenced separators="" open="(" close=")">
+                              <mrow>
+                                 <mi>U</mi>
+                                 <mi>E</mi>
+                                 <msup>
+                                    <mrow>
+                                       <mi>U</mi>
+                                    </mrow>
+                                    <mrow>
+                                       <mo class="MathClass-bin">∗</mo>
+                                    </mrow>
+                                 </msup>
+                              </mrow>
+                           </mfenced>
+                        </mrow>
+                        <mrow>
+                           <mo class="MathClass-bin">∗</mo>
+                        </mrow>
+                     </msup>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+               </mtr>
+               <mtr>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mo class="MathClass-rel">=</mo>
+                     <msup>
+                        <mrow>
+                           <mfenced separators="" open="(" close=")">
+                              <mrow>
+                                 <msup>
+                                    <mrow>
+                                       <mi>U</mi>
+                                    </mrow>
+                                    <mrow>
+                                       <mo class="MathClass-bin">∗</mo>
+                                    </mrow>
+                                 </msup>
+                              </mrow>
+                           </mfenced>
+                        </mrow>
+                        <mrow>
+                           <mo class="MathClass-bin">∗</mo>
+                        </mrow>
+                     </msup>
+                     <msup>
+                        <mrow>
+                           <mi>E</mi>
+                        </mrow>
+                        <mrow>
+                           <mo class="MathClass-bin">∗</mo>
+                        </mrow>
+                     </msup>
+                     <msup>
+                        <mrow>
+                           <mi>U</mi>
+                        </mrow>
+                        <mrow>
+                           <mo class="MathClass-bin">∗</mo>
+                        </mrow>
+                     </msup>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mtext> </mtext>
+                     <mtext xlink:type="simple" xlink:href="032_Section_MM_Matrix_Multiplication.xhtml#theorem.MMAD" class="label" xmlns:xlink="http://www.w3.org/1999/xlink">Theorem MMAD</mtext>
+                     <mtext class="endlabel"/>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+               </mtr>
+               <mtr>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mo class="MathClass-rel">=</mo>
+                     <mi>U</mi>
+                     <msup>
+                        <mrow>
+                           <mi>E</mi>
+                        </mrow>
+                        <mrow>
+                           <mo class="MathClass-bin">∗</mo>
+                        </mrow>
+                     </msup>
+                     <msup>
+                        <mrow>
+                           <mi>U</mi>
+                        </mrow>
+                        <mrow>
+                           <mo class="MathClass-bin">∗</mo>
+                        </mrow>
+                     </msup>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mtext> </mtext>
+                     <mtext xlink:type="simple" xlink:href="031_Section_MO_Matrix_Operations.xhtml#theorem.AA" class="label" xmlns:xlink="http://www.w3.org/1999/xlink">Theorem AA</mtext>
+                     <mtext class="endlabel"/>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+               </mtr>
+               <mtr>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mo class="MathClass-rel">=</mo>
+                     <mi>U</mi>
+                     <msup>
+                        <mrow>
+                           <mfenced separators="" open="(" close=")">
+                              <mrow>
+                                 <mover accent="false" class="mml-overline">
+                                    <mrow>
+                                       <mi>E</mi>
+                                    </mrow>
+                                    <mo accent="true">¯</mo>
+                                 </mover>
+                              </mrow>
+                           </mfenced>
+                        </mrow>
+                        <mrow>
+                           <mi>t</mi>
+                        </mrow>
+                     </msup>
+                     <msup>
+                        <mrow>
+                           <mi>U</mi>
+                        </mrow>
+                        <mrow>
+                           <mo class="MathClass-bin">∗</mo>
+                        </mrow>
+                     </msup>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mtext> </mtext>
+                     <mtext xlink:type="simple" xlink:href="031_Section_MO_Matrix_Operations.xhtml#definition.A" class="label" xmlns:xlink="http://www.w3.org/1999/xlink">Definition A</mtext>
+                     <mtext class="endlabel"/>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+               </mtr>
+               <mtr>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mo class="MathClass-rel">=</mo>
+                     <mi>U</mi>
+                     <msup>
+                        <mrow>
+                           <mi>E</mi>
+                        </mrow>
+                        <mrow>
+                           <mi>t</mi>
+                        </mrow>
+                     </msup>
+                     <msup>
+                        <mrow>
+                           <mi>U</mi>
+                        </mrow>
+                        <mrow>
+                           <mo class="MathClass-bin">∗</mo>
+                        </mrow>
+                     </msup>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mtext> </mtext>
+                     <mtext xlink:type="simple" xlink:href="049_Section_PEE_Properties_of_Eigenvalues_and_Eigenvectors.xhtml#theorem.HMRE" class="label" xmlns:xlink="http://www.w3.org/1999/xlink">Theorem HMRE</mtext>
+                     <mtext class="endlabel"/>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+               </mtr>
+               <mtr>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mo class="MathClass-rel">=</mo>
+                     <mi>U</mi>
+                     <mi>E</mi>
+                     <msup>
+                        <mrow>
+                           <mi>U</mi>
+                        </mrow>
+                        <mrow>
+                           <mo class="MathClass-bin">∗</mo>
+                        </mrow>
+                     </msup>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mtext> Diagonal matrix</mtext>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+               </mtr>
+               <mtr>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mo class="MathClass-rel">=</mo>
+                     <mi>S</mi>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+               </mtr>
+            </mtable>
+         </math>
+         <p>And finally, we want to check the use of 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>S</mi>
+            </math> in an inner product. Notice that 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>E</mi>
+            </math> is Hermitian since it is a diagonal matrix with real entries. Furthermore, as a diagonal matrix, the eigenvalues of 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>E</mi>
+            </math> are precisely the diagonal entries, and since these were 
+            <span class="cmti-12">chosen</span> to be positive, an application of 
+            <a href="104_Section_PSM_Positive_Semi-definite_Matrices.xhtml#theorem.EPSM">Theorem EPSM</a> tells us that 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>E</mi>
+            </math> is positive semi-definite. Now, for any 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>x</mi>
+               <mo class="MathClass-rel">∈</mo>
+               <msup>
+                  <mrow>
+                     <mi>ℂ</mi>
+                  </mrow>
+                  <mrow>
+                     <mi>n</mi>
+                  </mrow>
+               </msup>
+            </math>, 
+         </p>
+         <math alttext="Alternative text not available" display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mtable columnalign="left" class="align-star">
+               <mtr>
+                  <mtd columnalign="right" class="align-odd">
+                     <mfenced separators="" open="〈" close="〉">
+                        <mrow>
+                           <mi>S</mi>
+                           <mi>x</mi>
+                           <mo class="MathClass-punc">,</mo>
+                           <mspace width="0.3em" class="thinspace"/>
+                           <mi>x</mi>
+                        </mrow>
+                     </mfenced>
+                  </mtd>
+                  <mtd class="align-even">
+                     <mo class="MathClass-rel">=</mo>
+                     <mfenced separators="" open="〈" close="〉">
+                        <mrow>
+                           <mi>U</mi>
+                           <mi>E</mi>
+                           <msup>
+                              <mrow>
+                                 <mi>U</mi>
+                              </mrow>
+                              <mrow>
+                                 <mo class="MathClass-bin">∗</mo>
+                              </mrow>
+                           </msup>
+                           <mi>x</mi>
+                           <mo class="MathClass-punc">,</mo>
+                           <mspace width="0.3em" class="thinspace"/>
+                           <mi>x</mi>
+                        </mrow>
+                     </mfenced>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+               </mtr>
+               <mtr>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mo class="MathClass-rel">=</mo>
+                     <mfenced separators="" open="〈" close="〉">
+                        <mrow>
+                           <mi>E</mi>
+                           <msup>
+                              <mrow>
+                                 <mi>U</mi>
+                              </mrow>
+                              <mrow>
+                                 <mo class="MathClass-bin">∗</mo>
+                              </mrow>
+                           </msup>
+                           <mi>x</mi>
+                           <mo class="MathClass-punc">,</mo>
+                           <mspace width="0.3em" class="thinspace"/>
+                           <msup>
+                              <mrow>
+                                 <mi>U</mi>
+                              </mrow>
+                              <mrow>
+                                 <mo class="MathClass-bin">∗</mo>
+                              </mrow>
+                           </msup>
+                           <mi>x</mi>
+                        </mrow>
+                     </mfenced>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mtext> </mtext>
+                     <mtext xlink:type="simple" xlink:href="032_Section_MM_Matrix_Multiplication.xhtml#theorem.AIP" class="label" xmlns:xlink="http://www.w3.org/1999/xlink">Theorem AIP</mtext>
+                     <mtext class="endlabel"/>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+               </mtr>
+               <mtr>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mo class="MathClass-rel">=</mo>
+                     <mfenced separators="" open="〈" close="〉">
+                        <mrow>
+                           <mi>E</mi>
+                           <mfenced separators="" open="(" close=")">
+                              <mrow>
+                                 <msup>
+                                    <mrow>
+                                       <mi>U</mi>
+                                    </mrow>
+                                    <mrow>
+                                       <mo class="MathClass-bin">∗</mo>
+                                    </mrow>
+                                 </msup>
+                                 <mi>x</mi>
+                              </mrow>
+                           </mfenced>
+                           <mo class="MathClass-punc">,</mo>
+                           <mspace width="0.3em" class="thinspace"/>
+                           <msup>
+                              <mrow>
+                                 <mi>U</mi>
+                              </mrow>
+                              <mrow>
+                                 <mo class="MathClass-bin">∗</mo>
+                              </mrow>
+                           </msup>
+                           <mi>x</mi>
+                        </mrow>
+                     </mfenced>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+               </mtr>
+               <mtr>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mo class="MathClass-rel">≥</mo>
+                     <mn>0</mn>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mtext> </mtext>
+                     <mtext xlink:type="simple" xlink:href="104_Section_PSM_Positive_Semi-definite_Matrices.xhtml#definition.PSM" class="label" xmlns:xlink="http://www.w3.org/1999/xlink">Definition PSM</mtext>
+                     <mtext class="endlabel"/>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+               </mtr>
+            </mtable>
+         </math>
+         <p>So, according to 
+            <a href="104_Section_PSM_Positive_Semi-definite_Matrices.xhtml#definition.PSM">Definition PSM</a>, 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>S</mi>
+            </math> is positive semi-definite. 
+         </p>
+         <p> ( 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mo class="MathClass-rel">⇒</mo>
+            </math>) Assume that 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>A</mi>
+               <mo class="MathClass-rel">=</mo>
+               <msup>
+                  <mrow>
+                     <mi>S</mi>
+                  </mrow>
+                  <mrow>
+                     <mn>2</mn>
+                  </mrow>
+               </msup>
+            </math>, with 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>S</mi>
+            </math> positive semi-definite. Then 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>S</mi>
+            </math> is Hermitian, and we check that 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>A</mi>
+            </math> is Hermitian. 
+         </p>
+         <math alttext="Alternative text not available" display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mtable columnalign="left" class="align-star">
+               <mtr>
+                  <mtd columnalign="right" class="align-odd">
+                     <msup>
+                        <mrow>
+                           <mi>A</mi>
+                        </mrow>
+                        <mrow>
+                           <mo class="MathClass-bin">∗</mo>
+                        </mrow>
+                     </msup>
+                  </mtd>
+                  <mtd class="align-even">
+                     <mo class="MathClass-rel">=</mo>
+                     <msup>
+                        <mrow>
+                           <mfenced separators="" open="(" close=")">
+                              <mrow>
+                                 <mi>S</mi>
+                                 <mi>S</mi>
+                              </mrow>
+                           </mfenced>
+                        </mrow>
+                        <mrow>
+                           <mo class="MathClass-bin">∗</mo>
+                        </mrow>
+                     </msup>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+               </mtr>
+               <mtr>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mo class="MathClass-rel">=</mo>
+                     <msup>
+                        <mrow>
+                           <mi>S</mi>
+                        </mrow>
+                        <mrow>
+                           <mo class="MathClass-bin">∗</mo>
+                        </mrow>
+                     </msup>
+                     <msup>
+                        <mrow>
+                           <mi>S</mi>
+                        </mrow>
+                        <mrow>
+                           <mo class="MathClass-bin">∗</mo>
+                        </mrow>
+                     </msup>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mtext> </mtext>
+                     <mtext xlink:type="simple" xlink:href="032_Section_MM_Matrix_Multiplication.xhtml#theorem.MMAD" class="label" xmlns:xlink="http://www.w3.org/1999/xlink">Theorem MMAD</mtext>
+                     <mtext class="endlabel"/>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+               </mtr>
+               <mtr>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mo class="MathClass-rel">=</mo>
+                     <mi>S</mi>
+                     <mi>S</mi>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mtext> </mtext>
+                     <mtext xlink:type="simple" xlink:href="032_Section_MM_Matrix_Multiplication.xhtml#definition.HM" class="label" xmlns:xlink="http://www.w3.org/1999/xlink">Definition HM</mtext>
+                     <mtext class="endlabel"/>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+               </mtr>
+               <mtr>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mo class="MathClass-rel">=</mo>
+                     <mi>A</mi>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+               </mtr>
+            </mtable>
+         </math>
+         <p>Now for the use of 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>A</mi>
+            </math> in an inner product. For any 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>x</mi>
+               <mo class="MathClass-rel">∈</mo>
+               <msup>
+                  <mrow>
+                     <mi>ℂ</mi>
+                  </mrow>
+                  <mrow>
+                     <mi>n</mi>
+                  </mrow>
+               </msup>
+            </math>, 
+         </p>
+         <math alttext="Alternative text not available" display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mtable columnalign="left" class="align-star">
+               <mtr>
+                  <mtd columnalign="right" class="align-odd">
+                     <mfenced separators="" open="〈" close="〉">
+                        <mrow>
+                           <mi>A</mi>
+                           <mi>x</mi>
+                           <mo class="MathClass-punc">,</mo>
+                           <mspace width="0.3em" class="thinspace"/>
+                           <mi>x</mi>
+                        </mrow>
+                     </mfenced>
+                  </mtd>
+                  <mtd class="align-even">
+                     <mo class="MathClass-rel">=</mo>
+                     <mfenced separators="" open="〈" close="〉">
+                        <mrow>
+                           <msup>
+                              <mrow>
+                                 <mi>S</mi>
+                              </mrow>
+                              <mrow>
+                                 <mn>2</mn>
+                              </mrow>
+                           </msup>
+                           <mi>x</mi>
+                           <mo class="MathClass-punc">,</mo>
+                           <mspace width="0.3em" class="thinspace"/>
+                           <mi>x</mi>
+                        </mrow>
+                     </mfenced>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+               </mtr>
+               <mtr>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mo class="MathClass-rel">=</mo>
+                     <mfenced separators="" open="〈" close="〉">
+                        <mrow>
+                           <mi>S</mi>
+                           <mi>x</mi>
+                           <mo class="MathClass-punc">,</mo>
+                           <mspace width="0.3em" class="thinspace"/>
+                           <msup>
+                              <mrow>
+                                 <mi>S</mi>
+                              </mrow>
+                              <mrow>
+                                 <mo class="MathClass-bin">∗</mo>
+                              </mrow>
+                           </msup>
+                           <mi>x</mi>
+                        </mrow>
+                     </mfenced>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mtext> </mtext>
+                     <mtext xlink:type="simple" xlink:href="032_Section_MM_Matrix_Multiplication.xhtml#theorem.AIP" class="label" xmlns:xlink="http://www.w3.org/1999/xlink">Theorem AIP</mtext>
+                     <mtext class="endlabel"/>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+               </mtr>
+               <mtr>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mo class="MathClass-rel">=</mo>
+                     <mfenced separators="" open="〈" close="〉">
+                        <mrow>
+                           <mi>S</mi>
+                           <mi>x</mi>
+                           <mo class="MathClass-punc">,</mo>
+                           <mspace width="0.3em" class="thinspace"/>
+                           <mi>S</mi>
+                           <mi>x</mi>
+                        </mrow>
+                     </mfenced>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mtext> </mtext>
+                     <mtext xlink:type="simple" xlink:href="032_Section_MM_Matrix_Multiplication.xhtml#definition.HM" class="label" xmlns:xlink="http://www.w3.org/1999/xlink">Definition HM</mtext>
+                     <mtext class="endlabel"/>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+               </mtr>
+               <mtr>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mo class="MathClass-rel">≥</mo>
+                     <mn>0</mn>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mtext> </mtext>
+                     <mtext xlink:type="simple" xlink:href="029_Section_O_Orthogonality.xhtml#theorem.PIP" class="label" xmlns:xlink="http://www.w3.org/1999/xlink">Theorem PIP</mtext>
+                     <mtext class="endlabel"/>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+               </mtr>
+            </mtable>
+         </math>
+         <p>So by 
+            <a href="104_Section_PSM_Positive_Semi-definite_Matrices.xhtml#definition.PSM">Definition PSM</a>, 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>A</mi>
+            </math> is positive semi-definite. 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mo class="MathClass-ord">■</mo>
+            </math>
+         </p>
+         <p> There is a very close relationship between the eigenvalues and eigenspaces of a positive semi-definite matrix and its positive semi-definite square root. The next theorem is interesting in its own right, but is also an important technical step in some other important results, such as the upcoming uniqueness of the square root ( 
+            <a href="#theorem.USR">Theorem USR</a>). 
+         </p>
+         <p>
+            <span class="cmbx-12">Theorem</span>
+            <span class="cmbx-12"> EESR</span>
+            <br/>
+            <a id="theorem.EESR">
+               <span class="cmbx-12">Eigenvalues and Eigenspaces of a Square Root</span>
+            </a>
+            <span id="dx109-447005"/>
+            <span id="dx109-447006"/>
+            <span id="dx109-447007"/>
+            <br/> Suppose that 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>A</mi>
+            </math> is a positive semi-definite matrix and 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>S</mi>
+            </math> is a positive semi-definite matrix such that 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>A</mi>
+               <mo class="MathClass-rel">=</mo>
+               <msup>
+                  <mrow>
+                     <mi>S</mi>
+                  </mrow>
+                  <mrow>
+                     <mn>2</mn>
+                  </mrow>
+               </msup>
+            </math>. If 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <msub>
+                  <mrow>
+                     <mi>λ</mi>
+                  </mrow>
+                  <mrow>
+                     <mn>1</mn>
+                  </mrow>
+               </msub>
+               <mo class="MathClass-punc">,</mo>
+               <mspace width="0.3em" class="thinspace"/>
+               <msub>
+                  <mrow>
+                     <mi>λ</mi>
+                  </mrow>
+                  <mrow>
+                     <mn>2</mn>
+                  </mrow>
+               </msub>
+               <mo class="MathClass-punc">,</mo>
+               <mspace width="0.3em" class="thinspace"/>
+               <msub>
+                  <mrow>
+                     <mi>λ</mi>
+                  </mrow>
+                  <mrow>
+                     <mn>3</mn>
+                  </mrow>
+               </msub>
+               <mo class="MathClass-punc">,</mo>
+               <mspace width="0.3em" class="thinspace"/>
+               <mo class="MathClass-op">…</mo>
+               <mo class="MathClass-punc">,</mo>
+               <mspace width="0.3em" class="thinspace"/>
+               <msub>
+                  <mrow>
+                     <mi>λ</mi>
+                  </mrow>
+                  <mrow>
+                     <mi>p</mi>
+                  </mrow>
+               </msub>
+            </math> are the distinct eigenvalues of 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>A</mi>
+            </math>, then the distinct eigenvalues of 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>S</mi>
+            </math> are 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <msqrt>
+                  <mrow>
+                     <msub>
+                        <mrow>
+                           <mi>λ</mi>
+                        </mrow>
+                        <mrow>
+                           <mn>1</mn>
+                        </mrow>
+                     </msub>
+                  </mrow>
+               </msqrt>
+               <mo class="MathClass-punc">,</mo>
+               <mspace width="0.3em" class="thinspace"/>
+               <msqrt>
+                  <mrow>
+                     <msub>
+                        <mrow>
+                           <mi>λ</mi>
+                        </mrow>
+                        <mrow>
+                           <mn>2</mn>
+                        </mrow>
+                     </msub>
+                  </mrow>
+               </msqrt>
+               <mo class="MathClass-punc">,</mo>
+               <mspace width="0.3em" class="thinspace"/>
+               <msqrt>
+                  <mrow>
+                     <msub>
+                        <mrow>
+                           <mi>λ</mi>
+                        </mrow>
+                        <mrow>
+                           <mn>3</mn>
+                        </mrow>
+                     </msub>
+                  </mrow>
+               </msqrt>
+               <mo class="MathClass-punc">,</mo>
+               <mspace width="0.3em" class="thinspace"/>
+               <mo class="MathClass-op">…</mo>
+               <mo class="MathClass-punc">,</mo>
+               <mspace width="0.3em" class="thinspace"/>
+               <msqrt>
+                  <mrow>
+                     <msub>
+                        <mrow>
+                           <mi>λ</mi>
+                        </mrow>
+                        <mrow>
+                           <mi>p</mi>
+                        </mrow>
+                     </msub>
+                  </mrow>
+               </msqrt>
+            </math>, and 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <msub>
+                  <mrow>
+                     <mi mathvariant="bold-script">ℰ</mi>
+                  </mrow>
+                  <mrow>
+                     <mi>S</mi>
+                  </mrow>
+               </msub>
+               <mfenced separators="" open="(" close=")">
+                  <mrow>
+                     <msqrt>
+                        <mrow>
+                           <msub>
+                              <mrow>
+                                 <mi>λ</mi>
+                              </mrow>
+                              <mrow>
+                                 <mi>i</mi>
+                              </mrow>
+                           </msub>
+                        </mrow>
+                     </msqrt>
+                  </mrow>
+               </mfenced>
+               <mo class="MathClass-rel">=</mo>
+               <msub>
+                  <mrow>
+                     <mi mathvariant="bold-script">ℰ</mi>
+                  </mrow>
+                  <mrow>
+                     <mi>A</mi>
+                  </mrow>
+               </msub>
+               <mfenced separators="" open="(" close=")">
+                  <mrow>
+                     <msub>
+                        <mrow>
+                           <mi>λ</mi>
+                        </mrow>
+                        <mrow>
+                           <mi>i</mi>
+                        </mrow>
+                     </msub>
+                  </mrow>
+               </mfenced>
+            </math> for 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mn>1</mn>
+               <mo class="MathClass-rel">≤</mo>
+               <mi>i</mi>
+               <mo class="MathClass-rel">≤</mo>
+               <mi>p</mi>
+            </math>. 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mo class="MathClass-ord">□</mo>
+            </math>
+         </p>
+         <p>
+            <span class="cmbx-12">Proof</span>   Let 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>x</mi>
+            </math> be an eigenvector of 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>S</mi>
+            </math> for an eigenvalue 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>ρ</mi>
+            </math>. Then, in the style of 
+            <a href="049_Section_PEE_Properties_of_Eigenvalues_and_Eigenvectors.xhtml#theorem.EPM">Theorem EPM</a>, 
+         </p>
+         <math alttext="Alternative text not available" display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mtable columnalign="left" class="align-star">
+               <mtr>
+                  <mtd columnalign="right" class="align-odd">
+                     <mi>A</mi>
+                     <mi>x</mi>
+                  </mtd>
+                  <mtd class="align-even">
+                     <mo class="MathClass-rel">=</mo>
+                     <msup>
+                        <mrow>
+                           <mi>S</mi>
+                        </mrow>
+                        <mrow>
+                           <mn>2</mn>
+                        </mrow>
+                     </msup>
+                     <mi>x</mi>
+                     <mo class="MathClass-rel">=</mo>
+                     <mi>S</mi>
+                     <mfenced separators="" open="(" close=")">
+                        <mrow>
+                           <mi>S</mi>
+                           <mi>x</mi>
+                        </mrow>
+                     </mfenced>
+                     <mo class="MathClass-rel">=</mo>
+                     <mi>S</mi>
+                     <mfenced separators="" open="(" close=")">
+                        <mrow>
+                           <mi>ρ</mi>
+                           <mi>x</mi>
+                        </mrow>
+                     </mfenced>
+                     <mo class="MathClass-rel">=</mo>
+                     <mi>ρ</mi>
+                     <mi>S</mi>
+                     <mi>x</mi>
+                     <mo class="MathClass-rel">=</mo>
+                     <msup>
+                        <mrow>
+                           <mi>ρ</mi>
+                        </mrow>
+                        <mrow>
+                           <mn>2</mn>
+                        </mrow>
+                     </msup>
+                     <mi>x</mi>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+               </mtr>
+            </mtable>
+         </math>
+         <p>so 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <msup>
+                  <mrow>
+                     <mi>ρ</mi>
+                  </mrow>
+                  <mrow>
+                     <mn>2</mn>
+                  </mrow>
+               </msup>
+            </math> is an eigenvalue of 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>A</mi>
+            </math> and must equal some 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <msub>
+                  <mrow>
+                     <mi>λ</mi>
+                  </mrow>
+                  <mrow>
+                     <mi>i</mi>
+                  </mrow>
+               </msub>
+            </math>. Furthermore, because 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>S</mi>
+            </math> is positive semi-definite, 
+            <a href="104_Section_PSM_Positive_Semi-definite_Matrices.xhtml#theorem.EPSM">Theorem EPSM</a> tells us that 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>ρ</mi>
+               <mo class="MathClass-rel">≥</mo>
+               <mn>0</mn>
+            </math>. The impact for us here is that we cannot have two different eigenvalues of 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>S</mi>
+            </math> whose squares equal the same eigenvalue of 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>A</mi>
+            </math>, so we can pair each eigenvalue of 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>S</mi>
+            </math> with a different eigenvalue of 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>A</mi>
+            </math>, equal to its square. (A good exercise is to track through the rest of this proof in the situation where 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>S</mi>
+            </math> is not assumed to be positive semi-definite and we do not have this condition on the eigenvalues. Where does the proof then break down?) Let 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <msub>
+                  <mrow>
+                     <mi>ρ</mi>
+                  </mrow>
+                  <mrow>
+                     <mi>i</mi>
+                  </mrow>
+               </msub>
+            </math>, 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mn>1</mn>
+               <mo class="MathClass-rel">≤</mo>
+               <mi>i</mi>
+               <mo class="MathClass-rel">≤</mo>
+               <mi>q</mi>
+            </math> denote the 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>q</mi>
+            </math> distinct eigenvalues of 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>S</mi>
+            </math>. The discussion above implies that we can order the eigenvalues of 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>A</mi>
+            </math> and 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>S</mi>
+            </math> so that 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <msub>
+                  <mrow>
+                     <mi>λ</mi>
+                  </mrow>
+                  <mrow>
+                     <mi>i</mi>
+                  </mrow>
+               </msub>
+               <mo class="MathClass-rel">=</mo>
+               <msubsup>
+                  <mrow>
+                     <mi>ρ</mi>
+                  </mrow>
+                  <mrow>
+                     <mi>i</mi>
+                  </mrow>
+                  <mrow>
+                     <mn>2</mn>
+                  </mrow>
+               </msubsup>
+            </math> for 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mn>1</mn>
+               <mo class="MathClass-rel">≤</mo>
+               <mi>i</mi>
+               <mo class="MathClass-rel">≤</mo>
+               <mi>q</mi>
+            </math>. Notice that at this point we know that 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>q</mi>
+               <mo class="MathClass-rel">≤</mo>
+               <mi>p</mi>
+            </math>, though we will be showing that 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>q</mi>
+               <mo class="MathClass-rel">=</mo>
+               <mi>p</mi>
+            </math>. 
+         </p>
+         <p> Additionally, the equation above tells us that every eigenvector of 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>S</mi>
+            </math> for 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <msub>
+                  <mrow>
+                     <mi>ρ</mi>
+                  </mrow>
+                  <mrow>
+                     <mi>i</mi>
+                  </mrow>
+               </msub>
+            </math> is again an eigenvector of 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>A</mi>
+            </math> for 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <msubsup>
+                  <mrow>
+                     <mi>ρ</mi>
+                  </mrow>
+                  <mrow>
+                     <mi>i</mi>
+                  </mrow>
+                  <mrow>
+                     <mn>2</mn>
+                  </mrow>
+               </msubsup>
+            </math>. So for 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mn>1</mn>
+               <mo class="MathClass-rel">≤</mo>
+               <mi>i</mi>
+               <mo class="MathClass-rel">≤</mo>
+               <mi>q</mi>
+            </math>, the relevant eigenspaces are related by 
+         </p>
+         <math alttext="Alternative text not available" display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mtable columnalign="left" class="align-star">
+               <mtr>
+                  <mtd columnalign="right" class="align-odd">
+                     <msub>
+                        <mrow>
+                           <mi mathvariant="bold-script">ℰ</mi>
+                        </mrow>
+                        <mrow>
+                           <mi>S</mi>
+                        </mrow>
+                     </msub>
+                     <mfenced separators="" open="(" close=")">
+                        <mrow>
+                           <msqrt>
+                              <mrow>
+                                 <msub>
+                                    <mrow>
+                                       <mi>λ</mi>
+                                    </mrow>
+                                    <mrow>
+                                       <mi>i</mi>
+                                    </mrow>
+                                 </msub>
+                              </mrow>
+                           </msqrt>
+                        </mrow>
+                     </mfenced>
+                     <mo class="MathClass-rel">=</mo>
+                     <msub>
+                        <mrow>
+                           <mi mathvariant="bold-script">ℰ</mi>
+                        </mrow>
+                        <mrow>
+                           <mi>S</mi>
+                        </mrow>
+                     </msub>
+                     <mfenced separators="" open="(" close=")">
+                        <mrow>
+                           <msub>
+                              <mrow>
+                                 <mi>ρ</mi>
+                              </mrow>
+                              <mrow>
+                                 <mi>i</mi>
+                              </mrow>
+                           </msub>
+                        </mrow>
+                     </mfenced>
+                     <mo class="MathClass-rel">⊆</mo>
+                     <msub>
+                        <mrow>
+                           <mi mathvariant="bold-script">ℰ</mi>
+                        </mrow>
+                        <mrow>
+                           <mi>A</mi>
+                        </mrow>
+                     </msub>
+                     <mfenced separators="" open="(" close=")">
+                        <mrow>
+                           <msubsup>
+                              <mrow>
+                                 <mi>ρ</mi>
+                              </mrow>
+                              <mrow>
+                                 <mi>i</mi>
+                              </mrow>
+                              <mrow>
+                                 <mn>2</mn>
+                              </mrow>
+                           </msubsup>
+                        </mrow>
+                     </mfenced>
+                     <mo class="MathClass-rel">=</mo>
+                     <msub>
+                        <mrow>
+                           <mi mathvariant="bold-script">ℰ</mi>
+                        </mrow>
+                        <mrow>
+                           <mi>A</mi>
+                        </mrow>
+                     </msub>
+                     <mfenced separators="" open="(" close=")">
+                        <mrow>
+                           <msub>
+                              <mrow>
+                                 <mi>λ</mi>
+                              </mrow>
+                              <mrow>
+                                 <mi>i</mi>
+                              </mrow>
+                           </msub>
+                        </mrow>
+                     </mfenced>
+                  </mtd>
+                  <mtd class="align-even">
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"> </mtd>
+               </mtr>
+            </mtable>
+         </math>
+         <p>So the eigenspaces of 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>S</mi>
+            </math> are subsets of the eigenspaces of 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>A</mi>
+            </math>, for the related eigenvalues. However, we will be showing that these sets are indeed equal to each other. 
+         </p>
+         <p> Both 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>A</mi>
+            </math> and 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>S</mi>
+            </math> are positive semi-definite, hence Hermitian and therefore normal. 
+            <a href="060_Section_OD_Orthonormal_Diagonalization.xhtml#theorem.OD">Theorem OD</a> then tells us that each is diagonalizable ( 
+            <a href="050_Section_SD_Similarity_and_Diagonalization.xhtml#definition.DZM">Definition DZM</a>). Then 
+            <a href="050_Section_SD_Similarity_and_Diagonalization.xhtml#theorem.DMFE">Theorem DMFE</a> says that the algebraic multiplicity and geometric multiplicity of each eigenvalue are equal. Then, if we let 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>n</mi>
+            </math> denote the size of 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>A</mi>
+            </math>, 
+         </p>
+         <math alttext="Alternative text not available" display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mtable columnalign="left" class="align-star">
+               <mtr>
+                  <mtd columnalign="right" class="align-odd">
+                     <mi>n</mi>
+                  </mtd>
+                  <mtd class="align-even">
+                     <mo class="MathClass-rel">=</mo>
+                     <munderover accentunder="false" accent="false">
+                        <mrow>
+                           <mo mathsize="big"> ∑</mo>
+                        </mrow>
+                        <mrow>
+                           <mi>i</mi>
+                           <mo class="MathClass-rel">=</mo>
+                           <mn>1</mn>
+                        </mrow>
+                        <mrow>
+                           <mi>q</mi>
+                        </mrow>
+                     </munderover>
+                     <msub>
+                        <mrow>
+                           <mi>α</mi>
+                        </mrow>
+                        <mrow>
+                           <mi>S</mi>
+                        </mrow>
+                     </msub>
+                     <mfenced separators="" open="(" close=")">
+                        <mrow>
+                           <msqrt>
+                              <mrow>
+                                 <msub>
+                                    <mrow>
+                                       <mi>λ</mi>
+                                    </mrow>
+                                    <mrow>
+                                       <mi>i</mi>
+                                    </mrow>
+                                 </msub>
+                              </mrow>
+                           </msqrt>
+                        </mrow>
+                     </mfenced>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mtext> </mtext>
+                     <mtext xlink:type="simple" xlink:href="049_Section_PEE_Properties_of_Eigenvalues_and_Eigenvectors.xhtml#theorem.NEM" class="label" xmlns:xlink="http://www.w3.org/1999/xlink">Theorem NEM</mtext>
+                     <mtext class="endlabel"/>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+               </mtr>
+               <mtr>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mo class="MathClass-rel">=</mo>
+                     <munderover accentunder="false" accent="false">
+                        <mrow>
+                           <mo mathsize="big"> ∑</mo>
+                        </mrow>
+                        <mrow>
+                           <mi>i</mi>
+                           <mo class="MathClass-rel">=</mo>
+                           <mn>1</mn>
+                        </mrow>
+                        <mrow>
+                           <mi>q</mi>
+                        </mrow>
+                     </munderover>
+                     <msub>
+                        <mrow>
+                           <mi>γ</mi>
+                        </mrow>
+                        <mrow>
+                           <mi>S</mi>
+                        </mrow>
+                     </msub>
+                     <mfenced separators="" open="(" close=")">
+                        <mrow>
+                           <msqrt>
+                              <mrow>
+                                 <msub>
+                                    <mrow>
+                                       <mi>λ</mi>
+                                    </mrow>
+                                    <mrow>
+                                       <mi>i</mi>
+                                    </mrow>
+                                 </msub>
+                              </mrow>
+                           </msqrt>
+                        </mrow>
+                     </mfenced>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mtext> </mtext>
+                     <mtext xlink:type="simple" xlink:href="050_Section_SD_Similarity_and_Diagonalization.xhtml#theorem.DMFE" class="label" xmlns:xlink="http://www.w3.org/1999/xlink">Theorem DMFE</mtext>
+                     <mtext class="endlabel"/>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+               </mtr>
+               <mtr>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mo class="MathClass-rel">=</mo>
+                     <munderover accentunder="false" accent="false">
+                        <mrow>
+                           <mo mathsize="big"> ∑</mo>
+                        </mrow>
+                        <mrow>
+                           <mi>i</mi>
+                           <mo class="MathClass-rel">=</mo>
+                           <mn>1</mn>
+                        </mrow>
+                        <mrow>
+                           <mi>q</mi>
+                        </mrow>
+                     </munderover>
+                     <mo class="qopname"> dim</mo>
+                     <mfenced separators="" open="(" close=")">
+                        <mrow>
+                           <msub>
+                              <mrow>
+                                 <mi mathvariant="bold-script">ℰ</mi>
+                              </mrow>
+                              <mrow>
+                                 <mi>S</mi>
+                              </mrow>
+                           </msub>
+                           <mfenced separators="" open="(" close=")">
+                              <mrow>
+                                 <msqrt>
+                                    <mrow>
+                                       <msub>
+                                          <mrow>
+                                             <mi>λ</mi>
+                                          </mrow>
+                                          <mrow>
+                                             <mi>i</mi>
+                                          </mrow>
+                                       </msub>
+                                    </mrow>
+                                 </msqrt>
+                              </mrow>
+                           </mfenced>
+                        </mrow>
+                     </mfenced>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mtext> </mtext>
+                     <mtext xlink:type="simple" xlink:href="048_Section_EE_Eigenvalues_and_Eigenvectors.xhtml#definition.GME" class="label" xmlns:xlink="http://www.w3.org/1999/xlink">Definition GME</mtext>
+                     <mtext class="endlabel"/>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+               </mtr>
+               <mtr>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mo class="MathClass-rel">≤</mo>
+                     <munderover accentunder="false" accent="false">
+                        <mrow>
+                           <mo mathsize="big">∑</mo>
+                        </mrow>
+                        <mrow>
+                           <mi>i</mi>
+                           <mo class="MathClass-rel">=</mo>
+                           <mn>1</mn>
+                        </mrow>
+                        <mrow>
+                           <mi>q</mi>
+                        </mrow>
+                     </munderover>
+                     <mo class="qopname"> dim</mo>
+                     <mfenced separators="" open="(" close=")">
+                        <mrow>
+                           <msub>
+                              <mrow>
+                                 <mi mathvariant="bold-script">ℰ</mi>
+                              </mrow>
+                              <mrow>
+                                 <mi>A</mi>
+                              </mrow>
+                           </msub>
+                           <mfenced separators="" open="(" close=")">
+                              <mrow>
+                                 <msub>
+                                    <mrow>
+                                       <mi>λ</mi>
+                                    </mrow>
+                                    <mrow>
+                                       <mi>i</mi>
+                                    </mrow>
+                                 </msub>
+                              </mrow>
+                           </mfenced>
+                        </mrow>
+                     </mfenced>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mtext> </mtext>
+                     <mtext xlink:type="simple" xlink:href="043_Section_PD_Properties_of_Dimension.xhtml#theorem.PSSD" class="label" xmlns:xlink="http://www.w3.org/1999/xlink">Theorem PSSD</mtext>
+                     <mtext class="endlabel"/>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+               </mtr>
+               <mtr>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mo class="MathClass-rel">≤</mo>
+                     <munderover accentunder="false" accent="false">
+                        <mrow>
+                           <mo mathsize="big">∑</mo>
+                        </mrow>
+                        <mrow>
+                           <mi>i</mi>
+                           <mo class="MathClass-rel">=</mo>
+                           <mn>1</mn>
+                        </mrow>
+                        <mrow>
+                           <mi>p</mi>
+                        </mrow>
+                     </munderover>
+                     <mo class="qopname"> dim</mo>
+                     <mfenced separators="" open="(" close=")">
+                        <mrow>
+                           <msub>
+                              <mrow>
+                                 <mi mathvariant="bold-script">ℰ</mi>
+                              </mrow>
+                              <mrow>
+                                 <mi>A</mi>
+                              </mrow>
+                           </msub>
+                           <mfenced separators="" open="(" close=")">
+                              <mrow>
+                                 <msub>
+                                    <mrow>
+                                       <mi>λ</mi>
+                                    </mrow>
+                                    <mrow>
+                                       <mi>i</mi>
+                                    </mrow>
+                                 </msub>
+                              </mrow>
+                           </mfenced>
+                        </mrow>
+                     </mfenced>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mtext> </mtext>
+                     <mtext xlink:type="simple" xlink:href="042_Section_D_Dimension.xhtml#definition.D" class="label" xmlns:xlink="http://www.w3.org/1999/xlink">Definition D</mtext>
+                     <mtext class="endlabel"/>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+               </mtr>
+               <mtr>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mo class="MathClass-rel">=</mo>
+                     <munderover accentunder="false" accent="false">
+                        <mrow>
+                           <mo mathsize="big"> ∑</mo>
+                        </mrow>
+                        <mrow>
+                           <mi>i</mi>
+                           <mo class="MathClass-rel">=</mo>
+                           <mn>1</mn>
+                        </mrow>
+                        <mrow>
+                           <mi>p</mi>
+                        </mrow>
+                     </munderover>
+                     <msub>
+                        <mrow>
+                           <mi>γ</mi>
+                        </mrow>
+                        <mrow>
+                           <mi>A</mi>
+                        </mrow>
+                     </msub>
+                     <mfenced separators="" open="(" close=")">
+                        <mrow>
+                           <msub>
+                              <mrow>
+                                 <mi>λ</mi>
+                              </mrow>
+                              <mrow>
+                                 <mi>i</mi>
+                              </mrow>
+                           </msub>
+                        </mrow>
+                     </mfenced>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mtext> </mtext>
+                     <mtext xlink:type="simple" xlink:href="048_Section_EE_Eigenvalues_and_Eigenvectors.xhtml#definition.GME" class="label" xmlns:xlink="http://www.w3.org/1999/xlink">Definition GME</mtext>
+                     <mtext class="endlabel"/>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+               </mtr>
+               <mtr>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mo class="MathClass-rel">=</mo>
+                     <munderover accentunder="false" accent="false">
+                        <mrow>
+                           <mo mathsize="big"> ∑</mo>
+                        </mrow>
+                        <mrow>
+                           <mi>i</mi>
+                           <mo class="MathClass-rel">=</mo>
+                           <mn>1</mn>
+                        </mrow>
+                        <mrow>
+                           <mi>p</mi>
+                        </mrow>
+                     </munderover>
+                     <msub>
+                        <mrow>
+                           <mi>α</mi>
+                        </mrow>
+                        <mrow>
+                           <mi>A</mi>
+                        </mrow>
+                     </msub>
+                     <mfenced separators="" open="(" close=")">
+                        <mrow>
+                           <msub>
+                              <mrow>
+                                 <mi>λ</mi>
+                              </mrow>
+                              <mrow>
+                                 <mi>i</mi>
+                              </mrow>
+                           </msub>
+                        </mrow>
+                     </mfenced>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mtext> </mtext>
+                     <mtext xlink:type="simple" xlink:href="050_Section_SD_Similarity_and_Diagonalization.xhtml#theorem.DMFE" class="label" xmlns:xlink="http://www.w3.org/1999/xlink">Theorem DMFE</mtext>
+                     <mtext class="endlabel"/>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+               </mtr>
+               <mtr>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mo class="MathClass-rel">=</mo>
+                     <mi>n</mi>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-odd"/>
+                  <mtd class="align-even">
+                     <mtext> </mtext>
+                     <mtext xlink:type="simple" xlink:href="049_Section_PEE_Properties_of_Eigenvalues_and_Eigenvectors.xhtml#theorem.NEM" class="label" xmlns:xlink="http://www.w3.org/1999/xlink">Theorem NEM</mtext>
+                     <mtext class="endlabel"/>
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"/>
+                  <mtd class="align-label">
+                     <mspace width="2em"/>
+                  </mtd>
+               </mtr>
+            </mtable>
+         </math>
+         <p>With equal values at the two ends of this chain of equalities and inequalities, we know that the two inequalities are forced to actually be equalities. In particular, the second inequality implies that 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>p</mi>
+               <mo class="MathClass-rel">=</mo>
+               <mi>q</mi>
+            </math> and the first, in conjunction with 
+            <a href="043_Section_PD_Properties_of_Dimension.xhtml#theorem.EDYES">Theorem EDYES</a>, implies that 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <msub>
+                  <mrow>
+                     <mi mathvariant="bold-script">ℰ</mi>
+                  </mrow>
+                  <mrow>
+                     <mi>S</mi>
+                  </mrow>
+               </msub>
+               <mfenced separators="" open="(" close=")">
+                  <mrow>
+                     <msqrt>
+                        <mrow>
+                           <msub>
+                              <mrow>
+                                 <mi>λ</mi>
+                              </mrow>
+                              <mrow>
+                                 <mi>i</mi>
+                              </mrow>
+                           </msub>
+                        </mrow>
+                     </msqrt>
+                  </mrow>
+               </mfenced>
+               <mo class="MathClass-rel">=</mo>
+               <msub>
+                  <mrow>
+                     <mi mathvariant="bold-script">ℰ</mi>
+                  </mrow>
+                  <mrow>
+                     <mi>A</mi>
+                  </mrow>
+               </msub>
+               <mfenced separators="" open="(" close=")">
+                  <mrow>
+                     <msub>
+                        <mrow>
+                           <mi>λ</mi>
+                        </mrow>
+                        <mrow>
+                           <mi>i</mi>
+                        </mrow>
+                     </msub>
+                  </mrow>
+               </mfenced>
+            </math> for 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mn>1</mn>
+               <mo class="MathClass-rel">≤</mo>
+               <mi>i</mi>
+               <mo class="MathClass-rel">≤</mo>
+               <mi>p</mi>
+            </math>. 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mo class="MathClass-ord">■</mo>
+            </math>
+         </p>
+         <p> Notice that we defined the singular values of a matrix 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>A</mi>
+            </math> as the square roots of the eigenvalues of 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <msup>
+                  <mrow>
+                     <mi>A</mi>
+                  </mrow>
+                  <mrow>
+                     <mo class="MathClass-bin">∗</mo>
+                  </mrow>
+               </msup>
+               <mi>A</mi>
+            </math> ( 
+            <a href="108_Section_SVD_Singular_Value_Decomposition.xhtml#definition.SV">Definition SV</a>). With 
+            <a href="#theorem.EESR">Theorem EESR</a> in hand we recognize the singular values of 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>A</mi>
+            </math> as simply the eigenvalues of 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <msup>
+                  <mrow>
+                     <mi>A</mi>
+                  </mrow>
+                  <mrow>
+                     <mo class="MathClass-bin">∗</mo>
+                  </mrow>
+               </msup>
+               <msup>
+                  <mrow>
+                     <mi>A</mi>
+                  </mrow>
+                  <mrow>
+                     <mn>1</mn>
+                     <mo class="MathClass-bin">∕</mo>
+                     <mn>2</mn>
+                  </mrow>
+               </msup>
+            </math>. Indeed, many authors take this as the definition of singular values, since it is equivalent to our definition. We have chosen not to wait for a discussion of square roots before making a definition of singular values, allowing us to present the singular value decomposition ( 
+            <a href="108_Section_SVD_Singular_Value_Decomposition.xhtml#theorem.SVD">Theorem SVD</a>) all the sooner. 
+         </p>
+         <p> In the first half of the proof of 
+            <a href="#theorem.PSMSR">Theorem PSMSR</a> we could have chosen the matrix 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>E</mi>
+            </math> (which was the essential component of the desired matrix 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>S</mi>
+            </math>) in a variety of ways. Any collection of diagonal entries of 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>E</mi>
+            </math> could be replaced by their negatives and we would maintain the property that 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <msup>
+                  <mrow>
+                     <mi>E</mi>
+                  </mrow>
+                  <mrow>
+                     <mn>2</mn>
+                  </mrow>
+               </msup>
+               <mo class="MathClass-rel">=</mo>
+               <mi>D</mi>
+            </math>. However, if we decide to enforce the entries of 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>E</mi>
+            </math> as non-negative quantities then 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>E</mi>
+            </math> is positive semi-definite, and then 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>S</mi>
+            </math> follows along as a positive semi-definite matrix. We now show that of all the possible square roots of a positive semi-definite matrix, only one is itself again positive semi-definite. In other words, the 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>S</mi>
+            </math> of 
+            <a href="#theorem.PSMSR">Theorem PSMSR</a> is unique. 
+         </p>
+         <p>
+            <span class="cmbx-12">Theorem</span>
+            <span class="cmbx-12"> USR</span>
+            <br/>
+            <a id="theorem.USR">
+               <span class="cmbx-12">Unique Square Root</span>
+            </a>
+            <span id="dx109-447008"/>
+            <span id="dx109-447009"/>
+            <span id="dx109-447010"/>
+            <br/> Suppose 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>A</mi>
+            </math> is a positive semi-definite matrix. Then there is a unique positive semi-definite matrix 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>S</mi>
+            </math> such that 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>A</mi>
+               <mo class="MathClass-rel">=</mo>
+               <msup>
+                  <mrow>
+                     <mi>S</mi>
+                  </mrow>
+                  <mrow>
+                     <mn>2</mn>
+                  </mrow>
+               </msup>
+            </math>. 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mo class="MathClass-ord">□</mo>
+            </math>
+         </p>
+         <p>
+            <span class="cmbx-12">Proof</span>   
+            <a href="#theorem.PSMSR">Theorem PSMSR</a> gives us the existence of at least one positive semi-definite matrix 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>S</mi>
+            </math> such that 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>A</mi>
+               <mo class="MathClass-rel">=</mo>
+               <msup>
+                  <mrow>
+                     <mi>S</mi>
+                  </mrow>
+                  <mrow>
+                     <mn>2</mn>
+                  </mrow>
+               </msup>
+            </math>. As usual, we will assume that 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <msub>
+                  <mrow>
+                     <mi>S</mi>
+                  </mrow>
+                  <mrow>
+                     <mn>1</mn>
+                  </mrow>
+               </msub>
+            </math> and 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <msub>
+                  <mrow>
+                     <mi>S</mi>
+                  </mrow>
+                  <mrow>
+                     <mn>2</mn>
+                  </mrow>
+               </msub>
+            </math> are positive semi-definite matrices such that 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>A</mi>
+               <mo class="MathClass-rel">=</mo>
+               <msubsup>
+                  <mrow>
+                     <mi>S</mi>
+                  </mrow>
+                  <mrow>
+                     <mn>1</mn>
+                  </mrow>
+                  <mrow>
+                     <mn>2</mn>
+                  </mrow>
+               </msubsup>
+               <mo class="MathClass-rel">=</mo>
+               <msubsup>
+                  <mrow>
+                     <mi>S</mi>
+                  </mrow>
+                  <mrow>
+                     <mn>2</mn>
+                  </mrow>
+                  <mrow>
+                     <mn>2</mn>
+                  </mrow>
+               </msubsup>
+            </math> ( 
+            <a href="072_Section_PT_Proof_Techniques.xhtml#technique.U">Technique U</a>). 
+         </p>
+         <p> As 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>A</mi>
+            </math> is diagonalizable, there is a basis of 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <msup>
+                  <mrow>
+                     <mi>ℂ</mi>
+                  </mrow>
+                  <mrow>
+                     <mi>n</mi>
+                  </mrow>
+               </msup>
+            </math> composed entirely of eigenvectors of 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>A</mi>
+            </math> ( 
+            <a href="050_Section_SD_Similarity_and_Diagonalization.xhtml#theorem.DC">Theorem DC</a>), say 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>B</mi>
+               <mo class="MathClass-rel">=</mo>
+               <mfenced separators="" open="{" close="}">
+                  <mrow>
+                     <msub>
+                        <mrow>
+                           <mi>x</mi>
+                        </mrow>
+                        <mrow>
+                           <mn>1</mn>
+                        </mrow>
+                     </msub>
+                     <mo class="MathClass-punc">,</mo>
+                     <mspace width="0.3em" class="thinspace"/>
+                     <msub>
+                        <mrow>
+                           <mi>x</mi>
+                        </mrow>
+                        <mrow>
+                           <mn>2</mn>
+                        </mrow>
+                     </msub>
+                     <mo class="MathClass-punc">,</mo>
+                     <mspace width="0.3em" class="thinspace"/>
+                     <msub>
+                        <mrow>
+                           <mi>x</mi>
+                        </mrow>
+                        <mrow>
+                           <mn>3</mn>
+                        </mrow>
+                     </msub>
+                     <mo class="MathClass-punc">,</mo>
+                     <mspace width="0.3em" class="thinspace"/>
+                     <mo class="MathClass-op">…</mo>
+                     <mo class="MathClass-punc">,</mo>
+                     <mspace width="0.3em" class="thinspace"/>
+                     <msub>
+                        <mrow>
+                           <mi>x</mi>
+                        </mrow>
+                        <mrow>
+                           <mi>n</mi>
+                        </mrow>
+                     </msub>
+                  </mrow>
+               </mfenced>
+            </math>. Let 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <msub>
+                  <mrow>
+                     <mi>δ</mi>
+                  </mrow>
+                  <mrow>
+                     <mn>1</mn>
+                  </mrow>
+               </msub>
+               <mo class="MathClass-punc">,</mo>
+               <mspace width="0.3em" class="thinspace"/>
+               <msub>
+                  <mrow>
+                     <mi>δ</mi>
+                  </mrow>
+                  <mrow>
+                     <mn>2</mn>
+                  </mrow>
+               </msub>
+               <mo class="MathClass-punc">,</mo>
+               <mspace width="0.3em" class="thinspace"/>
+               <msub>
+                  <mrow>
+                     <mi>δ</mi>
+                  </mrow>
+                  <mrow>
+                     <mn>3</mn>
+                  </mrow>
+               </msub>
+               <mo class="MathClass-punc">,</mo>
+               <mspace width="0.3em" class="thinspace"/>
+               <mo class="MathClass-op">…</mo>
+               <mo class="MathClass-punc">,</mo>
+               <mspace width="0.3em" class="thinspace"/>
+               <msub>
+                  <mrow>
+                     <mi>δ</mi>
+                  </mrow>
+                  <mrow>
+                     <mi>n</mi>
+                  </mrow>
+               </msub>
+            </math> denote the associated eigenvalues. 
+            <a href="#theorem.EESR">Theorem EESR</a> allows to conclude that 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <msub>
+                  <mrow>
+                     <mi mathvariant="bold-script">ℰ</mi>
+                  </mrow>
+                  <mrow>
+                     <mi>A</mi>
+                  </mrow>
+               </msub>
+               <mfenced separators="" open="(" close=")">
+                  <mrow>
+                     <msub>
+                        <mrow>
+                           <mi>δ</mi>
+                        </mrow>
+                        <mrow>
+                           <mi>i</mi>
+                        </mrow>
+                     </msub>
+                  </mrow>
+               </mfenced>
+               <mo class="MathClass-rel">=</mo>
+               <msub>
+                  <mrow>
+                     <mi mathvariant="bold-script">ℰ</mi>
+                  </mrow>
+                  <mrow>
+                     <msub>
+                        <mrow>
+                           <mi>S</mi>
+                        </mrow>
+                        <mrow>
+                           <mn>1</mn>
+                        </mrow>
+                     </msub>
+                  </mrow>
+               </msub>
+               <mfenced separators="" open="(" close=")">
+                  <mrow>
+                     <msqrt>
+                        <mrow>
+                           <msub>
+                              <mrow>
+                                 <mi>δ</mi>
+                              </mrow>
+                              <mrow>
+                                 <mi>i</mi>
+                              </mrow>
+                           </msub>
+                        </mrow>
+                     </msqrt>
+                  </mrow>
+               </mfenced>
+               <mo class="MathClass-rel">=</mo>
+               <msub>
+                  <mrow>
+                     <mi mathvariant="bold-script">ℰ</mi>
+                  </mrow>
+                  <mrow>
+                     <msub>
+                        <mrow>
+                           <mi>S</mi>
+                        </mrow>
+                        <mrow>
+                           <mn>2</mn>
+                        </mrow>
+                     </msub>
+                  </mrow>
+               </msub>
+               <mfenced separators="" open="(" close=")">
+                  <mrow>
+                     <msqrt>
+                        <mrow>
+                           <msub>
+                              <mrow>
+                                 <mi>δ</mi>
+                              </mrow>
+                              <mrow>
+                                 <mi>i</mi>
+                              </mrow>
+                           </msub>
+                        </mrow>
+                     </msqrt>
+                  </mrow>
+               </mfenced>
+            </math>. So 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <msub>
+                  <mrow>
+                     <mi>S</mi>
+                  </mrow>
+                  <mrow>
+                     <mn>1</mn>
+                  </mrow>
+               </msub>
+               <msub>
+                  <mrow>
+                     <mi>x</mi>
+                  </mrow>
+                  <mrow>
+                     <mi>i</mi>
+                  </mrow>
+               </msub>
+               <mo class="MathClass-rel">=</mo>
+               <msqrt>
+                  <mrow>
+                     <msub>
+                        <mrow>
+                           <mi>δ</mi>
+                        </mrow>
+                        <mrow>
+                           <mi>i</mi>
+                        </mrow>
+                     </msub>
+                  </mrow>
+               </msqrt>
+               <msub>
+                  <mrow>
+                     <mi>x</mi>
+                  </mrow>
+                  <mrow>
+                     <mi>i</mi>
+                  </mrow>
+               </msub>
+               <mo class="MathClass-rel">=</mo>
+               <msub>
+                  <mrow>
+                     <mi>S</mi>
+                  </mrow>
+                  <mrow>
+                     <mn>2</mn>
+                  </mrow>
+               </msub>
+               <msub>
+                  <mrow>
+                     <mi>x</mi>
+                  </mrow>
+                  <mrow>
+                     <mi>i</mi>
+                  </mrow>
+               </msub>
+            </math> for 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mn>1</mn>
+               <mo class="MathClass-rel">≤</mo>
+               <mi>i</mi>
+               <mo class="MathClass-rel">≤</mo>
+               <mi>n</mi>
+            </math>. 
+         </p>
+         <p> Choose any 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>x</mi>
+               <mo class="MathClass-rel">∈</mo>
+               <msup>
+                  <mrow>
+                     <mi>ℂ</mi>
+                  </mrow>
+                  <mrow>
+                     <mi>n</mi>
+                  </mrow>
+               </msup>
+            </math>. The spanning property of 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>B</mi>
+            </math> allows us to conclude the existence of a set of scalars, 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <msub>
+                  <mrow>
+                     <mi>a</mi>
+                  </mrow>
+                  <mrow>
+                     <mn>1</mn>
+                  </mrow>
+               </msub>
+               <mo class="MathClass-punc">,</mo>
+               <mspace width="0.3em" class="thinspace"/>
+               <msub>
+                  <mrow>
+                     <mi>a</mi>
+                  </mrow>
+                  <mrow>
+                     <mn>2</mn>
+                  </mrow>
+               </msub>
+               <mo class="MathClass-punc">,</mo>
+               <mspace width="0.3em" class="thinspace"/>
+               <msub>
+                  <mrow>
+                     <mi>a</mi>
+                  </mrow>
+                  <mrow>
+                     <mn>3</mn>
+                  </mrow>
+               </msub>
+               <mo class="MathClass-punc">,</mo>
+               <mspace width="0.3em" class="thinspace"/>
+               <mo class="MathClass-op">…</mo>
+               <mo class="MathClass-punc">,</mo>
+               <mspace width="0.3em" class="thinspace"/>
+               <msub>
+                  <mrow>
+                     <mi>a</mi>
+                  </mrow>
+                  <mrow>
+                     <mi>n</mi>
+                  </mrow>
+               </msub>
+            </math>, yielding 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>x</mi>
+            </math> as a linear combination of the vectors in 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>B</mi>
+            </math>. So, 
+         </p>
+         <math alttext="Alternative text not available" display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mtable columnalign="left" class="align-star">
+               <mtr>
+                  <mtd columnalign="right" class="align-odd">
+                     <msub>
+                        <mrow>
+                           <mi>S</mi>
+                        </mrow>
+                        <mrow>
+                           <mn>1</mn>
+                        </mrow>
+                     </msub>
+                     <mi>x</mi>
+                     <mo class="MathClass-rel">=</mo>
+                     <msub>
+                        <mrow>
+                           <mi>S</mi>
+                        </mrow>
+                        <mrow>
+                           <mn>1</mn>
+                        </mrow>
+                     </msub>
+                     <munderover accentunder="false" accent="false">
+                        <mrow>
+                           <mo mathsize="big"> ∑</mo>
+                        </mrow>
+                        <mrow>
+                           <mi>i</mi>
+                           <mo class="MathClass-rel">=</mo>
+                           <mn>1</mn>
+                        </mrow>
+                        <mrow>
+                           <mi>n</mi>
+                        </mrow>
+                     </munderover>
+                     <msub>
+                        <mrow>
+                           <mi>a</mi>
+                        </mrow>
+                        <mrow>
+                           <mi>i</mi>
+                        </mrow>
+                     </msub>
+                     <msub>
+                        <mrow>
+                           <mi>x</mi>
+                        </mrow>
+                        <mrow>
+                           <mi>i</mi>
+                        </mrow>
+                     </msub>
+                     <mo class="MathClass-rel">=</mo>
+                     <munderover accentunder="false" accent="false">
+                        <mrow>
+                           <mo mathsize="big"> ∑</mo>
+                        </mrow>
+                        <mrow>
+                           <mi>i</mi>
+                           <mo class="MathClass-rel">=</mo>
+                           <mn>1</mn>
+                        </mrow>
+                        <mrow>
+                           <mi>n</mi>
+                        </mrow>
+                     </munderover>
+                     <msub>
+                        <mrow>
+                           <mi>a</mi>
+                        </mrow>
+                        <mrow>
+                           <mi>i</mi>
+                        </mrow>
+                     </msub>
+                     <msub>
+                        <mrow>
+                           <mi>S</mi>
+                        </mrow>
+                        <mrow>
+                           <mn>1</mn>
+                        </mrow>
+                     </msub>
+                     <msub>
+                        <mrow>
+                           <mi>x</mi>
+                        </mrow>
+                        <mrow>
+                           <mi>i</mi>
+                        </mrow>
+                     </msub>
+                     <mo class="MathClass-rel">=</mo>
+                     <munderover accentunder="false" accent="false">
+                        <mrow>
+                           <mo mathsize="big"> ∑</mo>
+                        </mrow>
+                        <mrow>
+                           <mi>i</mi>
+                           <mo class="MathClass-rel">=</mo>
+                           <mn>1</mn>
+                        </mrow>
+                        <mrow>
+                           <mi>n</mi>
+                        </mrow>
+                     </munderover>
+                     <msub>
+                        <mrow>
+                           <mi>a</mi>
+                        </mrow>
+                        <mrow>
+                           <mi>i</mi>
+                        </mrow>
+                     </msub>
+                     <msqrt>
+                        <mrow>
+                           <msub>
+                              <mrow>
+                                 <mi>δ</mi>
+                              </mrow>
+                              <mrow>
+                                 <mi>i</mi>
+                              </mrow>
+                           </msub>
+                        </mrow>
+                     </msqrt>
+                     <msub>
+                        <mrow>
+                           <mi>x</mi>
+                        </mrow>
+                        <mrow>
+                           <mi>i</mi>
+                        </mrow>
+                     </msub>
+                     <mo class="MathClass-rel">=</mo>
+                     <munderover accentunder="false" accent="false">
+                        <mrow>
+                           <mo mathsize="big"> ∑</mo>
+                        </mrow>
+                        <mrow>
+                           <mi>i</mi>
+                           <mo class="MathClass-rel">=</mo>
+                           <mn>1</mn>
+                        </mrow>
+                        <mrow>
+                           <mi>n</mi>
+                        </mrow>
+                     </munderover>
+                     <msub>
+                        <mrow>
+                           <mi>a</mi>
+                        </mrow>
+                        <mrow>
+                           <mi>i</mi>
+                        </mrow>
+                     </msub>
+                     <msub>
+                        <mrow>
+                           <mi>S</mi>
+                        </mrow>
+                        <mrow>
+                           <mn>2</mn>
+                        </mrow>
+                     </msub>
+                     <msub>
+                        <mrow>
+                           <mi>x</mi>
+                        </mrow>
+                        <mrow>
+                           <mi>i</mi>
+                        </mrow>
+                     </msub>
+                     <mo class="MathClass-rel">=</mo>
+                     <msub>
+                        <mrow>
+                           <mi>S</mi>
+                        </mrow>
+                        <mrow>
+                           <mn>2</mn>
+                        </mrow>
+                     </msub>
+                     <munderover accentunder="false" accent="false">
+                        <mrow>
+                           <mo mathsize="big"> ∑</mo>
+                        </mrow>
+                        <mrow>
+                           <mi>i</mi>
+                           <mo class="MathClass-rel">=</mo>
+                           <mn>1</mn>
+                        </mrow>
+                        <mrow>
+                           <mi>n</mi>
+                        </mrow>
+                     </munderover>
+                     <msub>
+                        <mrow>
+                           <mi>a</mi>
+                        </mrow>
+                        <mrow>
+                           <mi>i</mi>
+                        </mrow>
+                     </msub>
+                     <msub>
+                        <mrow>
+                           <mi>x</mi>
+                        </mrow>
+                        <mrow>
+                           <mi>i</mi>
+                        </mrow>
+                     </msub>
+                     <mo class="MathClass-rel">=</mo>
+                     <msub>
+                        <mrow>
+                           <mi>S</mi>
+                        </mrow>
+                        <mrow>
+                           <mn>2</mn>
+                        </mrow>
+                     </msub>
+                     <mi>x</mi>
+                  </mtd>
+                  <mtd class="align-even">
+                     <mspace width="2em"/>
+                  </mtd>
+                  <mtd columnalign="right" class="align-label"> </mtd>
+               </mtr>
+            </mtable>
+         </math>
+         <p>Since 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <msub>
+                  <mrow>
+                     <mi>S</mi>
+                  </mrow>
+                  <mrow>
+                     <mn>1</mn>
+                  </mrow>
+               </msub>
+            </math> and 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <msub>
+                  <mrow>
+                     <mi>S</mi>
+                  </mrow>
+                  <mrow>
+                     <mn>2</mn>
+                  </mrow>
+               </msub>
+            </math> have the same action on every vector, 
+            <a href="032_Section_MM_Matrix_Multiplication.xhtml#theorem.EMMVP">Theorem EMMVP</a> yields the conclusion that 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <msub>
+                  <mrow>
+                     <mi>S</mi>
+                  </mrow>
+                  <mrow>
+                     <mn>1</mn>
+                  </mrow>
+               </msub>
+               <mo class="MathClass-rel">=</mo>
+               <msub>
+                  <mrow>
+                     <mi>S</mi>
+                  </mrow>
+                  <mrow>
+                     <mn>2</mn>
+                  </mrow>
+               </msub>
+            </math>. 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mo class="MathClass-ord">■</mo>
+            </math>
+         </p>
+         <p> With a criteria that distinguishes one square root from all the rest (positive semi-definiteness) we can now define 
+            <span class="cmti-12">the </span>square root of a positive semi-definite matrix. 
+         </p>
+         <p>
+            <span class="cmbx-12">Definition</span>
+            <span class="cmbx-12"> SRM</span>
+            <br/>
+            <a id="definition.SRM">
+               <span class="cmbx-12">Square Root of a Matrix</span>
+            </a>
+            <span id="dx109-447011"/>
+            <span id="dx109-447012"/>
+            <span id="dx109-447013"/>
+            <br/> Suppose 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>A</mi>
+            </math> is a positive semi-definite matrix and 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>S</mi>
+            </math> is the positive semi-definite matrix such that 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <msup>
+                  <mrow>
+                     <mi>S</mi>
+                  </mrow>
+                  <mrow>
+                     <mn>2</mn>
+                  </mrow>
+               </msup>
+               <mo class="MathClass-rel">=</mo>
+               <mi>S</mi>
+               <mi>S</mi>
+               <mo class="MathClass-rel">=</mo>
+               <mi>A</mi>
+            </math>. Then 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>S</mi>
+            </math> is the 
+            <span class="cmbx-12">square</span>
+            <span class="cmbx-12">root </span>of 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>A</mi>
+            </math> and we write 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>S</mi>
+               <mo class="MathClass-rel">=</mo>
+               <msup>
+                  <mrow>
+                     <mi>A</mi>
+                  </mrow>
+                  <mrow>
+                     <mn>1</mn>
+                     <mo class="MathClass-bin">∕</mo>
+                     <mn>2</mn>
+                  </mrow>
+               </msup>
+            </math>. 
+            <span id="dx109-447014"/>
+            <span id="dx109-447015"/>
+            <span id="dx109-447016"/>
+         </p>
+         <p>(This definition contains 
+            <a id="notation.SRM">Notation SRM</a>.) 
+            <math alttext="Alternative text not available" display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mo class="MathClass-bin">△</mo>
+            </math>
+         </p>
+      </section>
+   </body>
+</html>

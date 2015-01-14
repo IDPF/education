@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html id="chapter.VS" xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+   <head>
+      <title>Chapter VS Vector Spaces</title>
+      <link rel="stylesheet" type="text/css" href="../css/fcla-xml-2.99.css"/>
+      <link rel="stylesheet" type="text/css" href="../css/edupub.css"/>
+   </head>
+   <body epub:type="bodymatter chapter" id="x37-149000doc">
+      <h1 class="likechapterHead" id="x37-149000">Chapter VS  Vector Spaces</h1>
+      <p> We now have a computational toolkit in place and so we can begin our study of linear algebra in a more theoretical style. </p>
+      <p> Linear algebra is the study of two fundamental objects, vector spaces and linear transformations (see 
+         <a href="051_Chapter_LT_Linear_Transformations.xhtml#chapter.LT">Chapter LT</a>). This chapter will focus on the former. The power of mathematics is often derived from generalizing many different situations into one abstract formulation, and that is exactly what we will be doing throughout this chapter. 
+      </p>
+      <nav epub:type="toc">
+         <h2>Table of Contents</h2>
+         <ol class="nomark">
+            <li>
+               <a href="038_Section_VS_Vector_Spaces.xhtml#x38-150000">Section VS Vector Spaces</a>
+            </li>
+            <li>
+               <a href="038_Section_VS_Vector_Spaces.xhtml#x38-151000" id="QQ2-38-151">Subsection VS: Vector Spaces</a>
+            </li>
+            <li>
+               <a href="038_Section_VS_Vector_Spaces.xhtml#x38-152000" id="QQ2-38-152">Subsection EVS: Examples of Vector Spaces</a>
+            </li>
+            <li>
+               <a href="038_Section_VS_Vector_Spaces.xhtml#x38-153000" id="QQ2-38-153">Subsection VSP: Vector Space Properties</a>
+            </li>
+            <li>
+               <a href="038_Section_VS_Vector_Spaces.xhtml#x38-154000" id="QQ2-38-154">Subsection RD: Recycling Definitions</a>
+            </li>
+            <li>
+               <a href="038_Section_VS_Vector_Spaces.xhtml#x38-155000" id="QQ2-38-155">Subsection READ: Reading Questions</a>
+            </li>
+            <li>
+               <a href="038_Section_VS_Vector_Spaces.xhtml#x38-156000" id="QQ2-38-156">Subsection EXC: Exercises</a>
+            </li>
+            <li>
+               <a href="038_Section_VS_Vector_Spaces.xhtml#x38-157000" id="QQ2-38-157">Subsection SOL: Solutions</a>
+            </li>
+            <li>
+               <a href="039_Section_S_Subspaces.xhtml#x39-158000">Section S Subspaces</a>
+            </li>
+            <li>
+               <a href="039_Section_S_Subspaces.xhtml#x39-159000" id="QQ2-39-159">Subsection TS: Testing Subspaces</a>
+            </li>
+            <li>
+               <a href="039_Section_S_Subspaces.xhtml#x39-160000" id="QQ2-39-160">Subsection TSS: The Span of a Set</a>
+            </li>
+            <li>
+               <a href="039_Section_S_Subspaces.xhtml#x39-161000" id="QQ2-39-161">Subsection SC: Subspace Constructions</a>
+            </li>
+            <li>
+               <a href="039_Section_S_Subspaces.xhtml#x39-162000" id="QQ2-39-162">Subsection READ: Reading Questions</a>
+            </li>
+            <li>
+               <a href="039_Section_S_Subspaces.xhtml#x39-163000" id="QQ2-39-163">Subsection EXC: Exercises</a>
+            </li>
+            <li>
+               <a href="039_Section_S_Subspaces.xhtml#x39-164000" id="QQ2-39-164">Subsection SOL: Solutions</a>
+            </li>
+            <li>
+               <a href="040_Section_LISS_Linear_Independence_and_Spanning_Sets.xhtml#x40-165000">Section LISS Linear Independence and Spanning Sets</a>
+            </li>
+            <li>
+               <a href="040_Section_LISS_Linear_Independence_and_Spanning_Sets.xhtml#x40-166000" id="QQ2-40-166">Subsection LI: Linear Independence</a>
+            </li>
+            <li>
+               <a href="040_Section_LISS_Linear_Independence_and_Spanning_Sets.xhtml#x40-167000" id="QQ2-40-167">Subsection SS: Spanning Sets</a>
+            </li>
+            <li>
+               <a href="040_Section_LISS_Linear_Independence_and_Spanning_Sets.xhtml#x40-168000" id="QQ2-40-168">Subsection VR: Vector Representation</a>
+            </li>
+            <li>
+               <a href="040_Section_LISS_Linear_Independence_and_Spanning_Sets.xhtml#x40-169000" id="QQ2-40-169">Subsection READ: Reading Questions</a>
+            </li>
+            <li>
+               <a href="040_Section_LISS_Linear_Independence_and_Spanning_Sets.xhtml#x40-170000" id="QQ2-40-170">Subsection EXC: Exercises</a>
+            </li>
+            <li>
+               <a href="040_Section_LISS_Linear_Independence_and_Spanning_Sets.xhtml#x40-171000" id="QQ2-40-171">Subsection SOL: Solutions</a>
+            </li>
+            <li>
+               <a href="041_Section_B_Bases.xhtml#x41-172000">Section B Bases</a>
+            </li>
+            <li>
+               <a href="041_Section_B_Bases.xhtml#x41-173000" id="QQ2-41-173">Subsection B: Bases</a>
+            </li>
+            <li>
+               <a href="041_Section_B_Bases.xhtml#x41-174000" id="QQ2-41-174">Subsection BSCV: Bases for Spans of Column Vectors</a>
+            </li>
+            <li>
+               <a href="041_Section_B_Bases.xhtml#x41-175000" id="QQ2-41-175">Subsection BNM: Bases and Nonsingular Matrices</a>
+            </li>
+            <li>
+               <a href="041_Section_B_Bases.xhtml#x41-176000" id="QQ2-41-176">Subsection OBC: Orthonormal Bases and Coordinates</a>
+            </li>
+            <li>
+               <a href="041_Section_B_Bases.xhtml#x41-177000" id="QQ2-41-177">Subsection READ: Reading Questions</a>
+            </li>
+            <li>
+               <a href="041_Section_B_Bases.xhtml#x41-178000" id="QQ2-41-178">Subsection EXC: Exercises</a>
+            </li>
+            <li>
+               <a href="041_Section_B_Bases.xhtml#x41-179000" id="QQ2-41-179">Subsection SOL: Solutions</a>
+            </li>
+            <li>
+               <a href="042_Section_D_Dimension.xhtml#x42-180000">Section D Dimension</a>
+            </li>
+            <li>
+               <a href="042_Section_D_Dimension.xhtml#x42-181000" id="QQ2-42-181">Subsection D: Dimension</a>
+            </li>
+            <li>
+               <a href="042_Section_D_Dimension.xhtml#x42-182000" id="QQ2-42-182">Subsection DVS: Dimension of Vector Spaces</a>
+            </li>
+            <li>
+               <a href="042_Section_D_Dimension.xhtml#x42-183000" id="QQ2-42-183">Subsection RNM: Rank and Nullity of a Matrix</a>
+            </li>
+            <li>
+               <a href="042_Section_D_Dimension.xhtml#x42-184000" id="QQ2-42-184">Subsection RNNM: Rank and Nullity of a Nonsingular Matrix</a>
+            </li>
+            <li>
+               <a href="042_Section_D_Dimension.xhtml#x42-185000" id="QQ2-42-185">Subsection READ: Reading Questions</a>
+            </li>
+            <li>
+               <a href="042_Section_D_Dimension.xhtml#x42-186000" id="QQ2-42-186">Subsection EXC: Exercises</a>
+            </li>
+            <li>
+               <a href="042_Section_D_Dimension.xhtml#x42-187000" id="QQ2-42-187">Subsection SOL: Solutions</a>
+            </li>
+            <li>
+               <a href="043_Section_PD_Properties_of_Dimension.xhtml#x43-188000">Section PD Properties of Dimension</a>
+            </li>
+            <li>
+               <a href="043_Section_PD_Properties_of_Dimension.xhtml#x43-189000" id="QQ2-43-189">Subsection GT: Goldilocks’ Theorem</a>
+            </li>
+            <li>
+               <a href="043_Section_PD_Properties_of_Dimension.xhtml#x43-190000" id="QQ2-43-190">Subsection RT: Ranks and Transposes</a>
+            </li>
+            <li>
+               <a href="043_Section_PD_Properties_of_Dimension.xhtml#x43-191000" id="QQ2-43-191">Subsection DFS: Dimension of Four Subspaces</a>
+            </li>
+            <li>
+               <a href="043_Section_PD_Properties_of_Dimension.xhtml#x43-192000" id="QQ2-43-192">Subsection DS: Direct Sums</a>
+            </li>
+            <li>
+               <a href="043_Section_PD_Properties_of_Dimension.xhtml#x43-193000" id="QQ2-43-193">Subsection READ: Reading Questions</a>
+            </li>
+            <li>
+               <a href="043_Section_PD_Properties_of_Dimension.xhtml#x43-194000" id="QQ2-43-194">Subsection EXC: Exercises</a>
+            </li>
+            <li>
+               <a href="043_Section_PD_Properties_of_Dimension.xhtml#x43-195000" id="QQ2-43-195">Subsection SOL: Solutions</a>
+            </li>
+         </ol>
+      </nav>
+   </body>
+</html>
