@@ -11,7 +11,6 @@
         <meta property="dcterms:modified">2014-12-11T09:12:55Z</meta>
         <meta property="dc:publisher">McDougal Littell</meta>
         <meta property="dc:date">2014-12-11T09:12:52+00:00</meta>
-        <link rel="mods-record" href="zedai-mods.xml"/>
         <meta property="schema:accessibilityFeature">alternativeText</meta>
         <meta property="schema:accessibilityFeature">longDescription</meta>
         <meta property="schema:accessibilityFeature">printPageNumbers</meta>
