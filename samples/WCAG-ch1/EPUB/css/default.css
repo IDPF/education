@@ -710,7 +710,7 @@ i {
 span.keyword, span[epub|type~='keyword'] {
   font-weight: 700;
   color: #1E7AB9;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 span.leadin {
@@ -1658,3 +1658,13 @@ p {
 .hidden {
 display:none;
 }
+
+.uc {
+   text-transform: uppercase;
+}
+
+dfn {
+   font-style: italic;
+}
+
+ol.loweralpha { list-style-type: lower-alpha; }

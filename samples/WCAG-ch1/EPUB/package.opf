@@ -11,10 +11,8 @@
         <dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/" id="d21041e30">41f1328c-0571-4e71-8be8-e65bc148281a</dc:identifier>
         <dc:language>en-US</dc:language>
         <meta property="dcterms:modified">2014-12-11T09:12:55Z</meta>
-        <meta property="dc:publisher">Anonymous</meta>
+        <meta property="dc:publisher">McDougal Littell</meta>
         <meta property="dc:date">2014-12-11T09:12:52+00:00</meta>
-        <meta property="dcterms:title">World Cultures and Geography</meta>
-        <meta property="dcterms:creator">DAISY XML Techniques Team</meta>
         <link rel="mods-record" href="zedai-mods.xml"/>
         <meta property="schema:accessibilityFeature">alternativeText</meta>
         <meta property="schema:accessibilityFeature">longDescription</meta>
