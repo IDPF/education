@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<package xmlns="http://www.idpf.org/2007/opf" prefix="ibooks: http://vocabulary.itunes.apple.com/rdf/ibooks/vocabulary-extensions-1.0/ rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#" unique-identifier="isbn" version="3.0" xml:lang="en">
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+        <dc:type>edupub</dc:type>
+        <dc:title>English Language GCSE for AQA: Student Book</dc:title>
+        <dc:identifier id="isbn">9781107453005</dc:identifier>
+        <meta property="identifier-type" refines="#isbn" scheme="onix:codelist5">15</meta>
+        <dc:creator>Lindsay McNab</dc:creator>
+        <dc:creator>Imelda Pilgrim</dc:creator>
+        <dc:creator>Marian Slee</dc:creator>
+        <dc:publisher>Cambridge University Press</dc:publisher>
+        <dc:language>en</dc:language>
+        <dc:source id="src">9781107453005</dc:source>
+        <meta property="identifier-type" refines="#src" scheme="onix:codelist5">15</meta>
+        <meta property="source-of" refines="#src">pagination</meta>
+        <meta name="cover" content="cover-image"/>
+        <meta property="ibooks:specified-fonts">true</meta>
+        <meta property="dcterms:modified">2014-04-10T11:41:00Z</meta>
+        <meta property="schema:audience" id="aud01">schema:audience</meta>
+        <meta refines="#aud01" property="rdf:type">http://www.schema.org/EducationalAudience</meta>
+        <meta property="schema:educationalRole" refines="#aud01">student</meta>
+        <meta property="schema:typicalAgeRange">16-18</meta>
+        <meta property="schema:accessibilityFeature">tableOfContents</meta>
+        <meta property="schema:accessibilityFeature">alternativeText</meta>
+        <meta property="schema:accessibilityFeature">printPageNumbers</meta>
+        <meta property="schema:accessibilityFeature">readingOrder</meta>
+        <meta property="schema:accessibilityFeature">structuralNavigation</meta>
+    </metadata>
+    <manifest>
+        <item href="toc.ncx" id="toc" media-type="application/x-dtbncx+xml"/>
+        <item href="Text/nav.xhtml" id="toc1" media-type="application/xhtml+xml" properties="nav"/>
+
+        <item href="Styles/main_styles.css" id="main_styles" media-type="text/css"/>
+        <item href="Styles/other_styles.css" id="other_styles" media-type="text/css"/>
+
+        <!--FONTS-->
+        <item href="Fonts/CharisSILB.ttf" id="CharisSILB.ttf" media-type="application/vnd.ms-opentype"/>
+        <item href="Fonts/CaflischScriptPro-Light.otf" id="CaflischScriptPro-Light.otf" media-type="application/vnd.ms-opentype"/>
+        <item href="Fonts/CharisSILBI.ttf" id="CharisSILBI.ttf" media-type="application/vnd.ms-opentype"/>
+        <item href="Fonts/CharisSILI.ttf" id="CharisSILI.ttf" media-type="application/vnd.ms-opentype"/>
+        <item href="Fonts/CharisSILR.ttf" id="CharisSILR.ttf" media-type="application/vnd.ms-opentype"/>
+        <item href="Fonts/Andika.ttf" id="Andika.ttf" media-type="application/vnd.ms-opentype"/>
+        <item href="Fonts/SourceSansPro-Regular.ttf" id="SourceSansPro-Regular.ttf" media-type="application/vnd.ms-opentype"/>
+        <item href="Fonts/SourceSansPro-Bold.ttf" id="SourceSansPro-Bold.ttf" media-type="application/vnd.ms-opentype"/>
+        <item href="Fonts/SourceSansPro-Italic.ttf" id="SourceSansPro-Italic.ttf" media-type="application/vnd.ms-opentype"/>
+        <item href="Fonts/SourceSansPro-BoldItalic.ttf" id="SourceSansPro-BoldItalic.ttf" media-type="application/vnd.ms-opentype"/>
+
+        <!--Images-->
+        <item id="arrow.png" href="Images/arrow.png" media-type="image/png"/>
+        <item id="camera.png" href="Images/camera.png" media-type="image/png"/>
+        <item id="common.png" href="Images/common.png" media-type="image/png"/>
+        <item id="common1.png" href="Images/common1.png" media-type="image/png"/>
+        <item id="common3.png" href="Images/common3.png" media-type="image/png"/>
+        <item id="copy.jpg" href="Images/copy.jpg" media-type="image/jpeg"/>
+        <item id="icon.png" href="Images/icon.png" media-type="image/png"/>
+        <item id="img106.jpg" href="Images/img106.jpg" media-type="image/jpeg"/>
+        <item id="img107.jpg" href="Images/img107.jpg" media-type="image/jpeg"/>
+        <item id="img107a.jpg" href="Images/img107a.jpg" media-type="image/jpeg"/>
+        <item id="img108.jpg" href="Images/img108.jpg" media-type="image/jpeg"/>
+        <item id="img109.jpg" href="Images/img109.jpg" media-type="image/jpeg"/>
+        <item id="img112.jpg" href="Images/img112.jpg" media-type="image/jpeg"/>
+        <item id="img113.jpg" href="Images/img113.jpg" media-type="image/jpeg"/>
+        <item id="img114.jpg" href="Images/img114.jpg" media-type="image/jpeg"/>
+        <item id="img115.jpg" href="Images/img115.jpg" media-type="image/jpeg"/>
+        <item id="img116.jpg" href="Images/img116.jpg" media-type="image/jpeg"/>
+        <item id="img117.jpg" href="Images/img117.jpg" media-type="image/jpeg"/>
+        <item id="img118.jpg" href="Images/img118.jpg" media-type="image/jpeg"/>
+        <item id="img120.jpg" href="Images/img120.jpg" media-type="image/jpeg"/>
+        <item id="img121.jpg" href="Images/img121.jpg" media-type="image/jpeg"/>
+        <item id="img122.jpg" href="Images/img122.jpg" media-type="image/jpeg"/>
+        <item id="img123.jpg" href="Images/img123.jpg" media-type="image/jpeg"/>
+        <item id="img127.jpg" href="Images/img127.jpg" media-type="image/jpeg"/>
+        <item id="img134.jpg" href="Images/img134.jpg" media-type="image/jpeg"/>
+        <item id="img135.jpg" href="Images/img135.jpg" media-type="image/jpeg"/>
+        <item id="radic.png" href="Images/radic.png" media-type="image/png"/>
+        <item id="radic1.png" href="Images/radic1.png" media-type="image/png"/>
+        <item id="round.png" href="Images/round.png" media-type="image/png"/>
+        <item id="round5.png" href="Images/round5.png" media-type="image/png"/>
+        <item id="round6.png" href="Images/round6.png" media-type="image/png"/>
+        <item id="tick.png" href="Images/tick.png" media-type="image/png"/>
+        <item id="tick1.png" href="Images/tick1.png" media-type="image/png"/>
+        <item id="times.png" href="Images/times.png" media-type="image/png"/>
+        
+        <item id="cover-image" href="Images/9781107453005frcvr.jpg" media-type="image/jpeg" properties="cover-image"/>
+        
+        <!-- VIDEO + POSTERS -->
+        <item id="chrisrules.jpg" href="video/g-lan-a-high-sb-vid-0005-a-chrisrules.jpg" media-type="image/jpeg"/>
+        <item id="chrisrules.mp4" href="video/g-lan-a-high-sb-vid-0005-a-chrisrules.mp4" media-type="video/mp4"/>
+        <item id="ianwriting.jpg" href="video/g-lan-a-high-sb-vid-0037-a-ianwriting.jpg" media-type="image/jpeg"/>
+        <item id="ianwriting.mp4" href="video/g-lan-a-high-sb-vid-0037-a-ianwriting.mp4" media-type="video/mp4"/>
+        <item id="samfeatures.jpg" href="video/g-lan-a-high-sb-vid-0038-a-samfeatures.jpg" media-type="image/jpeg"/>
+        <item id="samfeatures.mp4" href="video/g-lan-a-high-sb-vid-0038-a-samfeatures.mp4" media-type="video/mp4"/>
+        <item id="stella.jpg" href="video/g-lan-a-high-sb-vid-0039-a-stella_purpose.jpg" media-type="image/jpeg"/>
+        <item id="stella.mp4" href="video/g-lan-a-high-sb-vid-0039-a-stella_purpose.mp4" media-type="video/mp4"/>
+        <item id="benrevise.jpg" href="video/g-lan-a-high-sb-vid-0066-a-benrevise.jpg" media-type="image/jpeg"/>
+        <item id="benrevise.mp4" href="video/g-lan-a-high-sb-vid-0066-a-benrevise.mp4" media-type="video/mp4"/>
+        <item id="samstandard.jpg" href="video/g-lan-a-high-sb-vid-0046-a-samstandard.jpg" media-type="image/jpeg"/>
+        <item id="samstandard.mp4" href="video/g-lan-a-high-sb-vid-0046-a-samstandard.mp4" media-type="video/mp4"/>
+        <item id="stellatone.jpg" href="video/g-lan-a-high-sb-vid-0047-a-stellatone.jpg" media-type="image/jpeg"/>
+        <item id="stellatone.mp4" href="video/g-lan-a-high-sb-vid-0047-a-stellatone.mp4" media-type="video/mp4"/>
+        <item id="stellapersp.jpg" href="video/g-lan-a-high-sb-vid-0008-a-stellapersp.jpg" media-type="image/jpeg"/>
+        <item id="stellapersp.mp4" href="video/g-lan-a-high-sb-vid-0008-a-stellapersp.mp4" media-type="video/mp4"/>
+        
+        <!--PAGES-->
+        <item href="Text/cover.xhtml" id="cover" media-type="application/xhtml+xml"/>
+        <item href="Text/Ch16sec1.xhtml" id="Ch16sec1" media-type="application/xhtml+xml"/>
+        <item href="Text/Ch16sec2.xhtml" id="Ch16sec2" media-type="application/xhtml+xml"/>
+        <item href="Text/Ch16sec3.xhtml" id="Ch16sec3" media-type="application/xhtml+xml"/>
+        <item href="Text/Ch16sec4.xhtml" id="Ch16sec4" media-type="application/xhtml+xml"/>
+        <item href="Text/Ch16sec5.xhtml" id="Ch16sec5" media-type="application/xhtml+xml"/>
+        <item href="Text/Ch16sec6.xhtml" id="Ch16sec6" media-type="application/xhtml+xml"/>
+        <item href="Text/Ch16sec7.xhtml" id="Ch16sec7" media-type="application/xhtml+xml"/>
+        <item href="Text/Ch16sec8.xhtml" id="Ch16sec8" media-type="application/xhtml+xml"/>
+        <item href="Text/Ch19sec1.xhtml" id="Ch19sec1" media-type="application/xhtml+xml"/>
+        <item href="Text/Ch19sec2.xhtml" id="Ch19sec2" media-type="application/xhtml+xml"/>
+        <item href="Text/Ch19sec3.xhtml" id="Ch19sec3" media-type="application/xhtml+xml"/>
+        <item href="Text/Ch19sec4.xhtml" id="Ch19sec4" media-type="application/xhtml+xml"/>
+        <item href="Text/Ch19sec5.xhtml" id="Ch19sec5" media-type="application/xhtml+xml"/>
+        <item href="Text/Ch19sec6.xhtml" id="Ch19sec6" media-type="application/xhtml+xml"/>
+        <item href="Text/Ch19sec7.xhtml" id="Ch19sec7" media-type="application/xhtml+xml"/>
+        <item href="Text/Ch19sec8.xhtml" id="Ch19sec8" media-type="application/xhtml+xml"/>
+        <item href="Text/Realia_page133-001.xhtml" id="Realia_page133-001" media-type="application/xhtml+xml"/>
+        <item href="Text/Realia_page134-001.xhtml" id="Realia_page134-001" media-type="application/xhtml+xml"/>
+        <item href="Text/Realia_page134-002.xhtml" id="Realia_page134-002" media-type="application/xhtml+xml"/>
+        <item href="Text/Realia_page134-003.xhtml" id="Realia_page134-003" media-type="application/xhtml+xml"/>
+        <item href="Text/Realia_page135-001.xhtml" id="Realia_page135-001" media-type="application/xhtml+xml"/>
+        <item href="Text/Realia_page151-001.xhtml" id="Realia_page151-001" media-type="application/xhtml+xml"/>
+        <item href="Text/Realia_page154-001.xhtml" id="Realia_page154-001" media-type="application/xhtml+xml"/>
+        <item href="Text/Realia_page154-002.xhtml" id="Realia_page154-002" media-type="application/xhtml+xml"/>
+        <item href="Text/jenny.xhtml" id="jenny" media-type="application/xhtml+xml"/>
+        <item href="Text/tone.xhtml" id="tone" media-type="application/xhtml+xml"/>
+        <item href="Text/Copyright.xhtml" id="Copyright" media-type="application/xhtml+xml"/>
+        <item href="Text/Acknowledgements.xhtml" id="Acknowledgements" media-type="application/xhtml+xml"/>
+    </manifest>
+    <spine toc="toc">
+        <itemref idref="cover" linear="no"/>
+        <itemref idref="Ch16sec1"/>
+        <itemref idref="Ch16sec2"/>
+        <itemref idref="Ch16sec3"/>
+        <itemref idref="Ch16sec4"/>
+        <itemref idref="Realia_page133-001" linear="no"/>
+        <itemref idref="Ch16sec5"/>
+        <itemref idref="Realia_page134-001" linear="no"/>
+        <itemref idref="Realia_page134-002" linear="no"/>
+        <itemref idref="Realia_page134-003" linear="no"/>
+        <itemref idref="Realia_page135-001" linear="no"/>
+        <itemref idref="Ch16sec6"/>
+        <itemref idref="Ch16sec7"/>
+        <itemref idref="Ch16sec8"/>
+        <itemref idref="Ch19sec1"/>
+        <itemref idref="Ch19sec2"/>
+        <itemref idref="Realia_page151-001" linear="no"/>
+        <itemref idref="jenny" linear="no"/>
+        <itemref idref="Ch19sec3"/>
+        <itemref idref="Ch19sec4"/>
+        <itemref idref="Ch19sec5"/>
+        <itemref idref="Realia_page154-001" linear="no"/>
+        <itemref idref="Realia_page154-002" linear="no"/>
+        <itemref idref="tone" linear="no"/>
+        <itemref idref="Ch19sec6"/>
+        <itemref idref="Ch19sec7"/>
+        <itemref idref="Ch19sec8"/>
+        <itemref idref="Copyright"/>
+        <itemref idref="Acknowledgements"/>
+    </spine>
+</package>

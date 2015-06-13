@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="en">
+<head>
+<meta content="9781107453005" name="dtb:uid"/>
+<meta content="1" name="dtb:depth"/>
+<meta content="0" name="dtb:totalPageCount"/>
+<meta content="0" name="dtb:headmaxPageNumber"/>
+</head>
+<docTitle><text>English Language GCSE for AQA: Student Book</text></docTitle>
+<docAuthor><text>Lindsay McNab, Imelda Pilgrim, Marian Slee</text></docAuthor>
+<navMap>
+<navPoint id="nav-100" playOrder="1"><navLabel><text>WRITING Unit 16 Use sentence structures for effect</text></navLabel><content src="Text/Ch16sec1.xhtml#ch16"/>
+<navPoint id="nav-101" playOrder="2"><navLabel><text>Use your skills</text></navLabel><content src="Text/Ch16sec1.xhtml#s70"/></navPoint>
+<navPoint id="nav-102" playOrder="3"><navLabel><text>Choose the tense for your writing</text></navLabel><content src="Text/Ch16sec2.xhtml#s71"/></navPoint>
+<navPoint id="nav-103" playOrder="4"><navLabel><text>Write for purpose and audience</text></navLabel><content src="Text/Ch16sec3.xhtml#s72"/></navPoint>
+<navPoint id="nav-104" playOrder="5"><navLabel><text>Understand sentence functions</text></navLabel><content src="Text/Ch16sec4.xhtml#s73"/></navPoint>
+<navPoint id="nav-105" playOrder="6"><navLabel><text>Vary sentence structures</text></navLabel><content src="Text/Ch16sec5.xhtml#s74"/></navPoint>
+<navPoint id="nav-106" playOrder="7"><navLabel><text>Use fragments for effect</text></navLabel><content src="Text/Ch16sec6.xhtml#s75"/></navPoint>
+<navPoint id="nav-107" playOrder="8"><navLabel><text>Progress punctuation</text></navLabel><content src="Text/Ch16sec7.xhtml"/></navPoint>
+<navPoint id="nav-108" playOrder="9"><navLabel><text>Assess your progress</text></navLabel><content src="Text/Ch16sec8.xhtml"/></navPoint>
+</navPoint>
+<navPoint id="nav-125" playOrder="10"><navLabel><text>Unit 19 Create tone to influence your readers</text></navLabel><content src="Text/Ch19sec1.xhtml#ch19"/>
+<navPoint id="nav-126" playOrder="11"><navLabel><text>Use your skills</text></navLabel><content src="Text/Ch19sec1.xhtml#s88"/></navPoint>
+<navPoint id="nav-127" playOrder="12"><navLabel><text>Use the informal and formal register</text></navLabel><content src="Text/Ch19sec2.xhtml#s89"/></navPoint>
+<navPoint id="nav-128" playOrder="13"><navLabel><text>The active and passive voices</text></navLabel><content src="Text/Ch19sec3.xhtml#s90"/></navPoint>
+<navPoint id="nav-129" playOrder="14"><navLabel><text>Use the passive voice</text></navLabel><content src="Text/Ch19sec4.xhtml#s91"/></navPoint>
+<navPoint id="nav-130" playOrder="15"><navLabel><text>Create tone</text></navLabel><content src="Text/Ch19sec5.xhtml#s92"/></navPoint>
+<navPoint id="nav-131" playOrder="16"><navLabel><text>Use tone to manipulate your reader</text></navLabel><content src="Text/Ch19sec6.xhtml#s93"/></navPoint>
+<navPoint id="nav-132" playOrder="17"><navLabel><text>Progress punctuation</text></navLabel><content src="Text/Ch19sec7.xhtml#s94"/></navPoint>
+<navPoint id="nav-133" playOrder="18"><navLabel><text>Assess your progress</text></navLabel><content src="Text/Ch19sec8.xhtml"/></navPoint>
+</navPoint>
+<navPoint id="nav-198" playOrder="19"><navLabel><text>Imprint page</text></navLabel><content src="Text/Copyright.xhtml"/></navPoint>
+<navPoint id="nav-199" playOrder="20"><navLabel><text>Acknowledgements</text></navLabel><content src="Text/Acknowledgements.xhtml"/></navPoint>
+</navMap>
+</ncx>
