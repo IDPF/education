@@ -2661,11 +2661,6 @@ th.white {
 table.w30 {
     max-width: 30em;
 }
-.clip {
-    position: absolute !important;
-    clip: rect(1px 1px 1px 1px);
-    clip: rect(1px, 1px, 1px, 1px);
-}
 .back {
     text-decoration:none;
     color:white;

@@ -13,6 +13,8 @@
         <meta property="dcterms:modified">2014-12-11T09:12:55Z</meta>
         <meta property="dc:publisher">McDougal Littell</meta>
         <meta property="dc:date">2014-12-11T09:12:52+00:00</meta>
+        <dc:source id="src">urn:isbn:9780618596645</dc:source>
+        <meta property="source-of" refines="#src">pagination</meta>
         <meta property="schema:accessibilityFeature">alternativeText</meta>
         <meta property="schema:accessibilityFeature">longDescription</meta>
         <meta property="schema:accessibilityFeature">printPageNumbers</meta>
@@ -69,6 +71,5 @@
     <spine>
         <itemref idref="item_34" id="itemref_1"/>
         <itemref idref="item_35" id="itemref_2"/>
-        <itemref idref="item_36" id="itemref_3"/>
     </spine>
 </package>
