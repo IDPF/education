@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<package xmlns="http://www.idpf.org/2007/opf" prefix="ibooks: http://vocabulary.itunes.apple.com/rdf/ibooks/vocabulary-extensions-1.0/ rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#" unique-identifier="p9781107454729" version="3.0" xml:lang="en">
+    <!--prefix='ibooks' above necessary for iBooks versioning-->
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+        <dc:type>edupub</dc:type>
+        <dc:title>GCSE English Literature for AQA: Poetry Student Book</dc:title>
+        <dc:identifier id="p9781107454729">9781107454729</dc:identifier>
+        <dc:identifier id="isbn-id">urn:isbn:9781107454729</dc:identifier>
+        <dc:creator>Cambridge University Press</dc:creator>
+        <dc:publisher>Cambridge University Press</dc:publisher>
+        <dc:language>en</dc:language>
+        <dc:source id="src">9781107454729</dc:source>
+        <meta property="identifier-type" refines="#src" scheme="onix:codelist5">15</meta>
+        <meta property="source-of" refines="#src">pagination</meta>
+        <meta name="cover" content="cover-image"/>
+        <meta property="ibooks:specified-fonts">true</meta>
+        <meta property="dcterms:modified">2014-04-10T11:41:00Z</meta>
+        <meta property="schema:audience" id="aud01">schema:audience</meta>
+        <meta refines="#aud01" property="rdf:type">http://www.schema.org/EducationalAudience</meta>
+        <meta property="schema:educationalRole" refines="#aud01">student</meta>
+        <meta property="schema:typicalAgeRange">16-18</meta>
+        <meta property="schema:accessibilityFeature">tableOfContents</meta>
+        <meta property="schema:accessibilityFeature">alternativeText</meta>
+        <meta property="schema:accessibilityFeature">printPageNumbers</meta>
+        <meta property="schema:accessibilityFeature">readingOrder</meta>
+        <meta property="schema:accessibilityFeature">structuralNavigation</meta>
+    </metadata>
+    <manifest>
+        <item href="toc.ncx" id="toc" media-type="application/x-dtbncx+xml"/>
+        <item href="Text/nav.xhtml" id="toc1" media-type="application/xhtml+xml" properties="nav"/>
+
+        <item href="Styles/main_styles.css" id="main_styles" media-type="text/css"/>
+        <item href="Styles/other_styles.css" id="other_styles" media-type="text/css"/>
+
+        <!--FONTS-->
+        <item href="Fonts/CharisSILB.ttf" id="CharisSILB.ttf" media-type="application/vnd.ms-opentype"/>
+        <item href="Fonts/CharisSILBI.ttf" id="CharisSILBI.ttf" media-type="application/vnd.ms-opentype"/>
+        <item href="Fonts/CharisSILI.ttf" id="CharisSILI.ttf" media-type="application/vnd.ms-opentype"/>
+        <item href="Fonts/CharisSILR.ttf" id="CharisSILR.ttf" media-type="application/vnd.ms-opentype"/>
+        <item href="Fonts/Andika.ttf" id="Andika.ttf" media-type="application/vnd.ms-opentype"/>
+        <item href="Fonts/SourceSansPro-Regular.ttf" id="SourceSansPro-Regular.ttf" media-type="application/vnd.ms-opentype"/>
+        <item href="Fonts/SourceSansPro-Bold.ttf" id="SourceSansPro-Bold.ttf" media-type="application/vnd.ms-opentype"/>
+        <item href="Fonts/SourceSansPro-Italic.ttf" id="SourceSansPro-Italic.ttf" media-type="application/vnd.ms-opentype"/>
+        <item href="Fonts/SourceSansPro-BoldItalic.ttf" id="SourceSansPro-BoldItalic.ttf" media-type="application/vnd.ms-opentype"/>
+
+        <!--Images-->
+        <item id="callout_triangle-brown.png" href="Images/callout_triangle-brown.png" media-type="image/png"/>
+        <item id="callout_triangle-orange.png" href="Images/callout_triangle-orange.png" media-type="image/png"/>
+        <item id="callout_triangle-purple.png" href="Images/callout_triangle-purple.png" media-type="image/png"/>
+        <item id="callout_triangle-red.png" href="Images/callout_triangle-red.png" media-type="image/png"/>
+        <item id="callout_triangle-red1.png" href="Images/callout_triangle-red1.png" media-type="image/png"/>
+        <item id="callout_triangle.png" href="Images/callout_triangle.png" media-type="image/png"/>
+        <item id="callout_triangle1.png" href="Images/callout_triangle1.png" media-type="image/png"/>
+        <item id="callout_triangle2.png" href="Images/callout_triangle2.png" media-type="image/png"/>
+        <item id="copy.jpg" href="Images/copy.jpg" media-type="image/jpeg"/>
+        <item id="icon_check.png" href="Images/icon_check.png" media-type="image/png"/>
+        <item id="icon_i.png" href="Images/icon_i.png" media-type="image/png"/>
+        <item id="img82.jpg" href="Images/img82.jpg" media-type="image/jpeg"/>
+        <item id="img83.jpg" href="Images/img83.jpg" media-type="image/jpeg"/>
+        <item id="img84.jpg" href="Images/img84.jpg" media-type="image/jpeg"/>
+        <item id="img89.jpg" href="Images/img89.jpg" media-type="image/jpeg"/>
+        <item id="img90.jpg" href="Images/img90.jpg" media-type="image/jpeg"/>
+        <item id="img91.jpg" href="Images/img91.jpg" media-type="image/jpeg"/>
+        <item id="img92.jpg" href="Images/img92.jpg" media-type="image/jpeg"/>
+        <item id="img172.jpg" href="Images/img172.jpg" media-type="image/jpeg"/>
+        <item id="i9781107454712p96_fig2web.jpg" href="Images/9781107454712p96_fig2web.jpg" media-type="image/jpeg"/>
+        <item id="i9781107454712p96_fig3web.jpg" href="Images/9781107454712p96_fig3web.jpg" media-type="image/jpeg"/>
+        <item id="i9781107454712p96_fig4web.jpg" href="Images/9781107454712p96_fig4web.jpg" media-type="image/jpeg"/>
+        <item id="i9781107454712p96_fig5web.jpg" href="Images/9781107454712p96_fig5web.jpg" media-type="image/jpeg"/>
+        <item id="cover-image" href="Images/9781107454729frcvr.jpg" media-type="image/jpeg" properties="cover-image"/>
+        
+        <!-- Audio -->
+        <item id="g_lit_a_poet_sb_aud_0016.mp3" href="audio/g_lit_a_poet_sb_aud_0016.mp3" media-type="audio/mp3"/>
+        <item id="g_lit_a_poet_sb_aud_0018.mp3" href="audio/g_lit_a_poet_sb_aud_0018.mp3" media-type="audio/mp3"/>
+        
+        <!--PAGES-->
+        <item href="Text/cover.xhtml" id="cover" media-type="application/xhtml+xml"/>
+        <item href="Text/ch027.xhtml" id="ch027" media-type="application/xhtml+xml"/>
+        <item href="Text/ch029.xhtml" id="ch029" media-type="application/xhtml+xml"/>
+        <item href="Text/Realia_page108-001.xhtml" id="Realia_page108-001" media-type="application/xhtml+xml"/>
+        <item href="Text/Copyright.xhtml" id="Copyright" media-type="application/xhtml+xml"/>
+        <item href="Text/Acknowledgements.xhtml" id="Acknowledgements" media-type="application/xhtml+xml"/>
+    </manifest>
+
+    <spine toc="toc">
+        <itemref idref="cover" linear="no"/>
+        <itemref idref="ch027"/>
+        <itemref idref="ch029"/>
+        <itemref idref="Realia_page108-001" linear="no"/>
+        <itemref idref="Copyright"/>
+        <itemref idref="Acknowledgements"/>
+    </spine>
+
+</package>

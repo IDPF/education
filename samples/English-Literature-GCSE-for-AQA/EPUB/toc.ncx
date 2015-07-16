@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="en">
+<head>
+<meta content="9781107454729" name="dtb:uid"/>
+<meta content="1" name="dtb:depth"/>
+<meta content="0" name="dtb:totalPageCount"/>
+<meta content="0" name="dtb:headmaxPageNumber"/>
+</head>
+<docTitle><text>GCSE English Literature for AQA: Poetry Student Book</text></docTitle>
+<docAuthor><text>Cambridge University Press</text></docAuthor>
+<navMap>
+<navPoint id="nav-31" playOrder="1"><navLabel><text>Unit 1 Ozymandias &#8211; Percy Bysshe Shelley</text></navLabel><content src="Text/ch027.xhtml#page_97"/></navPoint>
+<navPoint id="nav-33" playOrder="2"><navLabel><text>Unit 3 Extract from The Prelude &#8211; William Wordsworth</text></navLabel><content src="Text/ch029.xhtml"/></navPoint>
+<navPoint id="nav-70" playOrder="3"><navLabel><text>Copyright</text></navLabel><content src="Text/Copyright.xhtml"/></navPoint>
+<navPoint id="nav-71" playOrder="4"><navLabel><text>ACKNOWLEDGEMENTS</text></navLabel><content src="Text/Acknowledgements.xhtml"/></navPoint>
+</navMap>
+</ncx>
