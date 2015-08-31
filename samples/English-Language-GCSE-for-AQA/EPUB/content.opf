@@ -15,7 +15,7 @@
         <meta property="source-of" refines="#src">pagination</meta>
         <meta name="cover" content="cover-image"/>
         <meta property="ibooks:specified-fonts">true</meta>
-        <meta property="dcterms:modified">2014-04-10T11:41:00Z</meta>
+        <meta property="dcterms:modified">2015-06-15T12:00:00Z</meta>
         <meta property="schema:audience" id="aud01">schema:audience</meta>
         <meta refines="#aud01" property="rdf:type">http://www.schema.org/EducationalAudience</meta>
         <meta property="schema:educationalRole" refines="#aud01">student</meta>
