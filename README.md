@@ -1,7 +1,7 @@
-EDUPUB
+EPUB for Education
 ======
 
-See the <a href="http://idpf.github.io/edupub/">project page</a> for more information about the EDUPUB samples.
+See the <a href="http://idpf.github.io/edupub/">project page</a> for more information about the EPUB for Education samples.
 
 ## Licensing
 
