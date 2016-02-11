@@ -1,11 +1,11 @@
 EPUB for Education
 ======
 
-See the <a href="http://idpf.github.io/edupub/">project page</a> for more information about the EPUB for Education samples.
+See the <a href="http://idpf.github.io/education/">project page</a> for more information about the EPUB for Education samples.
 
 ## Licensing
 
-Unless specified otherwise in the [samples table](http://idpf.github.io/edupub/samples.html), all samples are licensed under [CC-BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/)
+Unless specified otherwise in the [samples table](http://idpf.github.io/education/samples.html), all samples are licensed under [CC-BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/)
 
 ## Reporting Issues
 
