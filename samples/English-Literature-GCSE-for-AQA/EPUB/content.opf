@@ -2,7 +2,7 @@
 <package xmlns="http://www.idpf.org/2007/opf" prefix="ibooks: http://vocabulary.itunes.apple.com/rdf/ibooks/vocabulary-extensions-1.0/ rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#" unique-identifier="p9781107454729" version="3.0" xml:lang="en">
     <!--prefix='ibooks' above necessary for iBooks versioning-->
     <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
-        <dc:type>edupub</dc:type>
+        <dc:type>education</dc:type>
         <dc:title>GCSE English Literature for AQA: Poetry Student Book</dc:title>
         <dc:identifier id="p9781107454729">9781107454729</dc:identifier>
         <dc:identifier id="isbn-id">urn:isbn:9781107454729</dc:identifier>
@@ -14,7 +14,7 @@
         <meta property="source-of" refines="#src">pagination</meta>
         <meta name="cover" content="cover-image"/>
         <meta property="ibooks:specified-fonts">true</meta>
-        <meta property="dcterms:modified">2014-04-10T11:41:00Z</meta>
+        <meta property="dcterms:modified">2016-02-25T09:30:00Z</meta>
         <meta property="schema:audience" id="aud01">schema:audience</meta>
         <meta refines="#aud01" property="rdf:type">http://www.schema.org/EducationalAudience</meta>
         <meta property="schema:educationalRole" refines="#aud01">student</meta>

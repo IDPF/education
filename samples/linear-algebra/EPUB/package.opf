@@ -2,11 +2,11 @@
 <package version="3.0" xml:lang="en" unique-identifier="uid" prefix="cc: http://creativecommons.org/ns#" xmlns="http://www.idpf.org/2007/opf">
    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
       <dc:title id="title">A First Course in Linear Algebra</dc:title>
-      <dc:type>edupub</dc:type>
+      <dc:type>education</dc:type>
       <dc:identifier id="uid">https://github.com/IDPF/edupub/tree/master/samples/linear-algebra</dc:identifier>
       <dc:language>en</dc:language>
       <dc:creator>Robert A. Beezer</dc:creator>
-      <meta property="dcterms:modified">2015-08-31T11:45:00Z</meta>
+      <meta property="dcterms:modified">2016-02-25T09:30:00Z</meta>
       <dc:rights>This work is shared with the public using the GNU Free Documentation License, Version 1.2.</dc:rights>
       <dc:rights>© 2004 by Robert A. Beezer.</dc:rights>
       <link rel="cc:license" href="http://www.gnu.org/copyleft/fdl.xhtml"/>
@@ -266,7 +266,7 @@
          <dc:title>Chapter SLE Systems of Linear Equations</dc:title>
          <dc:title>A First Course in Linear Algebra</dc:title>
          <dc:type>distributable-object</dc:type>
-         <dc:type>edupub</dc:type>
+         <dc:type>education</dc:type>
          <dc:identifier>https://github.com/IDPF/edupub/tree/master/samples/linear-algebra/chapterSLE</dc:identifier>
          <dc:language>en</dc:language>
          <dc:creator>Robert A. Beezer</dc:creator>

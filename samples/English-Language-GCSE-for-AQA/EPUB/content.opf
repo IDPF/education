@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <package xmlns="http://www.idpf.org/2007/opf" prefix="ibooks: http://vocabulary.itunes.apple.com/rdf/ibooks/vocabulary-extensions-1.0/ rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#" unique-identifier="isbn" version="3.0" xml:lang="en">
     <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
-        <dc:type>edupub</dc:type>
+        <dc:type>education</dc:type>
         <dc:title>English Language GCSE for AQA: Student Book</dc:title>
         <dc:identifier id="isbn">9781107453005</dc:identifier>
         <meta property="identifier-type" refines="#isbn" scheme="onix:codelist5">15</meta>
@@ -15,7 +15,7 @@
         <meta property="source-of" refines="#src">pagination</meta>
         <meta name="cover" content="cover-image"/>
         <meta property="ibooks:specified-fonts">true</meta>
-        <meta property="dcterms:modified">2015-06-15T12:00:00Z</meta>
+        <meta property="dcterms:modified">2016-02-25T09:30:00Z</meta>
         <meta property="schema:audience" id="aud01">schema:audience</meta>
         <meta refines="#aud01" property="rdf:type">http://www.schema.org/EducationalAudience</meta>
         <meta property="schema:educationalRole" refines="#aud01">student</meta>

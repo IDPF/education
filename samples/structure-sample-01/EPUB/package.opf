@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns="http://www.idpf.org/2007/opf" version="3.0" xml:lang="en" unique-identifier="pub-id" prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 	<metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
-		<dc:title id="title">EDUPUB Structure Sample</dc:title>
+		<dc:title id="title">Education Structure Sample</dc:title>
 		<dc:creator id="creator">Jane Doe</dc:creator>
 		<dc:language>en</dc:language>
 		<dc:identifier id="pub-id">test-sample-uc</dc:identifier>
-		<meta property="dcterms:modified">2015-06-15T12:00:00Z</meta>
+		<meta property="dcterms:modified">2016-02-25T09:30:00Z</meta>
 		<dc:date>2011-01-07</dc:date>
 		<dc:publisher>Pearson</dc:publisher>
-		<dc:type>edupub</dc:type>
+		<dc:type>education</dc:type>
 		<dc:source id="src">urn:isbn:9780000000000</dc:source>
 		<meta property="source-of" refines="#src">pagination</meta>
 		<meta name="cover" content="cover-image"/>
