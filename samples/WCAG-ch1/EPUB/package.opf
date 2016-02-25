@@ -2,7 +2,7 @@
 <package xmlns="http://www.idpf.org/2007/opf" prefix="dc: http://purl.org/dc/elements/1.1/"
     unique-identifier="d21041e30" version="3.0">
     <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
-        <dc:type>edupub</dc:type>
+        <dc:type>education</dc:type>
         <dc:type>distributable-object</dc:type>
         <dc:title id="d20201e20">World Cultures and Geography</dc:title>
         <meta property="title-type" refines="#d20201e20">main</meta>
@@ -10,7 +10,7 @@
         <dc:language>en-US</dc:language>
         <dc:rights>Copyright © 2003 McDougal Littel, Inc.</dc:rights> 
         <dc:rights>McDougal Littel, Inc. holds the copyright for these files and has provided permission to use them for the purpose of creating exemplar files. They should not be re-posted to other sites, nor may they be sold for commercial purposes.</dc:rights>
-        <meta property="dcterms:modified">2015-06-15T12:00:00Z</meta>
+        <meta property="dcterms:modified">2016-02-25T11:00:00Z</meta>
         <meta property="dc:publisher">McDougal Littell</meta>
         <meta property="dc:date">2014-12-11T09:12:52+00:00</meta>
         <dc:source id="src">urn:isbn:9780618596645</dc:source>
